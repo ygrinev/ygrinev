@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FCT.EPS.WSP.SRA.Implementation.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AgentPollingIntervalInMilliseconds" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">60000</Value>
+    </Setting>
+    <Setting Name="HowManyPaymentTransactionRecordsToGet" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="MaxAllowedRetry" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="HowManyRowBetweenHeaderAndData" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="FileArchiveLocation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\wrkdir\EASYFUND\FCT\Archive\BatchPaymentReport</Value>
+    </Setting>
+    <Setting Name="DMSWrkDirLocation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\INTRAtrain.prefirstcdn.com\WrkDir\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,5 @@
+C:\PROJ\EPS\SC\FCT.EPS.Agents\FCT.EPS.WSP.ExternalResources\bin\Release\FCT.EPS.WSP.ExternalResources.dll.config
+C:\PROJ\EPS\SC\FCT.EPS.Agents\FCT.EPS.WSP.ExternalResources\bin\Release\FCT.EPS.WSP.ExternalResources.dll
+C:\PROJ\EPS\SC\FCT.EPS.Agents\FCT.EPS.WSP.ExternalResources\bin\Release\FCT.EPS.WSP.ExternalResources.pdb
+C:\PROJ\EPS\SC\FCT.EPS.Agents\FCT.EPS.WSP.ExternalResources\obj\Release\FCT.EPS.WSP.ExternalResources.dll
+C:\PROJ\EPS\SC\FCT.EPS.Agents\FCT.EPS.WSP.ExternalResources\obj\Release\FCT.EPS.WSP.ExternalResources.pdb

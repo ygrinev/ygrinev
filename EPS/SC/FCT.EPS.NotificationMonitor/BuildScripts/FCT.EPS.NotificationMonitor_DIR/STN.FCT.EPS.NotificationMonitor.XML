@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--XSLT VERSION 2012-08-13 11:00-->
+<project>
+  <settings>
+    <roots>
+      <!--When this file is used in the LAUNCH.[solution name].BAT context, the paths are taken from the parameters defined in the LAUNCH.[solution name].BAT-->
+      <root id="$(local_path_solution)">D:\TFS\EasyFund\EPS\SC\FCT.EPS.NotificationMonitor</root>
+      <root id="$(local_path_apd)">D:\TFS\APD\Packaging\EPS\FCT.EPS.NotificationMonitor\Latest</root>
+    </roots>
+    <target>
+      <ismproject id="&lt;ISProjectFolder&gt;">$(local_path_apd)\IS Project\FCT.EPS.NotificationMonitor.Send.ism</ismproject>
+      <pathvariables>
+        <!--Path variables have been retrieved from InstallShield Project.-->
+        <pathvariable id="&lt;PATH_TO_RESOURCE_FILES&gt;">&lt;ISProjectFolder&gt;\..\Resource</pathvariable>
+      </pathvariables>
+      <excludes>
+        <exclude>
+          <excluderoot>&lt;PATH_TO_RESOURCE_FILES&gt;</excluderoot>
+          <!--Edit Files to be excludet from the comparison-->
+          <excludemasks>FCT.EPS.NotificationMonitor.exe.config</excludemasks>
+        </exclude>
+      </excludes>
+    </target>
+    <sources>
+      <source id="$(sourceroot1)" targetid="$(target1)">
+        <!--EDIT SOLUTION OUTPUT PATH HERE-->
+        <includeroot>$(local_path_solution)\FCT.EPS.NotificationMonitor\bin\Release</includeroot>
+        <!--Add masks separated by ';' for files to be copied from the source-->
+        <!--*.htm;*.aspx;*.css;*.skin;*.gif;*.dfv;*.compiled;*.xml;*.ascx;*.master;*.dll;*.svc;*.config;*.asmx;*.jpg;*.resx;*.sitemap;*.asax-->
+        <includemasks>*.dll;*.exe;</includemasks>
+        <!--Add paterns separated by ';' to be excluded from comparison [release\web.config;release\app.config]-->
+        <excludepatterns>FCT.EPS.NotificationMonitor.exe.config;obj</excludepatterns>
+      </source>
+    </sources>
+  </settings>
+</project>

@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FCT.EPS.WSP.GCLA.BusinessLogicTests.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="pathToCCListFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\DOC\WORK\TASK\EPS-Merger for CREDIT CARD\TEST\CCLISTA.*</Value>
+    </Setting>
+    <Setting Name="pathToArcCCListFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\DOC\WORK\TASK\EPS-Merger for CREDIT CARD\TEST</Value>
+    </Setting>
+    <Setting Name="pathToReport" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\DOC\WORK\TASK\EPS-Merger for CREDIT CARD\TEST</Value>
+    </Setting>
+    <Setting Name="mailBodyErr" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">The following corporate creditors were not updated owing to errors on {0}: 
+    {1}
+
+    Please action accordingly.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

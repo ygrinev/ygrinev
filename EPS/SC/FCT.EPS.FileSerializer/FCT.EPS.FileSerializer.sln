@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.FileSerializer.RBC", "FCT.EPS.FileSerializer.RBC\FCT.EPS.FileSerializer.RBC.csproj", "{706D9486-32DC-4226-A9DA-78DFDFA41747}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.FileSerializer.Common", "FCT.EPS.FileSerializer.Common\FCT.EPS.FileSerializer.Common.csproj", "{989F3613-6FF2-476D-8257-A4CD01F638F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.FileSerializer.RBCTests", "FCT.EPS.FileSerializer.RBCTests\FCT.EPS.FileSerializer.RBCTests.csproj", "{0E8A2961-DFF4-4363-95B3-1D925A7708AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.FileSerializer.CommonTests", "FCT.EPS.FileSerializer.CommonTests\FCT.EPS.FileSerializer.CommonTests.csproj", "{79C43608-E23C-48CD-AB70-38604359EC44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2FBAF953-C3EF-46A4-B500-4139BA9F2351}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.firstcdn.com:8080/tfs/main
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FCT.EPS.FileSerializer.RBC\\FCT.EPS.FileSerializer.RBC.csproj
+		SccProjectName1 = FCT.EPS.FileSerializer.RBC
+		SccLocalPath1 = FCT.EPS.FileSerializer.RBC
+		SccProjectUniqueName2 = FCT.EPS.FileSerializer.Common\\FCT.EPS.FileSerializer.Common.csproj
+		SccProjectName2 = FCT.EPS.FileSerializer.Common
+		SccLocalPath2 = FCT.EPS.FileSerializer.Common
+		SccProjectUniqueName3 = FCT.EPS.FileSerializer.RBCTests\\FCT.EPS.FileSerializer.RBCTests.csproj
+		SccProjectTopLevelParentUniqueName3 = FCT.EPS.FileSerializer.sln
+		SccProjectName3 = FCT.EPS.FileSerializer.RBCTests
+		SccLocalPath3 = FCT.EPS.FileSerializer.RBCTests
+		SccProjectUniqueName4 = FCT.EPS.FileSerializer.CommonTests\\FCT.EPS.FileSerializer.CommonTests.csproj
+		SccProjectTopLevelParentUniqueName4 = FCT.EPS.FileSerializer.sln
+		SccProjectName4 = FCT.EPS.FileSerializer.CommonTests
+		SccLocalPath4 = FCT.EPS.FileSerializer.CommonTests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{706D9486-32DC-4226-A9DA-78DFDFA41747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{706D9486-32DC-4226-A9DA-78DFDFA41747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{706D9486-32DC-4226-A9DA-78DFDFA41747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{706D9486-32DC-4226-A9DA-78DFDFA41747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{989F3613-6FF2-476D-8257-A4CD01F638F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{989F3613-6FF2-476D-8257-A4CD01F638F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{989F3613-6FF2-476D-8257-A4CD01F638F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{989F3613-6FF2-476D-8257-A4CD01F638F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E8A2961-DFF4-4363-95B3-1D925A7708AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E8A2961-DFF4-4363-95B3-1D925A7708AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E8A2961-DFF4-4363-95B3-1D925A7708AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E8A2961-DFF4-4363-95B3-1D925A7708AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79C43608-E23C-48CD-AB70-38604359EC44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79C43608-E23C-48CD-AB70-38604359EC44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79C43608-E23C-48CD-AB70-38604359EC44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79C43608-E23C-48CD-AB70-38604359EC44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0E8A2961-DFF4-4363-95B3-1D925A7708AF} = {2FBAF953-C3EF-46A4-B500-4139BA9F2351}
+		{79C43608-E23C-48CD-AB70-38604359EC44} = {2FBAF953-C3EF-46A4-B500-4139BA9F2351}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<build version="1.1.0.1">
+  <tools>
+    <tool name="tf.exe" varname="tf_path">C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\tf.exe</tool>
+    <tool name="msbuild.exe" varname="msbuild_path">C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe</tool>
+    <tool name="AsmInfoUpdater.exe" varname="asminfoupdater_path">D:\TFS\Tools\AsmInfoUpdater.exe</tool>
+    <tool name="ConsM.exe" varname="consm_path">D:\TFS\Tools\ConsM.exe</tool>
+    <tool name="CopyValidator.exe" varname="copyvalidator_path">D:\TFS\Tools\CopyValidator.exe</tool>
+    <tool name="IsCmdBld.exe" varname="iscmdbld_path">c:\Program Files (x86)\InstallShield\2014 SAB\System\IsCmdBld.exe</tool>
+    <tool name="ReportLogger.exe" varname="reportlogger_path">D:\TFS\Tools\ReportLogger.exe</tool>
+    <tool name="TestLogon.exe" varname="logon_identity_path">D:\TFS\Tools\TestLogon.exe</tool>
+  </tools>
+  <roots>
+    <root name="local_path_solution">D:\TFS\EasyFund\EPS\SC\FCT.EPS.Agents</root>
+    <root name="local_path_binaries">D:\TFS\EasyFund\EPS\Binaries</root>
+    <root name="local_path_apd">D:\TFS\APD\Packaging\EPS\FCT.EPS.SendAgents\Latest</root>
+  </roots>
+  <unitofbuild name="FCT.EPS.WSP.SendAgents">
+    <solution name="FCT.EPS.WSP.SendAgents.sln">
+      <location>%local_path_solution%\FCT.EPS.WSP.SendAgents.sln</location>
+      <projects>
+        <project name="FCT.EPS.WSP.DataAccess">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.DataAccess\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.ExternalResources">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.ExternalResources\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.SCTFA.BusinessLogic">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SCTFA.BusinessLogic\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.SCTFA.Implementation">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SCTFA.Implementation\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.SFTFA.BusinessLogic">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SFTFA.BusinessLogic\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.SFTFA.Implementation">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SFTFA.Implementation\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.SCTFA.Resources">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SCTFA.Resources\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.SFTFA.Resources">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SFTFA.Resources\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.Resources">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.Resources\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.SPRTPTA.BusinessLogic">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SPRTPTA.BusinessLogic\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.SPRTPTA.Implementation">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SPRTPTA.Implementation\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.SPRTPTA.Resources">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SPRTPTA.Resources\Properties\AssemblyInfo.cs</infopath>
+        </project>
+
+        <project name="FCT.EPS.WSP.SRA.Implementation">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SRA.Implementation\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.SRA.BusinessLogic">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SRA.BusinessLogic\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.SRA.Resources">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SRA.Resources\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.SETBA.Resources">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SETBA.Resources\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.SETBA.BusinessLogic">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SETBA.BusinessLogic\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.SETBA.Implementation">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.SETBA.Implementation\Properties\AssemblyInfo.cs</infopath>
+        </project>
+      </projects>
+    </solution>
+    <apd name="FCT.EPS.WSP.SendAgents.ism">
+      <ismproject>%local_path_apd%\IS Project\FCT.EPS.WSP.SendAgents.ism</ismproject>
+      <includemasks></includemasks>
+      <xcopy>
+        <from>%local_path_apd%\IS Project\FCT.EPS.Agents.Send\Product Configuration 1\Release 1\DiskImages\DISK1\FCT.EPS.WSP.SendAgents.msi</from>
+        <to>%local_path_apd%\Release\FCT.EPS.WSP.SendAgents.msi</to>
+      </xcopy>
+      <pathvariables>
+        <pathvariable name="PATH_TO_RESOURCE_FILES">&lt;ISProjectFolder&gt;\..\Resource</pathvariable>
+      </pathvariables>
+    </apd>
+  </unitofbuild>
+</build>

@@ -1,0 +1,1 @@
+SQLImportExport.exe EXPORT tblPaymentMethod.config

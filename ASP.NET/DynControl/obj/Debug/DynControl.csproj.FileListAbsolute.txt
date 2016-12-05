@@ -1,0 +1,6 @@
+C:\PROJ_YG\ASP.NET\DynControl\bin\DynControl.dll.config
+C:\PROJ_YG\ASP.NET\DynControl\bin\DynControl.dll
+C:\PROJ_YG\ASP.NET\DynControl\bin\DynControl.pdb
+C:\PROJ_YG\ASP.NET\DynControl\obj\Debug\DynControl.dll
+C:\PROJ_YG\ASP.NET\DynControl\obj\Debug\DynControl.pdb
+C:\PROJ_YG\ASP.NET\DynControl\obj\Debug\DynControl.csprojResolveAssemblyReference.cache

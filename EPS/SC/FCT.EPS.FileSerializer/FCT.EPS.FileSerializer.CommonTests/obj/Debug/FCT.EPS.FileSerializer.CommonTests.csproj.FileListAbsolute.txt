@@ -1,0 +1,1 @@
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.CommonTests\obj\Debug\FCT.EPS.FileSerializer.CommonTests.csprojResolveAssemblyReference.cache

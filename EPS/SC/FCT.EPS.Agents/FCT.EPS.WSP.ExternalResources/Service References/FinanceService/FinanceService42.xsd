@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="FCT.EPS.FinanceService.DataContracts" elementFormDefault="qualified" targetNamespace="FCT.EPS.FinanceService.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ChequeRequestList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ChequeRequestDetail" nillable="true" type="tns:ChequeRequest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChequeRequestList" nillable="true" type="tns:ChequeRequestList" />
+  <xs:complexType name="ChequeRequest">
+    <xs:sequence>
+      <xs:element name="FCTRefNum" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ProgramID" type="xs:int" />
+      <xs:element name="DisbursementTransactionID" type="xs:int" />
+      <xs:element name="ServiceDescription" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StatusID" type="xs:int" />
+      <xs:element name="PayeeName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AddressLine1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressLine3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressLine4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressLine5" nillable="true" type="xs:string" />
+      <xs:element name="Amount" type="xs:decimal" />
+      <xs:element name="DateEntered" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChequeRequest" nillable="true" type="tns:ChequeRequest" />
+  <xs:complexType name="ChequeStatusRequest">
+    <xs:sequence>
+      <xs:element name="EPSChequeRequestID" type="xs:int" />
+      <xs:element name="NumberOfRecords" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChequeStatusRequest" nillable="true" type="tns:ChequeStatusRequest" />
+  <xs:complexType name="ChequeStatusResponseList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ChequeStatus" nillable="true" type="tns:ChequeStatusResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChequeStatusResponseList" nillable="true" type="tns:ChequeStatusResponseList" />
+  <xs:complexType name="ChequeStatusResponse">
+    <xs:sequence>
+      <xs:element name="EPSChequeRequestID" type="xs:int" />
+      <xs:element name="FCTRefNum" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="DisbursemenTransactionID" type="xs:int" />
+      <xs:element minOccurs="0" name="ChequeNumber" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StatusID" type="xs:int" />
+      <xs:element minOccurs="0" name="DatePaid" nillable="true" type="xs:dateTime" />
+      <xs:element name="PaymentBatchID" nillable="true" type="xs:string" />
+      <xs:element name="PaymentBatchDescription" nillable="true" type="xs:string" />
+      <xs:element name="LastModifiedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChequeStatusResponse" nillable="true" type="tns:ChequeStatusResponse" />
+  <xs:complexType name="FCTFeeSummaryRequestList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FCTFeeSummaryRequest" nillable="true" type="tns:FCTFeeSummary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FCTFeeSummaryRequestList" nillable="true" type="tns:FCTFeeSummaryRequestList" />
+  <xs:complexType name="FCTFeeSummary">
+    <xs:sequence>
+      <xs:element name="FCTRefNumber" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ProgramID" type="xs:int" />
+      <xs:element name="DisbursementTransactionID" type="xs:int" />
+      <xs:element name="Service" type="xs:int" />
+      <xs:element name="PayeeName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="BillingPartyID1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="BillingPartyID2" type="xs:int" />
+      <xs:element name="ProvinceCode" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Amount" type="xs:decimal" />
+      <xs:element name="PST" type="xs:decimal" />
+      <xs:element name="GST" type="xs:decimal" />
+      <xs:element name="HST" type="xs:decimal" />
+      <xs:element name="QST" type="xs:decimal" />
+      <xs:element name="RST" type="xs:decimal" />
+      <xs:element name="TotalFee" type="xs:decimal" />
+      <xs:element name="DateEntered" type="xs:dateTime" />
+      <xs:element name="ServiceBatchID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FCTFeeSummary" nillable="true" type="tns:FCTFeeSummary" />
+  <xs:complexType name="FCTFeeStatusRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EPSFCTFeeSummaryID" type="xs:int" />
+      <xs:element minOccurs="0" name="NumberOfRecords" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FCTFeeStatusRequest" nillable="true" type="tns:FCTFeeStatusRequest" />
+  <xs:complexType name="FCTFeeStatusResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FCTFeeStatusList" nillable="true" type="tns:FCTFeeStatusInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FCTFeeStatusResponse" nillable="true" type="tns:FCTFeeStatusResponse" />
+  <xs:complexType name="FCTFeeStatusInfo">
+    <xs:sequence>
+      <xs:element name="EPSFCTFeeSummaryID" type="xs:int" />
+      <xs:element name="FCTRefNum" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceBatchID" type="xs:int" />
+      <xs:element name="DisbursemenTransactionID" type="xs:int" />
+      <xs:element name="JournalControlNumber" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ProcessFlag" type="xs:int" />
+      <xs:element name="ErrorNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="DatePaid" nillable="true" type="xs:dateTime" />
+      <xs:element name="LastModifiedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FCTFeeStatusInfo" nillable="true" type="tns:FCTFeeStatusInfo" />
+</xs:schema>

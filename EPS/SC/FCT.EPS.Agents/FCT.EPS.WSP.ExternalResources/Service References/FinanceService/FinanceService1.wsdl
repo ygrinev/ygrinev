@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FinanceService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="EPSNetTcpEndpoint_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="EPSNetTcpEndpoint_CreateCheques_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="EPSNetTcpEndpoint_GetListOfUpdatedCheques_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="EPSNetTcpEndpoint_CreateFees_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="EPSNetTcpEndpoint_GetFCTFeeStatus_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="EPSwsHttpEndpoint_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <http:NegotiateAuthentication xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="EPSwsHttpEndpoint_CreateCheques_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsat:ATAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:wsat="http://schemas.xmlsoap.org/ws/2004/10/wsat" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="EPSwsHttpEndpoint_GetListOfUpdatedCheques_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsat:ATAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:wsat="http://schemas.xmlsoap.org/ws/2004/10/wsat" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="EPSwsHttpEndpoint_CreateFees_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsat:ATAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:wsat="http://schemas.xmlsoap.org/ws/2004/10/wsat" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="EPSwsHttpEndpoint_GetFCTFeeStatus_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsat:ATAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:wsat="http://schemas.xmlsoap.org/ws/2004/10/wsat" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc?xsd=xsd3" namespace="FCT.EPS.FinanceService.FaultContracts" />
+      <xsd:import schemaLocation="http://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc?xsd=xsd2" namespace="FCT.EPS.FinanceService.DataContracts" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFinanceService_CreateCheques_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCheques" />
+  </wsdl:message>
+  <wsdl:message name="IFinanceService_CreateCheques_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateChequesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFinanceService_CreateCheques_ServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="FCT.EPS.FinanceService.FaultContracts" name="detail" element="q1:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="IFinanceService_GetListOfUpdatedCheques_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListOfUpdatedCheques" />
+  </wsdl:message>
+  <wsdl:message name="IFinanceService_GetListOfUpdatedCheques_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListOfUpdatedChequesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFinanceService_GetListOfUpdatedCheques_ServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="FCT.EPS.FinanceService.FaultContracts" name="detail" element="q2:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="IFinanceService_CreateFees_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFees" />
+  </wsdl:message>
+  <wsdl:message name="IFinanceService_CreateFees_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFinanceService_CreateFees_ServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="FCT.EPS.FinanceService.FaultContracts" name="detail" element="q3:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="IFinanceService_GetFCTFeeStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFCTFeeStatus" />
+  </wsdl:message>
+  <wsdl:message name="IFinanceService_GetFCTFeeStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFCTFeeStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFinanceService_GetFCTFeeStatus_ServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="FCT.EPS.FinanceService.FaultContracts" name="detail" element="q4:ServiceFault" />
+  </wsdl:message>
+  <wsdl:portType name="IFinanceService">
+    <wsdl:operation name="CreateCheques">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFinanceService/CreateCheques" message="tns:IFinanceService_CreateCheques_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFinanceService/CreateChequesResponse" message="tns:IFinanceService_CreateCheques_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IFinanceService/CreateChequesServiceFaultFault" name="ServiceFaultFault" message="tns:IFinanceService_CreateCheques_ServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfUpdatedCheques">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFinanceService/GetListOfUpdatedCheques" message="tns:IFinanceService_GetListOfUpdatedCheques_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFinanceService/GetListOfUpdatedChequesResponse" message="tns:IFinanceService_GetListOfUpdatedCheques_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IFinanceService/GetListOfUpdatedChequesServiceFaultFault" name="ServiceFaultFault" message="tns:IFinanceService_GetListOfUpdatedCheques_ServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateFees">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFinanceService/CreateFees" message="tns:IFinanceService_CreateFees_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFinanceService/CreateFeesResponse" message="tns:IFinanceService_CreateFees_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IFinanceService/CreateFeesServiceFaultFault" name="ServiceFaultFault" message="tns:IFinanceService_CreateFees_ServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFCTFeeStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFinanceService/GetFCTFeeStatus" message="tns:IFinanceService_GetFCTFeeStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFinanceService/GetFCTFeeStatusResponse" message="tns:IFinanceService_GetFCTFeeStatus_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IFinanceService/GetFCTFeeStatusServiceFaultFault" name="ServiceFaultFault" message="tns:IFinanceService_GetFCTFeeStatus_ServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EPSNetTcpEndpoint" type="tns:IFinanceService">
+    <wsp:PolicyReference URI="#EPSNetTcpEndpoint_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="CreateCheques">
+      <wsp:PolicyReference URI="#EPSNetTcpEndpoint_CreateCheques_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IFinanceService/CreateCheques" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultFault">
+        <soap12:fault use="literal" name="ServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfUpdatedCheques">
+      <wsp:PolicyReference URI="#EPSNetTcpEndpoint_GetListOfUpdatedCheques_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IFinanceService/GetListOfUpdatedCheques" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultFault">
+        <soap12:fault use="literal" name="ServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateFees">
+      <wsp:PolicyReference URI="#EPSNetTcpEndpoint_CreateFees_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IFinanceService/CreateFees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultFault">
+        <soap12:fault use="literal" name="ServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFCTFeeStatus">
+      <wsp:PolicyReference URI="#EPSNetTcpEndpoint_GetFCTFeeStatus_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IFinanceService/GetFCTFeeStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultFault">
+        <soap12:fault use="literal" name="ServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EPSwsHttpEndpoint" type="tns:IFinanceService">
+    <wsp:PolicyReference URI="#EPSwsHttpEndpoint_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateCheques">
+      <wsp:PolicyReference URI="#EPSwsHttpEndpoint_CreateCheques_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IFinanceService/CreateCheques" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultFault">
+        <soap12:fault use="literal" name="ServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfUpdatedCheques">
+      <wsp:PolicyReference URI="#EPSwsHttpEndpoint_GetListOfUpdatedCheques_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IFinanceService/GetListOfUpdatedCheques" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultFault">
+        <soap12:fault use="literal" name="ServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateFees">
+      <wsp:PolicyReference URI="#EPSwsHttpEndpoint_CreateFees_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IFinanceService/CreateFees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultFault">
+        <soap12:fault use="literal" name="ServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFCTFeeStatus">
+      <wsp:PolicyReference URI="#EPSwsHttpEndpoint_GetFCTFeeStatus_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IFinanceService/GetFCTFeeStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFaultFault">
+        <soap12:fault use="literal" name="ServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FinanceService">
+    <wsdl:port name="EPSNetTcpEndpoint" binding="tns:EPSNetTcpEndpoint">
+      <soap12:address location="net.tcp://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>pbinnell@firstcdn.com</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="EPSwsHttpEndpoint" binding="tns:EPSwsHttpEndpoint">
+      <soap12:address location="https://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>pbinnell@firstcdn.com</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

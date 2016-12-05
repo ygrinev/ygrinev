@@ -1,0 +1,7 @@
+C:\PROJ\EPS\SC\FCT.EPS.DataEntities\FCT.EPS.DataEntities\bin\Debug\FCT.EPS.DataEntities.dll.config
+C:\PROJ\EPS\SC\FCT.EPS.DataEntities\FCT.EPS.DataEntities\bin\Debug\FCT.EPS.DataEntities.dll
+C:\PROJ\EPS\SC\FCT.EPS.DataEntities\FCT.EPS.DataEntities\bin\Debug\FCT.EPS.DataEntities.pdb
+C:\PROJ\EPS\SC\FCT.EPS.DataEntities\FCT.EPS.DataEntities\bin\Debug\FCT.EPS.FileSerializer.Common.dll
+C:\PROJ\EPS\SC\FCT.EPS.DataEntities\FCT.EPS.DataEntities\obj\Debug\FCT.EPS.DataEntities.dll
+C:\PROJ\EPS\SC\FCT.EPS.DataEntities\FCT.EPS.DataEntities\obj\Debug\FCT.EPS.DataEntities.pdb
+C:\PROJ\EPS\SC\FCT.EPS.DataEntities\FCT.EPS.DataEntities\obj\Debug\FCT.EPS.DataEntities.csprojResolveAssemblyReference.cache

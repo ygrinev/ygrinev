@@ -1,0 +1,16 @@
+C:\PROJ_YG\Xamarin\Phoneword\bin\Debug\Phoneword.dll
+C:\PROJ_YG\Xamarin\Phoneword\bin\Debug\Phoneword.pdb
+C:\PROJ_YG\Xamarin\Phoneword\bin\Debug\com.fct.phoneword.apk
+C:\PROJ_YG\Xamarin\Phoneword\bin\Debug\com.fct.phoneword-Signed.apk
+C:\PROJ_YG\Xamarin\Phoneword\obj\Debug\Phoneword.dll
+C:\PROJ_YG\Xamarin\Phoneword\obj\Debug\Phoneword.pdb
+C:\PROJ_YG\Xamarin\Phoneword\obj\Debug\android\bin\com.fct.phoneword.apk
+C:\PROJ_YG\Xamarin\Phoneword\obj\Debug\res\layout\main.xml
+C:\PROJ_YG\Xamarin\Phoneword\obj\Debug\res\values\strings.xml
+C:\PROJ_YG\Xamarin\Phoneword\obj\Debug\res\drawable-xhdpi\icon.png
+C:\PROJ_YG\Xamarin\Phoneword\obj\Debug\res\drawable-mdpi\icon.png
+C:\PROJ_YG\Xamarin\Phoneword\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\PROJ_YG\Xamarin\Phoneword\obj\Debug\res\drawable-xxxhdpi\icon.png
+C:\PROJ_YG\Xamarin\Phoneword\obj\Debug\res\drawable-hdpi\icon.png
+C:\PROJ_YG\Xamarin\Phoneword\obj\Debug\R.cs.flag
+C:\PROJ_YG\Xamarin\Phoneword\obj\Debug\uploadflags.txt

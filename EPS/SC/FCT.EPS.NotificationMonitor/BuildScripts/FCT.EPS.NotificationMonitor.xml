@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<build version="1.1.0.1">
+  <tools>
+    <tool name="tf.exe" varname="tf_path">C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\tf.exe</tool>
+    <tool name="msbuild.exe" varname="msbuild_path">C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe</tool>
+    <tool name="AsmInfoUpdater.exe" varname="asminfoupdater_path">D:\TFS\Tools\AsmInfoUpdater.exe</tool>
+    <tool name="ConsM.exe" varname="consm_path">D:\TFS\Tools\ConsM.exe</tool>
+    <tool name="CopyValidator.exe" varname="copyvalidator_path">D:\TFS\Tools\CopyValidator.exe</tool>
+    <tool name="IsCmdBld.exe" varname="iscmdbld_path">C:\Program Files (x86)\InstallShield\2014 SAB\System\IsCmdBld.exe</tool>
+    <tool name="ReportLogger.exe" varname="reportlogger_path">D:\TFS\Tools\ReportLogger.exe</tool>
+    <tool name="TestLogon.exe" varname="logon_identity_path">D:\TFS\Tools\TestLogon.exe</tool>
+  </tools>
+  <roots>
+    <root name="local_path_solution">D:\TFS\EasyFund\EPS\SC\FCT.EPS.NotificationMonitor</root>
+    <root name="local_path_binaries">D:\TFS\EasyFund\EPS\Binaries</root>
+    <root name="local_path_apd">D:\TFS\APD\Packaging\EPS\FCT.EPS.NotificationMonitor\Latest</root>
+  </roots>
+  <unitofbuild name="FCT.EPS.NotificationMonitor">
+    <solution name="FCT.EPS.NotificationMonitor.sln">
+      <location>%local_path_solution%\FCT.EPS.NotificationMonitor.sln</location>
+      <projects>
+        <project name="FCT.EPS.NotificationMonitor">
+          <infopath>%local_path_solution%\FCT.EPS.NotificationMonitor\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.NotificationMonitor.Resources">
+          <infopath>%local_path_solution%\FCT.EPS.NotificationMonitor.Resources\Properties\AssemblyInfo.cs</infopath>
+        </project>
+      </projects>
+    </solution>
+    <apd name="FCT.EPS.NotificationMonitor.ism">
+      <ismproject>%local_path_apd%\IS Project\FCT.EPS.NotificationMonitor.ism</ismproject>
+      <includemasks></includemasks>
+      <xcopy>
+        <from>%local_path_apd%\IS Project\FCT.EPS.NotificationMonitor\Product Configuration 1\Release 1\DiskImages\DISK1\FCT.EPS.NotificationMonitor.msi</from>
+        <to>%local_path_apd%\Release\FCT.EPS.NotificationMonitor.msi</to>
+      </xcopy>
+      <pathvariables>
+        <pathvariable name="PATH_TO_RESOURCE_FILES">D:\TFS\APD\Packaging\EPS\FCT.EPS.NotificationMonitor\Resource</pathvariable>
+      </pathvariables>
+    </apd>
+  </unitofbuild>
+</build>

@@ -1,0 +1,1 @@
+SQLImportExport.exe IMPORT tblPayeeType.config

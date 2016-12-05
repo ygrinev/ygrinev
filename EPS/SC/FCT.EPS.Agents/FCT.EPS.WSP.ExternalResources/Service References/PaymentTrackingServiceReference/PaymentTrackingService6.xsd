@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="https://schemas.firstcdn.com/LawyerIntegration/ExternalInterface/20071214" elementFormDefault="qualified" targetNamespace="https://schemas.firstcdn.com/LawyerIntegration/ExternalInterface/20071214" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/FCT.LLC.BusinessServiceCode/PaymentTrackingService.svc?xsd=xsd4" namespace="FCT.LLC.Common.DataContracts" />
+  <xs:complexType name="ServiceNotAvailableFault">
+    <xs:sequence>
+      <xs:element name="Id" nillable="true" type="xs:string" />
+      <xs:element name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Details" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NavigateToUrl" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="FCT.LLC.Common.DataContracts" minOccurs="0" name="ErrorCode" type="q1:ErrorCode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceNotAvailableFault" nillable="true" type="tns:ServiceNotAvailableFault" />
+</xs:schema>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="FCT.LLC.Common.DataContracts" elementFormDefault="qualified" targetNamespace="FCT.LLC.Common.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="ErrorCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="DealDoesNotExist" />
+      <xs:enumeration value="DealsDoNotMatch" />
+      <xs:enumeration value="DisbursementsNotFound" />
+      <xs:enumeration value="DisbursementsDoNotMatch" />
+      <xs:enumeration value="NoTrustAccountID" />
+      <xs:enumeration value="TrustAccountNotActive" />
+      <xs:enumeration value="SummaryNotFound" />
+      <xs:enumeration value="FundsDoNotMatch" />
+      <xs:enumeration value="PurchaserHasNotSigned" />
+      <xs:enumeration value="VendorHasNotSigned" />
+      <xs:enumeration value="CPASystemClosure" />
+      <xs:enumeration value="VendorLawyerDisbursementNotFound" />
+      <xs:enumeration value="VendorLawyerAmountInadequate" />
+      <xs:enumeration value="Weekend" />
+      <xs:enumeration value="NotWithinWorkingHours" />
+      <xs:enumeration value="SubmitPaymentFaulted" />
+      <xs:enumeration value="InSufficientFunds" />
+      <xs:enumeration value="VendorAcknowledged" />
+      <xs:enumeration value="InactiveUser" />
+      <xs:enumeration value="OutstandingDeposit" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ErrorCode" nillable="true" type="tns:ErrorCode" />
+</xs:schema>

@@ -1,0 +1,6 @@
+C:\PROJ_YG\UtilityAndTools\ConsoleSnippets\ConsoleSnippets\bin\Debug\ConsoleSnippets.exe.config
+C:\PROJ_YG\UtilityAndTools\ConsoleSnippets\ConsoleSnippets\bin\Debug\ConsoleSnippets.exe
+C:\PROJ_YG\UtilityAndTools\ConsoleSnippets\ConsoleSnippets\bin\Debug\ConsoleSnippets.pdb
+C:\PROJ_YG\UtilityAndTools\ConsoleSnippets\ConsoleSnippets\obj\Debug\ConsoleSnippets.csprojResolveAssemblyReference.cache
+C:\PROJ_YG\UtilityAndTools\ConsoleSnippets\ConsoleSnippets\obj\Debug\ConsoleSnippets.exe
+C:\PROJ_YG\UtilityAndTools\ConsoleSnippets\ConsoleSnippets\obj\Debug\ConsoleSnippets.pdb

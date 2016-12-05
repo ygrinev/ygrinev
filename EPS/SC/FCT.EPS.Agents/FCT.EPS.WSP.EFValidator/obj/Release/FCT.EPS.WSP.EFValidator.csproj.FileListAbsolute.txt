@@ -1,0 +1,5 @@
+C:\PROJ\EPS\SC\FCT.EPS.Agents\FCT.EPS.WSP.EFValidator\bin\Release\FCT.EPS.WSP.EFValidator.dll
+C:\PROJ\EPS\SC\FCT.EPS.Agents\FCT.EPS.WSP.EFValidator\bin\Release\FCT.EPS.WSP.EFValidator.pdb
+C:\PROJ\EPS\SC\FCT.EPS.Agents\FCT.EPS.WSP.EFValidator\obj\Release\FCT.EPS.WSP.EFValidator.dll
+C:\PROJ\EPS\SC\FCT.EPS.Agents\FCT.EPS.WSP.EFValidator\obj\Release\FCT.EPS.WSP.EFValidator.pdb
+C:\PROJ\EPS\SC\FCT.EPS.Agents\FCT.EPS.WSP.EFValidator\bin\Release\FCT.EPS.DataEntities.dll

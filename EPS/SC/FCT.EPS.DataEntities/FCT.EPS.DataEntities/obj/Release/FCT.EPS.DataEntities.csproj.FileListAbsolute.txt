@@ -1,0 +1,6 @@
+C:\PROJ\EPS\SC\FCT.EPS.DataEntities\FCT.EPS.DataEntities\bin\Release\FCT.EPS.DataEntities.dll.config
+C:\PROJ\EPS\SC\FCT.EPS.DataEntities\FCT.EPS.DataEntities\bin\Release\FCT.EPS.DataEntities.dll
+C:\PROJ\EPS\SC\FCT.EPS.DataEntities\FCT.EPS.DataEntities\bin\Release\FCT.EPS.DataEntities.pdb
+C:\PROJ\EPS\SC\FCT.EPS.DataEntities\FCT.EPS.DataEntities\obj\Release\FCT.EPS.DataEntities.dll
+C:\PROJ\EPS\SC\FCT.EPS.DataEntities\FCT.EPS.DataEntities\obj\Release\FCT.EPS.DataEntities.pdb
+C:\PROJ\EPS\SC\FCT.EPS.DataEntities\FCT.EPS.DataEntities\bin\Release\FCT.EPS.FileSerializer.Common.dll

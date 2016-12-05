@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Sketcher 01</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+<body>
+    <div style="position: relative;">
+        <canvas id="layer1" width="800" height="600"
+                style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+        <canvas id="layer2" width="800" height="600"
+                style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var canvas = document.getElementById('layer1');
+            var ctx1 = canvas.getContext('2d');
+            var ctx2 = document.getElementById('layer2').getContext('2d');
+            var rect = canvas.getBoundingClientRect();
+
+            //var mousePosFrom = { x: 100, y: 100};
+            //var mousePosTo = { x: 120, y: 120 };
+
+            //ctx1.beginPath();
+            //ctx1.arc(mousePosFrom.x, mousePosFrom.y, 50, 0, 2 * Math.PI, false);
+            //ctx1.fillStyle = '#0000ff';
+            //ctx1.fill();
+            //ctx1.lineWidth = 2;
+            //ctx1.strokeStyle = '#0000ff';
+            //ctx1.stroke();
+
+
+            //ctx2.beginPath();
+            //ctx2.arc(mousePosTo.x, mousePosTo.y, 50, 0, 2 * Math.PI, false);
+            //ctx2.fillStyle = '#ff0000';
+            //ctx2.fill();
+            //ctx2.lineWidth = 2;
+            //ctx2.strokeStyle = '#ff0000';
+            //ctx2.stroke();
+
+            ////$("#layer2").hide();
+            ////$("p").hide();
+            //var flag = true;
+            //var count = 0;
+
+            //function showHideRed()
+            //{
+            //    if (count++ < 10)
+            //    {
+            //        $(flag ? "#layer1" : "#layer2").hide();
+            //        $(flag ? "#layer2" : "#layer1").show();
+            //        flag = !flag;
+            //        setTimeout(showHideRed, 1000);
+            //    }
+            //}
+
+            //showHideRed();
+
+            var mousePosFrom = {x: 100, y: 200};
+            var mousePosTo;
+            var isMouseDown = false;
+            var firstPoint = true;
+
+            function writeMessage(message) {
+                ctx1.clearRect(0, 0, 300, 200);
+                ctx1.font = '18pt Calibri';
+                ctx1.fillStyle = 'black';
+                ctx1.fillText(message, 10, 25);
+            }
+
+            function getMousePos(evt) {
+                return {
+                    x: evt.clientX - rect.left,
+                    y: evt.clientY - rect.top
+                };
+            }
+
+            //mousePosFrom = getMousePos(evt);
+            var message = 'Mouse position: ';
+            writeMessage(message);
+
+        //    canvas.addEventListener('mousedown', function (evt) {
+        //        isMouseDown = true;
+        //        if (!firstPoint) {
+        //            mousePosTo = getMousePos(evt);
+        //            ctx1.moveTo(mousePosFrom.x, mousePosFrom.y);
+        //            ctx1.lineTo(mousePosTo.x, mousePosTo.y);
+        //            ctx1.strokeStyle = '#0000ff';
+        //            ctx1.stroke();
+        //        }
+        //        //var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+        //        //writeMessage(canvas, message);
+        //    }, false);
+
+        //    canvas.addEventListener('mousemove', function (evt) {
+        //        if (!isMouseDown || firstPoint) return;
+        //        //ctx1.clearRect(mousePosFrom.x, mousePosFrom.y, mousePosTo.x, mousePosTo.y);
+        //        // erase the prev. segment
+        //        ctx1.moveTo(mousePosFrom.x, mousePosFrom.y);
+        //        ctx1.lineTo(mousePosTo.x, mousePosTo.y);
+        //        ctx1.strokeStyle = 'rgba(0,0,0,0)';
+        //        ctx.lineWidth = 3;
+        //        ctx1.stroke();
+
+        //        mousePosTo = getMousePos(evt);
+        //        // draw the new one with the same from-point
+        //        ctx1.strokeStyle = '#0000ff';
+        //        ctx1.moveTo(mousePosFrom.x, mousePosFrom.y);
+        //        ctx1.lineTo(mousePosTo.x, mousePosTo.y);
+        //        ctx1.stroke();
+        //        //var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+        //        //writeMessage(message);
+        //    }, false);
+
+        //    canvas.addEventListener('mouseup', function (evt) {
+        //        if(isMouseDown == true)
+		//		{
+		//			isMouseDown = false;
+		//		}
+        //        if (firstPoint) {
+        //            mousePosFrom = getMousePos(evt);
+        //            var message = 'Mouse position: ' + mousePosFrom.x + ',' + mousePosFrom.y;
+        //            writeMessage(message);
+        //            firstPoint = false;
+		//			ctx1.beginPath();
+		//			ctx1.arc(mousePosFrom.x, mousePosFrom.y, 3, 0, 2 * Math.PI, false);
+		//			ctx1.fillStyle = '#0000ff';
+		//			ctx1.fill();
+		//			ctx1.lineWidth = 2;
+		//			ctx1.strokeStyle = '#0000ff';
+		//			ctx1.stroke();
+        //        }
+        //        else
+        //        {
+        //            ctx1.clearRect(0, 0, 800, 600);
+        //            ctx2.moveTo(mousePosFrom.x, mousePosFrom.y);
+        //            ctx2.lineTo(mousePosTo.x, mousePosTo.y);
+        //            ctx2.strokeStyle = '#0000ff';
+        //            ctx2.stroke();
+        //            mousePosFrom = mousePosTo;
+        //        }
+        //        //var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+        //        //writeMessage(canvas, message);
+        //    }, false);
+
+        //});
+    </script>
+</body>
+</html>

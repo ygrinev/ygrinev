@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e1a76fd5-bbc3-4420-8d18-35a24a4bf3d0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://APPPRIDEVSG02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FinanceService4.xsd" MetadataType="Schema" ID="ddbb01c0-d88f-46cb-8c0b-7a3003b12d5b" SourceId="1" SourceUrl="http://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc?xsd=xsd1" />
+    <MetadataFile FileName="FinanceService41.xsd" MetadataType="Schema" ID="679ac639-940c-4e23-a2f8-5a357ba4bda0" SourceId="1" SourceUrl="http://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc?xsd=xsd0" />
+    <MetadataFile FileName="FinanceService1.disco" MetadataType="Disco" ID="02346840-4897-45dd-92dc-9a1b895bdd03" SourceId="1" SourceUrl="http://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc?disco" />
+    <MetadataFile FileName="FinanceService42.xsd" MetadataType="Schema" ID="95a16701-19f2-4ac8-9b77-d7ae504ae458" SourceId="1" SourceUrl="http://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc?xsd=xsd2" />
+    <MetadataFile FileName="FinanceService43.xsd" MetadataType="Schema" ID="7d3da3c0-060e-4f41-be3c-b4c59fc662d7" SourceId="1" SourceUrl="http://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc?xsd=xsd3" />
+    <MetadataFile FileName="FinanceService1.wsdl" MetadataType="Wsdl" ID="bf6d977b-bed3-4594-bb3b-dae5cc9dc55f" SourceId="1" SourceUrl="http://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

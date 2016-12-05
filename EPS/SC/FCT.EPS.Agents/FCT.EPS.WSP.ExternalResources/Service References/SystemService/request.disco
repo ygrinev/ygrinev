@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://ssoakmint02.prefirstcdn.com/documentservices/websubmissionserver/request.asmx?wsdl" docRef="http://ssoakmint02.prefirstcdn.com/documentservices/websubmissionserver/request.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://ssoakmint02.prefirstcdn.com/documentservices/websubmissionserver/request.asmx" xmlns:q1="http://firstcanadiantitle.ca/DocumentServices/WebSubmissionServer/Request" binding="q1:RequestSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://ssoakmint02.prefirstcdn.com/documentservices/websubmissionserver/request.asmx" xmlns:q2="http://firstcanadiantitle.ca/DocumentServices/WebSubmissionServer/Request" binding="q2:RequestSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

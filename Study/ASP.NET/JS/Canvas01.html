@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+        <title>Canvas from scratch</title>
+        <meta charset="utf-8">
+ 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ 
+        <script>
+			var canvas;
+			var ctx;
+            $(document).ready(function() {
+                canvas = document.getElementById("myCanvas");
+                ctx = canvas.getContext("2d");
+				ctx.fillRect(0, 0, 100, 100);
+				ctx.save();
+				
+				setTimeout(function continueExecution(){
+					ctx.fillStyle = "rgb(0, 255, 0)";
+					ctx.fillRect(0, 0, 100, 100);
+					ctx.translate(100, 100);
+					ctx.fillStyle = "rgb(0, 0, 255)";
+					ctx.fillRect(0, 0, 100, 100);}, 500);
+					restoreIn1sec();
+            });
+			function restoreIn1sec(){
+				setTimeout(function rstr(){
+					//ctx.translate(100, 100);
+					ctx.rotate(Math.PI/2);
+					ctx.fillStyle = "rgb(255, 0, 0)";
+					ctx.fillRect(0, 0, 100, 100);
+					ctx.translate(-100, -100);
+					ctx.fillStyle = "rgb(0, 255, 255)";
+					ctx.fillRect(0, 0, 100, 100);
+					ctx.restore();}, 1000);
+			}
+        </script>
+    </head>
+ 
+    <body>
+        <canvas id="myCanvas" width="500" height="500">
+            <!-- Insert fallback content here -->
+        </canvas>
+		<input type="text" value="'piu<65y46	1423e@%#$#%(**&)"></input>
+    </body>
+</html>

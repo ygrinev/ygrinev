@@ -1,0 +1,19 @@
+﻿.box
+{
+    margin: 5px 1px 15px 0px;
+    border: rgba(128, 128, 128, 0.51) 1px solid;
+    padding: 5px 0px 5px 3px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+.title {
+    float: left;
+    padding: 0 5px;
+    margin: -15px 0 0 6px;
+    color: #83203a;
+    background: #fff;
+    font-weight: bold;
+    font-size: 14px
+}

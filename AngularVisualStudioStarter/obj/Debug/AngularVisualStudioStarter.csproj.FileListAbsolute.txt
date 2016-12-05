@@ -1,0 +1,6 @@
+C:\PROJ_YG\AngularVisualStudioStarter\bin\AngularVisualStudioStarter.dll.config
+C:\PROJ_YG\AngularVisualStudioStarter\bin\AngularVisualStudioStarter.dll
+C:\PROJ_YG\AngularVisualStudioStarter\bin\AngularVisualStudioStarter.pdb
+C:\PROJ_YG\AngularVisualStudioStarter\obj\Debug\AngularVisualStudioStarter.csprojResolveAssemblyReference.cache
+C:\PROJ_YG\AngularVisualStudioStarter\obj\Debug\AngularVisualStudioStarter.dll
+C:\PROJ_YG\AngularVisualStudioStarter\obj\Debug\AngularVisualStudioStarter.pdb

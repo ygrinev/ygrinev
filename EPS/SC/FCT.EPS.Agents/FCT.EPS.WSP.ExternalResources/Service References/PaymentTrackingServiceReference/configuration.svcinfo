@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configurationSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-wcfconfigurationsnapshot">
+  <behaviors />
+  <bindings>
+    <binding digest="System.ServiceModel.Configuration.WSHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;PaymentTrackingService_wsHTTPEndpoint&quot; transactionFlow=&quot;true&quot;&gt;&lt;security mode=&quot;Transport&quot; /&gt;&lt;/Data&gt;" bindingType="wsHttpBinding" name="PaymentTrackingService_wsHTTPEndpoint" />
+  </bindings>
+  <endpoints>
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;https://apppridevsg02.prefirstcdn.com/FCT.LLC.BusinessServiceCode/PaymentTrackingService.svc&quot; binding=&quot;wsHttpBinding&quot; bindingConfiguration=&quot;PaymentTrackingService_wsHTTPEndpoint&quot; contract=&quot;PaymentTrackingServiceReference.IPaymentTrackingService&quot; name=&quot;PaymentTrackingService_wsHTTPEndpoint&quot;&gt;&lt;identity&gt;&lt;userPrincipalName value=&quot;llcq9sit@Prefirstcdn.com&quot; /&gt;&lt;/identity&gt;&lt;/Data&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;https://apppridevsg02.prefirstcdn.com/FCT.LLC.BusinessServiceCode/PaymentTrackingService.svc&quot; binding=&quot;wsHttpBinding&quot; bindingConfiguration=&quot;PaymentTrackingService_wsHTTPEndpoint&quot; contract=&quot;PaymentTrackingServiceReference.IPaymentTrackingService&quot; name=&quot;PaymentTrackingService_wsHTTPEndpoint&quot;&gt;&lt;identity&gt;&lt;userPrincipalName value=&quot;llcq9sit@Prefirstcdn.com&quot; /&gt;&lt;/identity&gt;&lt;/Data&gt;" contractName="PaymentTrackingServiceReference.IPaymentTrackingService" name="PaymentTrackingService_wsHTTPEndpoint" />
+  </endpoints>
+</configurationSnapshot>

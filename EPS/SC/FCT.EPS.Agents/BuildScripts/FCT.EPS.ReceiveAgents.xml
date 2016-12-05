@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<build version="1.1.0.1">
+  <tools>
+    <tool name="tf.exe" varname="tf_path">C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\tf.exe</tool>
+    <tool name="msbuild.exe" varname="msbuild_path">C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe</tool>
+    <tool name="AsmInfoUpdater.exe" varname="asminfoupdater_path">D:\TFS\Tools\AsmInfoUpdater.exe</tool>
+    <tool name="ConsM.exe" varname="consm_path">D:\TFS\Tools\ConsM.exe</tool>
+    <tool name="CopyValidator.exe" varname="copyvalidator_path">D:\TFS\Tools\CopyValidator.exe</tool>
+    <tool name="IsCmdBld.exe" varname="iscmdbld_path">c:\Program Files (x86)\InstallShield\2014 SAB\System\IsCmdBld.exe</tool>
+    <tool name="ReportLogger.exe" varname="reportlogger_path">D:\TFS\Tools\ReportLogger.exe</tool>
+    <tool name="TestLogon.exe" varname="logon_identity_path">D:\TFS\Tools\TestLogon.exe</tool>
+  </tools>
+  <roots>
+    <root name="local_path_solution">D:\TFS\EasyFund\EPS\SC\FCT.EPS.Agents</root>
+    <root name="local_path_binaries">D:\TFS\EasyFund\EPS\Binaries</root>
+    <root name="local_path_apd">D:\TFS\APD\Packaging\EPS\FCT.EPS.ReceiveAgents\Latest</root>
+  </roots>
+  <unitofbuild name="FCT.EPS.WSP.ReceiveAgents">
+    <solution name="FCT.EPS.WSP.ReceiveAgents.sln">
+      <location>%local_path_solution%\FCT.EPS.WSP.ReceiveAgents.sln</location>
+      <projects>
+        <project name="FCT.EPS.WSP.DataAccess">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.DataAccess\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.DataAccessTests">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.DataAccessTests\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.ExternalResources">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.ExternalResources\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.GCSA.BusinessLogic">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.GCSA.BusinessLogic\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.GCSA.Implementation">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.GCSA.Implementation\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.Resources">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.Resources\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.GetChequeStateTests">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.GetChequeStateTests\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.GCSA.Resources">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.GCSA.Resources\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.GCSA.BusinessLogicTests">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.GCSA.BusinessLogicTests\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.GFSA.BusinessLogic">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.GFSA.BusinessLogic\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.GFSA.Implementation">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.GFSA.Implementation\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.GFSA.Resources">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.GFSA.Resources\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.GFSA.BusinessLogicTests">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.GFSA.BusinessLogicTests\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.GEDMA.Implementation">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.GEDMA.Implementation\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.GEDMA.Resources">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.GEDMA.Resources\Properties\AssemblyInfo.cs</infopath>
+        </project>
+        <project name="FCT.EPS.WSP.GEDMA.BusinessLogicTests">
+          <infopath>%local_path_solution%\FCT.EPS.WSP.GEDMA.BusinessLogicTests\Properties\AssemblyInfo.cs</infopath>
+        </project>
+      </projects>
+    </solution>
+    <apd name="FCT.EPS.WSP.ReceiveAgents.ism">
+      <ismproject>%local_path_apd%\IS Project\FCT.EPS.WSP.ReceiveAgents.ism</ismproject>
+      <includemasks>*.dll;*.config;</includemasks>
+      <xcopy>
+        <from>%local_path_apd%\IS Project\FCT.EPS.Agents.Receive\Product Configuration 1\Release 1\DiskImages\DISK1\FCT.EPS.WSP.ReceiveAgents.msi</from>
+        <to>%local_path_apd%\Release\FCT.EPS.WSP.ReceiveAgents.msi</to>
+      </xcopy>
+      <pathvariables>
+        <pathvariable name="PATH_TO_RESOURCE_FILES">&lt;ISProjectFolder&gt;\..\Resource</pathvariable>
+      </pathvariables>
+    </apd>
+  </unitofbuild>
+</build>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="FCT.EPS.FinanceService.FaultContracts" elementFormDefault="qualified" targetNamespace="FCT.EPS.FinanceService.FaultContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ServiceFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Request" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceFault" nillable="true" type="tns:ServiceFault" />
+</xs:schema>

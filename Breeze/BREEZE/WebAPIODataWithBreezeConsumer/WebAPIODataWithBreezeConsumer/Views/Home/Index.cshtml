@@ -1,0 +1,50 @@
+﻿<script src="~/Scripts/jquery-1.9.1.js"></script>
+<script src="~/Scripts/knockout-2.2.1.js"></script>
+<script src="~/Scripts/q.js"></script>
+<script src="~/Scripts/datajs-1.1.0.js"></script>
+<script src="~/Scripts/breeze.debug.js"></script>
+
+<script type="text/javascript">
+    var my = {}; //my namespace
+    $(function () {
+        var serverAddress = "/odata/";
+        breeze.config.initializeAdapterInstances({ dataService: "OData" });
+        var manager = new breeze.EntityManager(serverAddress);
+
+        my.vm = {
+            customers: ko.observableArray([]),
+            load: function () {
+                var query = breeze.EntityQuery.from("Customers").where("CompanyName","startsWith","B").orderBy("CustomerID");
+                manager.executeQuery(query, function (data) {
+                    var results = data.results;
+                    $.each(data.results, function (i, c) {
+                        my.vm.customers.push(c);
+                    });
+                });
+            }
+        }
+
+        my.vm.load();
+        ko.applyBindings(my.vm);
+
+    });
+</script>
+
+<h2>Customers (<span data-bind="text: customers().length"></span>)</h2>
+<table>
+    <thead>
+        <tr>
+             <th>CustomerID</th>
+             <th>CompanyName</th>
+             <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody data-bind="foreach: customers">
+        <tr >
+            <td data-bind="text: CustomerID"></td>
+            <td data-bind="text: CompanyName"></td>
+            <td data-bind="text: Phone"></td>
+        </tr>
+    </tbody>
+</table>
+

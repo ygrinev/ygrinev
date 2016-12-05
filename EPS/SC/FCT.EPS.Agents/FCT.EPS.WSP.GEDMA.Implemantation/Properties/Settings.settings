@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FCT.EPS.WSP.GEDMA.Implemantation.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GetElectronicMessagesIntervalInMilliSeconds" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="pathToElectronicRejectedTransactionsFiles" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\wrkdir\</Value>
+    </Setting>
+    <Setting Name="pathToElectronicRejectedTransactionsFilesArchive" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\wrkdir\Archive</Value>
+    </Setting>
+    <Setting Name="ElectronicReportFileArchivePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ReportEmailAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ReportEmailSubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ReportEmailBody" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

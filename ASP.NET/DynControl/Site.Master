@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="nsDynControl.Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+</head>
+<body>
+    <br /><div style="font-weight:bolder;font-style:italic;font-size:24px;font-family:'Book Antiqua'">Print Preview</div><br />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderHead" runat="server">       
+    
+    </asp:ContentPlaceHolder>
+    <form id="form1" runat="server">    
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

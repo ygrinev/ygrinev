@@ -1,0 +1,9 @@
+C:\PROJ_YG\DataAnnotation1\bin\Debug\DataAnnotation1.exe.config
+C:\PROJ_YG\DataAnnotation1\obj\Debug\DataAnnotation1.NewCompanyPage.resources
+C:\PROJ_YG\DataAnnotation1\obj\Debug\DataAnnotation1.Properties.Resources.resources
+C:\PROJ_YG\DataAnnotation1\obj\Debug\DataAnnotation1.csproj.GenerateResource.Cache
+C:\PROJ_YG\DataAnnotation1\bin\Debug\DataAnnotation1.exe
+C:\PROJ_YG\DataAnnotation1\bin\Debug\DataAnnotation1.pdb
+C:\PROJ_YG\DataAnnotation1\obj\Debug\DataAnnotation1.exe
+C:\PROJ_YG\DataAnnotation1\obj\Debug\DataAnnotation1.pdb
+C:\PROJ_YG\DataAnnotation1\obj\Debug\DataAnnotation1.csprojResolveAssemblyReference.cache

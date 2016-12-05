@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="FCT.EPS.PaymentTrackingService.DataContracts" elementFormDefault="qualified" targetNamespace="FCT.EPS.PaymentTrackingService.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="PaymentNotificationRequest">
+    <xs:sequence>
+      <xs:element name="PaymentNotifications" nillable="true" type="tns:PaymentNotificationList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentNotificationRequest" nillable="true" type="tns:PaymentNotificationRequest" />
+  <xs:complexType name="PaymentNotificationList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaymentNotification" nillable="true" type="tns:PaymentNotification" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentNotificationList" nillable="true" type="tns:PaymentNotificationList" />
+  <xs:complexType name="PaymentNotification">
+    <xs:sequence>
+      <xs:element name="NotificationType" type="tns:PaymentNotification.NotificationTypeType" />
+      <xs:element name="PaymentReferenceNumber" nillable="true" type="xs:string" />
+      <xs:element name="DisbursementRequestID" nillable="true" type="xs:string" />
+      <xs:element name="PaymentDateTime" type="xs:dateTime" />
+      <xs:element name="PaymentAmount" type="xs:decimal" />
+      <xs:element name="PaymentOriginatorAccount" nillable="true" type="tns:Account" />
+      <xs:element name="PaymentOriginatorName" nillable="true" type="xs:string" />
+      <xs:element name="PaymentBatchID" nillable="true" type="xs:string" />
+      <xs:element name="PaymentBatchDescription" nillable="true" type="xs:string" />
+      <xs:element name="AdditionalInformation" nillable="true" type="xs:string" />
+      <xs:element name="PaymentStatus" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentNotification" nillable="true" type="tns:PaymentNotification" />
+  <xs:simpleType name="PaymentNotification.NotificationTypeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CreditConfirmation" />
+      <xs:enumeration value="DebitConfirmation" />
+      <xs:enumeration value="ChequeConfirmation" />
+      <xs:enumeration value="FCTFeeConfirmation" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PaymentNotification.NotificationTypeType" nillable="true" type="tns:PaymentNotification.NotificationTypeType" />
+  <xs:complexType name="Account">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BankName" nillable="true" type="xs:string" />
+      <xs:element name="BankNumber" nillable="true" type="xs:string" />
+      <xs:element name="TransitNumber" nillable="true" type="xs:string" />
+      <xs:element name="AccountNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Account" nillable="true" type="tns:Account" />
+  <xs:complexType name="PaymentNotificationResponse">
+    <xs:sequence>
+      <xs:element name="NotificationRecieved" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentNotificationResponse" nillable="true" type="tns:PaymentNotificationResponse" />
+</xs:schema>

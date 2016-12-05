@@ -1,0 +1,7 @@
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBC\bin\Release\FCT.EPS.FileSerializer.RBC.dll
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBC\bin\Release\FCT.EPS.FileSerializer.RBC.pdb
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBC\bin\Release\FCT.EPS.FileSerializer.Common.dll
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBC\bin\Release\FCT.EPS.FileSerializer.Common.pdb
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBC\obj\Release\FCT.EPS.FileSerializer.RBC.dll
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBC\obj\Release\FCT.EPS.FileSerializer.RBC.pdb
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBC\obj\Release\FCT.EPS.FileSerializer.RBC.csprojResolveAssemblyReference.cache

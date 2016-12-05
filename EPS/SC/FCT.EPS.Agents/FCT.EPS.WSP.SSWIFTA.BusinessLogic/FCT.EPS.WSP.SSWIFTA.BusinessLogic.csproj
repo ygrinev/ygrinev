@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{783F0FF9-F839-44C9-BD18-FE5EE62639B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FCT.EPS.WSP.SSWIFTA.BusinessLogic</RootNamespace>
+    <AssemblyName>FCT.EPS.WSP.SSWIFTA.BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FCT.EPS.DataEntities">
+      <HintPath>..\..\..\Binaries\FCT.EPS\FCT.EPS.DataEntities.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.EPS.Swift.Map, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\FCT.EPS\FCT.EPS.Swift.Map.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SingleWireFileHandler.cs" />
+    <Compile Include="SingleWireFileNameHandler.cs" />
+    <Compile Include="SingleWireSWIFTNotificationRequestHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Translate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FCT.EPS.Notification\FCT.EPS.Notification.csproj">
+      <Project>{3c92252d-be74-4fa1-97fa-6255eaba1332}</Project>
+      <Name>FCT.EPS.Notification</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FCT.EPS.WSP.DataAccess\FCT.EPS.WSP.DataAccess.csproj">
+      <Project>{120e09f0-832f-4a9d-978c-cc70c7dd50f4}</Project>
+      <Name>FCT.EPS.WSP.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FCT.EPS.WSP.Resources\FCT.EPS.WSP.Resources.csproj">
+      <Project>{6c8a3f15-e4c2-4cb1-a75c-06dc83d66921}</Project>
+      <Name>FCT.EPS.WSP.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FCT.EPS.WSP.SSWIFTA.Resources\FCT.EPS.WSP.SSWIFTA.Resources.csproj">
+      <Project>{dc55cbe7-6395-47e5-87a9-2e7da8e0cab8}</Project>
+      <Name>FCT.EPS.WSP.SSWIFTA.Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

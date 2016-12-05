@@ -1,0 +1,5 @@
+C:\PROJ_YG\CCListParserRBC\CCListParserRBC.Parser\bin\Debug\CCListParserRBC.Parser.dll
+C:\PROJ_YG\CCListParserRBC\CCListParserRBC.Parser\bin\Debug\CCListParserRBC.Parser.pdb
+C:\PROJ_YG\CCListParserRBC\CCListParserRBC.Parser\obj\Debug\CCListParserRBC.Parser.csprojResolveAssemblyReference.cache
+C:\PROJ_YG\CCListParserRBC\CCListParserRBC.Parser\obj\Debug\CCListParserRBC.Parser.dll
+C:\PROJ_YG\CCListParserRBC\CCListParserRBC.Parser\obj\Debug\CCListParserRBC.Parser.pdb

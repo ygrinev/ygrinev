@@ -1,0 +1,11 @@
+C:\PROJ_YG\CCListParserRBC\bin\Debug\CCListParserRBC.exe.config
+C:\PROJ_YG\CCListParserRBC\bin\Debug\CCListParserRBC.exe
+C:\PROJ_YG\CCListParserRBC\bin\Debug\CCListParserRBC.pdb
+C:\PROJ_YG\CCListParserRBC\bin\Debug\CCListParserRBC.Parser.dll
+C:\PROJ_YG\CCListParserRBC\bin\Debug\CCListParserRBC.Parser.pdb
+C:\PROJ_YG\CCListParserRBC\obj\Debug\CCListParserRBC.csprojResolveAssemblyReference.cache
+C:\PROJ_YG\CCListParserRBC\obj\Debug\CCListParserRBC.ImportView.resources
+C:\PROJ_YG\CCListParserRBC\obj\Debug\CCListParserRBC.Properties.Resources.resources
+C:\PROJ_YG\CCListParserRBC\obj\Debug\CCListParserRBC.csproj.GenerateResource.Cache
+C:\PROJ_YG\CCListParserRBC\obj\Debug\CCListParserRBC.exe
+C:\PROJ_YG\CCListParserRBC\obj\Debug\CCListParserRBC.pdb

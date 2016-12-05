@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FCT.EPS.NotificationMonitor.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Agentspath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Agents</Value>
+    </Setting>
+    <Setting Name="ApplicationName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FCT.EPS.NotificationMonitor</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

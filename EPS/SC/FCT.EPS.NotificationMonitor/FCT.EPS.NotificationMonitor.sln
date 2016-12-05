@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.NotificationMonitor", "FCT.EPS.NotificationMonitor\FCT.EPS.NotificationMonitor.csproj", "{8FBA01E6-ABDE-4AA8-AEC2-68AA9C8865D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{C04548B9-55B9-4DA5-BA08-3C2B703B459F}"
+	ProjectSection(SolutionItems) = preProject
+		default.runsettings = default.runsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.NotificationMonitorTests", "FCT.EPS.NotificationMonitorTests\FCT.EPS.NotificationMonitorTests.csproj", "{94AF4F87-8D18-4B45-919C-C458AD0E8970}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindowsService", "WindowsService", "{5CDFE633-315E-45D2-8243-0715CEF74FAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF13F13A-0E10-4EB2-A191-997195FB6E3B}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet.config = NuGet.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.NotificationMonitor.Resources", "FCT.EPS.NotificationMonitor.Resources\FCT.EPS.NotificationMonitor.Resources.csproj", "{3516CAB4-61BD-42B0-9BCA-5C46757DCE5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.NotificationMonitor.ResourcesTests", "FCT.EPS.NotificationMonitor.ResourcesTests\FCT.EPS.NotificationMonitor.ResourcesTests.csproj", "{7F1B251C-5CBA-4AE0-BDC5-5DE0056F11F6}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.firstcdn.com:8080/tfs/main
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FCT.EPS.NotificationMonitor\\FCT.EPS.NotificationMonitor.csproj
+		SccProjectTopLevelParentUniqueName1 = FCT.EPS.NotificationMonitor.sln
+		SccProjectName1 = FCT.EPS.NotificationMonitor
+		SccLocalPath1 = FCT.EPS.NotificationMonitor
+		SccProjectUniqueName2 = FCT.EPS.NotificationMonitorTests\\FCT.EPS.NotificationMonitorTests.csproj
+		SccProjectTopLevelParentUniqueName2 = FCT.EPS.NotificationMonitor.sln
+		SccProjectName2 = FCT.EPS.NotificationMonitorTests
+		SccLocalPath2 = FCT.EPS.NotificationMonitorTests
+		SccProjectUniqueName3 = FCT.EPS.NotificationMonitor.Resources\\FCT.EPS.NotificationMonitor.Resources.csproj
+		SccProjectTopLevelParentUniqueName3 = FCT.EPS.NotificationMonitor.sln
+		SccProjectName3 = FCT.EPS.NotificationMonitor.Resources
+		SccLocalPath3 = FCT.EPS.NotificationMonitor.Resources
+		SccProjectUniqueName4 = FCT.EPS.NotificationMonitor.ResourcesTests\\FCT.EPS.NotificationMonitor.ResourcesTests.csproj
+		SccProjectTopLevelParentUniqueName4 = FCT.EPS.NotificationMonitor.sln
+		SccProjectName4 = FCT.EPS.NotificationMonitor.ResourcesTests
+		SccLocalPath4 = FCT.EPS.NotificationMonitor.ResourcesTests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FBA01E6-ABDE-4AA8-AEC2-68AA9C8865D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FBA01E6-ABDE-4AA8-AEC2-68AA9C8865D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FBA01E6-ABDE-4AA8-AEC2-68AA9C8865D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FBA01E6-ABDE-4AA8-AEC2-68AA9C8865D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94AF4F87-8D18-4B45-919C-C458AD0E8970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94AF4F87-8D18-4B45-919C-C458AD0E8970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94AF4F87-8D18-4B45-919C-C458AD0E8970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94AF4F87-8D18-4B45-919C-C458AD0E8970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3516CAB4-61BD-42B0-9BCA-5C46757DCE5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3516CAB4-61BD-42B0-9BCA-5C46757DCE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3516CAB4-61BD-42B0-9BCA-5C46757DCE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3516CAB4-61BD-42B0-9BCA-5C46757DCE5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F1B251C-5CBA-4AE0-BDC5-5DE0056F11F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F1B251C-5CBA-4AE0-BDC5-5DE0056F11F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F1B251C-5CBA-4AE0-BDC5-5DE0056F11F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F1B251C-5CBA-4AE0-BDC5-5DE0056F11F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8FBA01E6-ABDE-4AA8-AEC2-68AA9C8865D7} = {5CDFE633-315E-45D2-8243-0715CEF74FAE}
+		{C04548B9-55B9-4DA5-BA08-3C2B703B459F} = {5CDFE633-315E-45D2-8243-0715CEF74FAE}
+		{94AF4F87-8D18-4B45-919C-C458AD0E8970} = {C04548B9-55B9-4DA5-BA08-3C2B703B459F}
+		{3516CAB4-61BD-42B0-9BCA-5C46757DCE5A} = {5CDFE633-315E-45D2-8243-0715CEF74FAE}
+		{7F1B251C-5CBA-4AE0-BDC5-5DE0056F11F6} = {C04548B9-55B9-4DA5-BA08-3C2B703B459F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = ..\..\Binaries\NuGet\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;..\..\Binaries\NuGet\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45;..\..\Binaries\NuGet\EnterpriseLibrary.ExceptionHandling.6.0.1304.0\lib\NET45;..\..\Binaries\NuGet\EnterpriseLibrary.Validation.6.0.1304.0\lib\NET45;..\..\Binaries\NuGet\EnterpriseLibrary.Validation.Integration.WCF.6.0.1304.0\lib\NET45;..\..\Binaries\NuGet\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45;..\..\Binaries\NuGet\EnterpriseLibrary.Logging.Database.6.0.1304.0\lib\NET45;..\..\Binaries\NuGet\EnterpriseLibrary.ExceptionHandling.Logging.6.0.1304.0\lib\NET45;Library.ExceptionHandling.WCF.6.0.1304.0\lib\NET45;Library.Common.6.0.1304.0\lib\NET45;Library.Logging.6.0.1304.0\lib\NET45;Library.Data.6.0.1304.0\lib\NET45;Library.ExceptionHandling.6.0.1304.0\lib\NET45;Library.ExceptionHandling.Logging.6.0.1304.0\lib\NET45;Library.Logging.Database.6.0.1304.0\lib\NET45;Library.Validation.6.0.1304.0\lib\NET45;Library.Validation.Integration.WCF.6.0.1304.0\lib\NET45;ry.Logging.Database.6.0.1304.0\lib\NET45;ry.Common.6.0.1304.0\lib\NET45;ry.Logging.6.0.1304.0\lib\NET45;ry.Data.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

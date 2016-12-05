@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="01fb672c-b86a-434d-aa13-519f4cebdf11" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/FCT.LLC.BusinessServiceCode/PaymentTrackingService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PaymentTrackingService1.wsdl" MetadataType="Wsdl" ID="732842d6-cc01-448d-8e81-54a730a24909" SourceId="1" SourceUrl="http://localhost/FCT.LLC.BusinessServiceCode/PaymentTrackingService.svc?wsdl" />
+    <MetadataFile FileName="PaymentTrackingService5.xsd" MetadataType="Schema" ID="f131b629-f724-4a2f-8f07-ea67e1beeed8" SourceId="1" SourceUrl="http://localhost/FCT.LLC.BusinessServiceCode/PaymentTrackingService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PaymentTrackingService6.xsd" MetadataType="Schema" ID="2b4c5549-e45c-4d3c-ba43-badbccf53eb1" SourceId="1" SourceUrl="http://localhost/FCT.LLC.BusinessServiceCode/PaymentTrackingService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PaymentTrackingService7.xsd" MetadataType="Schema" ID="44d25b85-e8f7-4b3b-8da2-a81469e0c343" SourceId="1" SourceUrl="http://localhost/FCT.LLC.BusinessServiceCode/PaymentTrackingService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PaymentTrackingService8.xsd" MetadataType="Schema" ID="2f7c2fd9-645d-4f79-8a2f-5f5f3067c285" SourceId="1" SourceUrl="http://localhost/FCT.LLC.BusinessServiceCode/PaymentTrackingService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PaymentTrackingService1.disco" MetadataType="Disco" ID="a1b617ee-7ab7-4cdb-a59c-95e7ac97cf9e" SourceId="1" SourceUrl="http://localhost/FCT.LLC.BusinessServiceCode/PaymentTrackingService.svc?disco" />
+    <MetadataFile FileName="PaymentTrackingService9.xsd" MetadataType="Schema" ID="17a48676-7a10-4a60-9403-b6ab5ede8ac1" SourceId="1" SourceUrl="http://localhost/FCT.LLC.BusinessServiceCode/PaymentTrackingService.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

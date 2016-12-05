@@ -1,0 +1,71 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FCT.EPS.WSP.GCLA.Implementation.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="pollStart" Type="System.TimeSpan" Scope="Application">
+      <Value Profile="(Default)">06:00:00</Value>
+    </Setting>
+    <Setting Name="GetElectronicPollingIntervalInMilliSeconds" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">600000</Value>
+    </Setting>
+    <Setting Name="mailBodyDel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">The Creditor {0} [ID={1}] was received in today's the listing dated {2} with the disable rule . Please action accordingly.</Value>
+    </Setting>
+    <Setting Name="maxRetryNumber" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="pathToArcCCListFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\wrkdir\EASYFUND\FCT\RBCBPS\Archive\Reception</Value>
+    </Setting>
+    <Setting Name="dateShift" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="mailDateFormat" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">{0:ddd-MM-yyyy}</Value>
+    </Setting>
+    <Setting Name="pathToReport" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\wrkdir\EASYFUND\FCT\RBCBPS\Archive\Report</Value>
+    </Setting>
+    <Setting Name="pathToCCListFile1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\wrkdir\EASYFUND\FCT\RBCBPS\Reception\CCLISTA.*</Value>
+    </Setting>
+    <Setting Name="pathToArcCCListFile1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\wrkdir\EASYFUND\FCT\RBCBPS\Archive\Reception</Value>
+    </Setting>
+    <Setting Name="dateShift1" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="mailSubjectErr" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">RBC CC List has Error(s) - {0}. </Value>
+    </Setting>
+    <Setting Name="mailTo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EasyFundSupport@fct.ca</Value>
+    </Setting>
+    <Setting Name="mailSubjectNew" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">RBC CC List has New Creditor(s) - {0:ddd-MM-yyyy}</Value>
+    </Setting>
+    <Setting Name="mailSubjectDel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Creditor found in RBC Creditor List dated {0} with new Disable rule. </Value>
+    </Setting>
+    <Setting Name="mailBodyNew" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">The following new corporate creditors were added on {0:ddd-MM-yyyy}: {1}
+
+Please action accordingly.</Value>
+    </Setting>
+    <Setting Name="retryInterval" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="pathToCCListFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\wrkdir\EASYFUND\FCT\RBCBPS\Reception\CCLISTA.*</Value>
+    </Setting>
+    <Setting Name="pathToErrCCListFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\wrkdir\EASYFUND\FCT\RBCBPS\Archive\Reception</Value>
+    </Setting>
+    <Setting Name="mailBodyErr" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">The following corporate creditors were not processed owing to errors on {0} : 
+          {1}.
+          
+          Please action accordingly.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

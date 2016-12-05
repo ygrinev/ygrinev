@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCListParserRBC", "CCListParserRBC.csproj", "{D9BE882D-4EFF-46A6-BCDF-035FCCDE151E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{023B71AE-E12F-4E9E-805A-943C0553F8C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCListParserRBC.Parser", "CCListParserRBC.Parser\CCListParserRBC.Parser.csproj", "{68979283-08AF-4E15-A600-CB0AF4C778B4}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ygrinev.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CCListParserRBC.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = CCListParserRBC.Parser\\CCListParserRBC.Parser.csproj
+		SccProjectTopLevelParentUniqueName2 = CCListParserRBC.sln
+		SccProjectName2 = CCListParserRBC.Parser
+		SccLocalPath2 = CCListParserRBC.Parser
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9BE882D-4EFF-46A6-BCDF-035FCCDE151E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9BE882D-4EFF-46A6-BCDF-035FCCDE151E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9BE882D-4EFF-46A6-BCDF-035FCCDE151E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9BE882D-4EFF-46A6-BCDF-035FCCDE151E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68979283-08AF-4E15-A600-CB0AF4C778B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68979283-08AF-4E15-A600-CB0AF4C778B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68979283-08AF-4E15-A600-CB0AF4C778B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68979283-08AF-4E15-A600-CB0AF4C778B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{68979283-08AF-4E15-A600-CB0AF4C778B4} = {023B71AE-E12F-4E9E-805A-943C0553F8C1}
+	EndGlobalSection
+EndGlobal

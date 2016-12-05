@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://apppridevsg02.prefirstcdn.com/FCT.EPS.FinanceService.Implementation/FinanceService.svc?xsd=xsd2" namespace="FCT.EPS.FinanceService.DataContracts" />
+  <xs:element name="CreateCheques">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="FCT.EPS.FinanceService.DataContracts" minOccurs="0" name="ListOfCheques" nillable="true" type="q1:ChequeRequestList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateChequesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateChequesResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListOfUpdatedCheques">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="FCT.EPS.FinanceService.DataContracts" minOccurs="0" name="chequeStatusRequest" nillable="true" type="q2:ChequeStatusRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListOfUpdatedChequesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="FCT.EPS.FinanceService.DataContracts" minOccurs="0" name="GetListOfUpdatedChequesResult" nillable="true" type="q3:ChequeStatusResponseList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateFees">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="FCT.EPS.FinanceService.DataContracts" minOccurs="0" name="ListOfFees" nillable="true" type="q4:FCTFeeSummaryRequestList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateFeesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateFeesResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFCTFeeStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="FCT.EPS.FinanceService.DataContracts" minOccurs="0" name="feeStatusRequest" nillable="true" type="q5:FCTFeeStatusRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFCTFeeStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="FCT.EPS.FinanceService.DataContracts" minOccurs="0" name="GetFCTFeeStatusResult" nillable="true" type="q6:FCTFeeStatusResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,9 @@
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBCTests\bin\Debug\FCT.EPS.FileSerializer.RBCTests.dll
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBCTests\bin\Debug\FCT.EPS.FileSerializer.RBCTests.pdb
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBCTests\bin\Debug\FCT.EPS.FileSerializer.Common.dll
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBCTests\bin\Debug\FCT.EPS.FileSerializer.RBC.dll
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBCTests\bin\Debug\FCT.EPS.FileSerializer.Common.pdb
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBCTests\bin\Debug\FCT.EPS.FileSerializer.RBC.pdb
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBCTests\obj\Debug\FCT.EPS.FileSerializer.RBCTests.csprojResolveAssemblyReference.cache
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBCTests\obj\Debug\FCT.EPS.FileSerializer.RBCTests.dll
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.RBCTests\obj\Debug\FCT.EPS.FileSerializer.RBCTests.pdb

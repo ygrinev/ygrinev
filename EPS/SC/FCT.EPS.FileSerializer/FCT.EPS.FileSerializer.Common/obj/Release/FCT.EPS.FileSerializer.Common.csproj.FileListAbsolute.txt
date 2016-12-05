@@ -1,0 +1,4 @@
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.Common\bin\Release\FCT.EPS.FileSerializer.Common.dll
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.Common\bin\Release\FCT.EPS.FileSerializer.Common.pdb
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.Common\obj\Release\FCT.EPS.FileSerializer.Common.dll
+C:\PROJ\EPS\SC\FCT.EPS.FileSerializer\FCT.EPS.FileSerializer.Common\obj\Release\FCT.EPS.FileSerializer.Common.pdb

@@ -1,0 +1,346 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.DataAccess", "FCT.EPS.WSP.DataAccess\FCT.EPS.WSP.DataAccess.csproj", "{120E09F0-832F-4A9D-978C-CC70C7DD50F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.DataAccessTests", "FCT.EPS.WSP.DataAccessTests\FCT.EPS.WSP.DataAccessTests.csproj", "{EE681136-D5E9-4563-9658-63D0E09BA67C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.ExternalResources", "FCT.EPS.WSP.ExternalResources\FCT.EPS.WSP.ExternalResources.csproj", "{25461EAC-7E88-4C9C-A7BB-A0219DE0E808}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GCSA.BusinessLogic", "FCT.EPS.WSP.GCSA.BusinessLogic\FCT.EPS.WSP.GCSA.BusinessLogic.csproj", "{59A034C6-F768-4EF9-83B2-B9898BA8546F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GCSA.Implementation", "FCT.EPS.WSP.GCSA.Implementation\FCT.EPS.WSP.GCSA.Implementation.csproj", "{226A8D9B-EA15-4E0A-BB45-B41C3271A1BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.Resources", "FCT.EPS.WSP.Resources\FCT.EPS.WSP.Resources.csproj", "{6C8A3F15-E4C2-4CB1-A75C-06DC83D66921}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GetChequeStateTests", "FCT.EPS.WSP.GetChequeStateTests\FCT.EPS.WSP.GetChequeStateTests.csproj", "{957C0F28-BF7A-48F8-B945-DC853D5C80D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{505C8AB9-25C7-4D12-8BC4-225CB34A5A8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GetChequeStatusAgent", "GetChequeStatusAgent", "{25928D05-CA7D-4721-A57C-2805584448E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1B578BC0-6BB8-4EBB-BF3D-29974D94AE48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GCSA.Resources", "FCT.EPS.WSP.GCSA.Resources\FCT.EPS.WSP.GCSA.Resources.csproj", "{0DAD49FB-7233-4F9F-97BB-8FEBABF9054E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GCSA.BusinessLogicTests", "FCT.EPS.WSP.GCSA.BusinessLogicTests\FCT.EPS.WSP.GCSA.BusinessLogicTests.csproj", "{01A9B4C4-4127-4799-ACA7-F851DCE7C9F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GetFeeStatusAgent", "GetFeeStatusAgent", "{B7679901-B83F-4723-A857-2C4A525394AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GFSA.BusinessLogic", "FCT.EPS.WSP.GFSA.BusinessLogic\FCT.EPS.WSP.GFSA.BusinessLogic.csproj", "{5887964C-9D5A-401D-AE94-4D45EC30E4AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GFSA.Implementation", "FCT.EPS.WSP.GFSA.Implementation\FCT.EPS.WSP.GFSA.Implementation.csproj", "{FA4C05FA-00F2-4EE9-AB9B-C0BD3B228248}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GFSA.Resources", "FCT.EPS.WSP.GFSA.Resources\FCT.EPS.WSP.GFSA.Resources.csproj", "{276663CA-80C8-4767-B539-5DBCBC39CF35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GFSA.BusinessLogicTests", "FCT.EPS.WSP.GFSA.BusinessLogicTests\FCT.EPS.WSP.GFSA.BusinessLogicTests.csproj", "{7D856EFC-571C-4A00-8116-FA2A0264EDFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E7355D8A-99B2-4A32-9693-02C71E29A2B9}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet.config = NuGet.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GetSwiftMessagesAgent", "GetSwiftMessagesAgent", "{9F67A06C-6A2D-4DF8-BD05-414392BE1FE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GSMA.Implemantation", "FCT.EPS.WSP.GSMA.Implemantation\FCT.EPS.WSP.GSMA.Implemantation.csproj", "{0EC0ABE6-F87B-4638-98A7-8BE8349E4FBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GSMA.BusinessLogic", "FCT.EPS.WSP.GSMA.BusinessLogic\FCT.EPS.WSP.GSMA.BusinessLogic.csproj", "{7B0598C4-33CC-419C-B876-47FE4F4BC2EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GSMA.Resources", "FCT.EPS.WSP.GSMA.Resources\FCT.EPS.WSP.GSMA.Resources.csproj", "{8CD236F0-106A-4D91-B8F6-92B431987349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinhDo.Transactions.FileManager", "ChinhDo.Transactions.FileManager\ChinhDo.Transactions.FileManager.csproj", "{E824ACBB-90C8-4C60-9D52-9C8020E98E3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinhDo.Transactions.FileManagerTest", "ChinhDo.Transactions.FileManagerTest\ChinhDo.Transactions.FileManagerTest.csproj", "{2C3F1182-D243-448C-84B0-2F869A96A871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GSMA.BusinessLogicTests", "FCT.EPS.WSP.GSMA.BusinessLogicTests\FCT.EPS.WSP.GSMA.BusinessLogicTests.csproj", "{42A4400D-421F-41CF-86DC-14232D6EF4B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GetElectronicMessagesAgent", "GetElectronicMessagesAgent", "{E1EAB237-5494-439A-B31A-FD3CAACE729E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GEDMA.Implemantation", "FCT.EPS.WSP.GEDMA.Implemantation\FCT.EPS.WSP.GEDMA.Implemantation.csproj", "{46BAED51-3DFE-48B1-B832-2FB10F116E57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GEDMA.Resources", "FCT.EPS.WSP.GEDMA.Resources\FCT.EPS.WSP.GEDMA.Resources.csproj", "{55DC5579-AB9B-4465-950E-7DA145D01A52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GEDMA.BusinessLogic", "FCT.EPS.WSP.GEDMA.BusinessLogic\FCT.EPS.WSP.GEDMA.BusinessLogic.csproj", "{EADB5B75-FF34-4D71-8BD2-40AF2C9A2A65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GCLA.BusinessLogicTests", "FCT.EPS.WSP.GCLA.BusinessLogicTests\FCT.EPS.WSP.GCLA.BusinessLogicTests.csproj", "{7C8F4442-CD63-4875-81AF-42FBF0E613C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GetCreditorListAgent", "GetCreditorListAgent", "{8142272B-94C6-47EA-86EC-6CAACCD5BDB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GCLA.Resources", "FCT.EPS.WSP.GCLA.Resources\FCT.EPS.WSP.GCLA.Resources.csproj", "{E805F02E-6702-42B9-91AA-A5A7CB39F7E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GCLA.BusinessLogic", "FCT.EPS.WSP.GCLA.BusinessLogic\FCT.EPS.WSP.GCLA.BusinessLogic.csproj", "{FA40F456-29B9-46BB-9C93-161167D4DD00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GCLA.Implementation", "FCT.EPS.WSP.GCLA.Implementation\FCT.EPS.WSP.GCLA.Implementation.csproj", "{6E0A1B63-560F-4DC4-9FCF-FAA715B03383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.GEDMA.BusinessLogicTests", "FCT.EPS.WSP.GEDMA.BusinessLogicTests\FCT.EPS.WSP.GEDMA.BusinessLogicTests.csproj", "{B9B0729C-7C08-4769-8C86-B5E12BE24226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.EPS.WSP.EFValidator", "FCT.EPS.WSP.EFValidator\FCT.EPS.WSP.EFValidator.csproj", "{1A3B783F-1A5D-4A32-9E9D-85DAACE3F07F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 29
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.firstcdn.com:8080/tfs/main
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FCT.EPS.WSP.DataAccessTests\\FCT.EPS.WSP.DataAccessTests.csproj
+		SccProjectTopLevelParentUniqueName1 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName1 = FCT.EPS.WSP.DataAccessTests
+		SccLocalPath1 = FCT.EPS.WSP.DataAccessTests
+		SccProjectUniqueName2 = FCT.EPS.WSP.GCSA.BusinessLogic\\FCT.EPS.WSP.GCSA.BusinessLogic.csproj
+		SccProjectTopLevelParentUniqueName2 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName2 = FCT.EPS.WSP.GCSA.BusinessLogic
+		SccLocalPath2 = FCT.EPS.WSP.GCSA.BusinessLogic
+		SccProjectUniqueName3 = FCT.EPS.WSP.GCSA.Implementation\\FCT.EPS.WSP.GCSA.Implementation.csproj
+		SccProjectTopLevelParentUniqueName3 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName3 = FCT.EPS.WSP.GCSA.Implementation
+		SccLocalPath3 = FCT.EPS.WSP.GCSA.Implementation
+		SccProjectUniqueName4 = FCT.EPS.WSP.GetChequeStateTests\\FCT.EPS.WSP.GetChequeStateTests.csproj
+		SccProjectTopLevelParentUniqueName4 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName4 = FCT.EPS.WSP.GetChequeStateTests
+		SccLocalPath4 = FCT.EPS.WSP.GetChequeStateTests
+		SccProjectUniqueName5 = FCT.EPS.WSP.GCSA.Resources\\FCT.EPS.WSP.GCSA.Resources.csproj
+		SccProjectTopLevelParentUniqueName5 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName5 = FCT.EPS.WSP.GCSA.Resources
+		SccLocalPath5 = FCT.EPS.WSP.GCSA.Resources
+		SccProjectUniqueName6 = FCT.EPS.WSP.DataAccess\\FCT.EPS.WSP.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName6 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName6 = FCT.EPS.WSP.DataAccess
+		SccLocalPath6 = FCT.EPS.WSP.DataAccess
+		SccProjectUniqueName7 = FCT.EPS.WSP.ExternalResources\\FCT.EPS.WSP.ExternalResources.csproj
+		SccProjectTopLevelParentUniqueName7 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName7 = FCT.EPS.WSP.ExternalResources
+		SccLocalPath7 = FCT.EPS.WSP.ExternalResources
+		SccProjectUniqueName8 = FCT.EPS.WSP.Resources\\FCT.EPS.WSP.Resources.csproj
+		SccProjectTopLevelParentUniqueName8 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName8 = FCT.EPS.WSP.Resources
+		SccLocalPath8 = FCT.EPS.WSP.Resources
+		SccProjectUniqueName9 = FCT.EPS.WSP.GCSA.BusinessLogicTests\\FCT.EPS.WSP.GCSA.BusinessLogicTests.csproj
+		SccProjectTopLevelParentUniqueName9 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName9 = FCT.EPS.WSP.GCSA.BusinessLogicTests
+		SccLocalPath9 = FCT.EPS.WSP.GCSA.BusinessLogicTests
+		SccProjectUniqueName10 = FCT.EPS.WSP.GFSA.BusinessLogic\\FCT.EPS.WSP.GFSA.BusinessLogic.csproj
+		SccProjectTopLevelParentUniqueName10 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName10 = FCT.EPS.WSP.GFSA.BusinessLogic
+		SccLocalPath10 = FCT.EPS.WSP.GFSA.BusinessLogic
+		SccProjectUniqueName11 = FCT.EPS.WSP.GFSA.Implementation\\FCT.EPS.WSP.GFSA.Implementation.csproj
+		SccProjectTopLevelParentUniqueName11 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName11 = FCT.EPS.WSP.GFSA.Implementation
+		SccLocalPath11 = FCT.EPS.WSP.GFSA.Implementation
+		SccProjectUniqueName12 = FCT.EPS.WSP.GFSA.Resources\\FCT.EPS.WSP.GFSA.Resources.csproj
+		SccProjectTopLevelParentUniqueName12 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName12 = FCT.EPS.WSP.GFSA.Resources
+		SccLocalPath12 = FCT.EPS.WSP.GFSA.Resources
+		SccProjectUniqueName13 = FCT.EPS.WSP.GFSA.BusinessLogicTests\\FCT.EPS.WSP.GFSA.BusinessLogicTests.csproj
+		SccProjectTopLevelParentUniqueName13 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName13 = FCT.EPS.WSP.GFSA.BusinessLogicTests
+		SccLocalPath13 = FCT.EPS.WSP.GFSA.BusinessLogicTests
+		SccProjectUniqueName14 = FCT.EPS.WSP.GSMA.Implemantation\\FCT.EPS.WSP.GSMA.Implemantation.csproj
+		SccProjectTopLevelParentUniqueName14 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName14 = FCT.EPS.WSP.GSMA.Implemantation
+		SccLocalPath14 = FCT.EPS.WSP.GSMA.Implemantation
+		SccProjectUniqueName15 = FCT.EPS.WSP.GSMA.BusinessLogic\\FCT.EPS.WSP.GSMA.BusinessLogic.csproj
+		SccProjectTopLevelParentUniqueName15 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName15 = FCT.EPS.WSP.GSMA.BusinessLogic
+		SccLocalPath15 = FCT.EPS.WSP.GSMA.BusinessLogic
+		SccProjectUniqueName16 = FCT.EPS.WSP.GSMA.Resources\\FCT.EPS.WSP.GSMA.Resources.csproj
+		SccProjectTopLevelParentUniqueName16 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName16 = FCT.EPS.WSP.GSMA.Resources
+		SccLocalPath16 = FCT.EPS.WSP.GSMA.Resources
+		SccProjectUniqueName17 = ChinhDo.Transactions.FileManager\\ChinhDo.Transactions.FileManager.csproj
+		SccProjectTopLevelParentUniqueName17 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName17 = ChinhDo.Transactions.FileManager
+		SccLocalPath17 = ChinhDo.Transactions.FileManager
+		SccProjectUniqueName18 = ChinhDo.Transactions.FileManagerTest\\ChinhDo.Transactions.FileManagerTest.csproj
+		SccProjectTopLevelParentUniqueName18 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName18 = ChinhDo.Transactions.FileManagerTest
+		SccLocalPath18 = ChinhDo.Transactions.FileManagerTest
+		SccProjectUniqueName19 = FCT.EPS.WSP.GSMA.BusinessLogicTests\\FCT.EPS.WSP.GSMA.BusinessLogicTests.csproj
+		SccProjectTopLevelParentUniqueName19 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName19 = FCT.EPS.WSP.GSMA.BusinessLogicTests
+		SccLocalPath19 = FCT.EPS.WSP.GSMA.BusinessLogicTests
+		SccProjectUniqueName20 = FCT.EPS.WSP.GEDMA.Implemantation\\FCT.EPS.WSP.GEDMA.Implemantation.csproj
+		SccProjectTopLevelParentUniqueName20 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName20 = FCT.EPS.WSP.GEDMA.Implemantation
+		SccLocalPath20 = FCT.EPS.WSP.GEDMA.Implemantation
+		SccProjectUniqueName21 = FCT.EPS.WSP.GEDMA.Resources\\FCT.EPS.WSP.GEDMA.Resources.csproj
+		SccProjectTopLevelParentUniqueName21 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName21 = FCT.EPS.WSP.GEDMA.Resources
+		SccLocalPath21 = FCT.EPS.WSP.GEDMA.Resources
+		SccProjectUniqueName22 = FCT.EPS.WSP.GEDMA.BusinessLogic\\FCT.EPS.WSP.GEDMA.BusinessLogic.csproj
+		SccProjectTopLevelParentUniqueName22 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName22 = FCT.EPS.WSP.GEDMA.BusinessLogic
+		SccLocalPath22 = FCT.EPS.WSP.GEDMA.BusinessLogic
+		SccProjectUniqueName23 = FCT.EPS.WSP.GCLA.BusinessLogicTests\\FCT.EPS.WSP.GCLA.BusinessLogicTests.csproj
+		SccProjectTopLevelParentUniqueName23 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName23 = FCT.EPS.WSP.GCLA.BusinessLogicTests
+		SccLocalPath23 = FCT.EPS.WSP.GCLA.BusinessLogicTests
+		SccProjectUniqueName24 = FCT.EPS.WSP.GCLA.Resources\\FCT.EPS.WSP.GCLA.Resources.csproj
+		SccProjectTopLevelParentUniqueName24 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName24 = FCT.EPS.WSP.GCLA.Resources
+		SccLocalPath24 = FCT.EPS.WSP.GCLA.Resources
+		SccProjectUniqueName25 = FCT.EPS.WSP.GCLA.BusinessLogic\\FCT.EPS.WSP.GCLA.BusinessLogic.csproj
+		SccProjectTopLevelParentUniqueName25 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName25 = FCT.EPS.WSP.GCLA.BusinessLogic
+		SccLocalPath25 = FCT.EPS.WSP.GCLA.BusinessLogic
+		SccProjectUniqueName26 = FCT.EPS.WSP.GCLA.Implementation\\FCT.EPS.WSP.GCLA.Implementation.csproj
+		SccProjectTopLevelParentUniqueName26 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName26 = FCT.EPS.WSP.GCLA.Implementation
+		SccLocalPath26 = FCT.EPS.WSP.GCLA.Implementation
+		SccProjectUniqueName27 = FCT.EPS.WSP.GEDMA.BusinessLogicTests\\FCT.EPS.WSP.GEDMA.BusinessLogicTests.csproj
+		SccProjectTopLevelParentUniqueName27 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName27 = FCT.EPS.WSP.GEDMA.BusinessLogicTests
+		SccLocalPath27 = FCT.EPS.WSP.GEDMA.BusinessLogicTests
+		SccProjectUniqueName28 = FCT.EPS.WSP.EFValidator\\FCT.EPS.WSP.EFValidator.csproj
+		SccProjectTopLevelParentUniqueName28 = FCT.EPS.WSP.ReceiveAgents.sln
+		SccProjectName28 = FCT.EPS.WSP.EFValidator
+		SccLocalPath28 = FCT.EPS.WSP.EFValidator
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{120E09F0-832F-4A9D-978C-CC70C7DD50F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120E09F0-832F-4A9D-978C-CC70C7DD50F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120E09F0-832F-4A9D-978C-CC70C7DD50F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120E09F0-832F-4A9D-978C-CC70C7DD50F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE681136-D5E9-4563-9658-63D0E09BA67C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE681136-D5E9-4563-9658-63D0E09BA67C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE681136-D5E9-4563-9658-63D0E09BA67C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25461EAC-7E88-4C9C-A7BB-A0219DE0E808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25461EAC-7E88-4C9C-A7BB-A0219DE0E808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25461EAC-7E88-4C9C-A7BB-A0219DE0E808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25461EAC-7E88-4C9C-A7BB-A0219DE0E808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59A034C6-F768-4EF9-83B2-B9898BA8546F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A034C6-F768-4EF9-83B2-B9898BA8546F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A034C6-F768-4EF9-83B2-B9898BA8546F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A034C6-F768-4EF9-83B2-B9898BA8546F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{226A8D9B-EA15-4E0A-BB45-B41C3271A1BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{226A8D9B-EA15-4E0A-BB45-B41C3271A1BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{226A8D9B-EA15-4E0A-BB45-B41C3271A1BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{226A8D9B-EA15-4E0A-BB45-B41C3271A1BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C8A3F15-E4C2-4CB1-A75C-06DC83D66921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C8A3F15-E4C2-4CB1-A75C-06DC83D66921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C8A3F15-E4C2-4CB1-A75C-06DC83D66921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C8A3F15-E4C2-4CB1-A75C-06DC83D66921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{957C0F28-BF7A-48F8-B945-DC853D5C80D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957C0F28-BF7A-48F8-B945-DC853D5C80D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957C0F28-BF7A-48F8-B945-DC853D5C80D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DAD49FB-7233-4F9F-97BB-8FEBABF9054E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DAD49FB-7233-4F9F-97BB-8FEBABF9054E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DAD49FB-7233-4F9F-97BB-8FEBABF9054E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DAD49FB-7233-4F9F-97BB-8FEBABF9054E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01A9B4C4-4127-4799-ACA7-F851DCE7C9F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01A9B4C4-4127-4799-ACA7-F851DCE7C9F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01A9B4C4-4127-4799-ACA7-F851DCE7C9F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5887964C-9D5A-401D-AE94-4D45EC30E4AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5887964C-9D5A-401D-AE94-4D45EC30E4AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5887964C-9D5A-401D-AE94-4D45EC30E4AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5887964C-9D5A-401D-AE94-4D45EC30E4AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA4C05FA-00F2-4EE9-AB9B-C0BD3B228248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA4C05FA-00F2-4EE9-AB9B-C0BD3B228248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA4C05FA-00F2-4EE9-AB9B-C0BD3B228248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA4C05FA-00F2-4EE9-AB9B-C0BD3B228248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{276663CA-80C8-4767-B539-5DBCBC39CF35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{276663CA-80C8-4767-B539-5DBCBC39CF35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{276663CA-80C8-4767-B539-5DBCBC39CF35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{276663CA-80C8-4767-B539-5DBCBC39CF35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D856EFC-571C-4A00-8116-FA2A0264EDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D856EFC-571C-4A00-8116-FA2A0264EDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D856EFC-571C-4A00-8116-FA2A0264EDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC0ABE6-F87B-4638-98A7-8BE8349E4FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC0ABE6-F87B-4638-98A7-8BE8349E4FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC0ABE6-F87B-4638-98A7-8BE8349E4FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC0ABE6-F87B-4638-98A7-8BE8349E4FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B0598C4-33CC-419C-B876-47FE4F4BC2EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B0598C4-33CC-419C-B876-47FE4F4BC2EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B0598C4-33CC-419C-B876-47FE4F4BC2EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B0598C4-33CC-419C-B876-47FE4F4BC2EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD236F0-106A-4D91-B8F6-92B431987349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD236F0-106A-4D91-B8F6-92B431987349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD236F0-106A-4D91-B8F6-92B431987349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD236F0-106A-4D91-B8F6-92B431987349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E824ACBB-90C8-4C60-9D52-9C8020E98E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E824ACBB-90C8-4C60-9D52-9C8020E98E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E824ACBB-90C8-4C60-9D52-9C8020E98E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E824ACBB-90C8-4C60-9D52-9C8020E98E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C3F1182-D243-448C-84B0-2F869A96A871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3F1182-D243-448C-84B0-2F869A96A871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3F1182-D243-448C-84B0-2F869A96A871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A4400D-421F-41CF-86DC-14232D6EF4B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A4400D-421F-41CF-86DC-14232D6EF4B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A4400D-421F-41CF-86DC-14232D6EF4B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46BAED51-3DFE-48B1-B832-2FB10F116E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46BAED51-3DFE-48B1-B832-2FB10F116E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46BAED51-3DFE-48B1-B832-2FB10F116E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46BAED51-3DFE-48B1-B832-2FB10F116E57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55DC5579-AB9B-4465-950E-7DA145D01A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55DC5579-AB9B-4465-950E-7DA145D01A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55DC5579-AB9B-4465-950E-7DA145D01A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55DC5579-AB9B-4465-950E-7DA145D01A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EADB5B75-FF34-4D71-8BD2-40AF2C9A2A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EADB5B75-FF34-4D71-8BD2-40AF2C9A2A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EADB5B75-FF34-4D71-8BD2-40AF2C9A2A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EADB5B75-FF34-4D71-8BD2-40AF2C9A2A65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C8F4442-CD63-4875-81AF-42FBF0E613C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C8F4442-CD63-4875-81AF-42FBF0E613C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C8F4442-CD63-4875-81AF-42FBF0E613C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E805F02E-6702-42B9-91AA-A5A7CB39F7E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E805F02E-6702-42B9-91AA-A5A7CB39F7E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E805F02E-6702-42B9-91AA-A5A7CB39F7E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E805F02E-6702-42B9-91AA-A5A7CB39F7E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA40F456-29B9-46BB-9C93-161167D4DD00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA40F456-29B9-46BB-9C93-161167D4DD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA40F456-29B9-46BB-9C93-161167D4DD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA40F456-29B9-46BB-9C93-161167D4DD00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E0A1B63-560F-4DC4-9FCF-FAA715B03383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E0A1B63-560F-4DC4-9FCF-FAA715B03383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E0A1B63-560F-4DC4-9FCF-FAA715B03383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E0A1B63-560F-4DC4-9FCF-FAA715B03383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9B0729C-7C08-4769-8C86-B5E12BE24226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B0729C-7C08-4769-8C86-B5E12BE24226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B0729C-7C08-4769-8C86-B5E12BE24226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A3B783F-1A5D-4A32-9E9D-85DAACE3F07F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A3B783F-1A5D-4A32-9E9D-85DAACE3F07F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A3B783F-1A5D-4A32-9E9D-85DAACE3F07F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A3B783F-1A5D-4A32-9E9D-85DAACE3F07F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{120E09F0-832F-4A9D-978C-CC70C7DD50F4} = {505C8AB9-25C7-4D12-8BC4-225CB34A5A8A}
+		{EE681136-D5E9-4563-9658-63D0E09BA67C} = {1B578BC0-6BB8-4EBB-BF3D-29974D94AE48}
+		{25461EAC-7E88-4C9C-A7BB-A0219DE0E808} = {505C8AB9-25C7-4D12-8BC4-225CB34A5A8A}
+		{59A034C6-F768-4EF9-83B2-B9898BA8546F} = {25928D05-CA7D-4721-A57C-2805584448E5}
+		{226A8D9B-EA15-4E0A-BB45-B41C3271A1BA} = {25928D05-CA7D-4721-A57C-2805584448E5}
+		{6C8A3F15-E4C2-4CB1-A75C-06DC83D66921} = {505C8AB9-25C7-4D12-8BC4-225CB34A5A8A}
+		{957C0F28-BF7A-48F8-B945-DC853D5C80D9} = {1B578BC0-6BB8-4EBB-BF3D-29974D94AE48}
+		{0DAD49FB-7233-4F9F-97BB-8FEBABF9054E} = {25928D05-CA7D-4721-A57C-2805584448E5}
+		{01A9B4C4-4127-4799-ACA7-F851DCE7C9F4} = {1B578BC0-6BB8-4EBB-BF3D-29974D94AE48}
+		{5887964C-9D5A-401D-AE94-4D45EC30E4AC} = {B7679901-B83F-4723-A857-2C4A525394AE}
+		{FA4C05FA-00F2-4EE9-AB9B-C0BD3B228248} = {B7679901-B83F-4723-A857-2C4A525394AE}
+		{276663CA-80C8-4767-B539-5DBCBC39CF35} = {B7679901-B83F-4723-A857-2C4A525394AE}
+		{7D856EFC-571C-4A00-8116-FA2A0264EDFD} = {1B578BC0-6BB8-4EBB-BF3D-29974D94AE48}
+		{0EC0ABE6-F87B-4638-98A7-8BE8349E4FBA} = {9F67A06C-6A2D-4DF8-BD05-414392BE1FE4}
+		{7B0598C4-33CC-419C-B876-47FE4F4BC2EF} = {9F67A06C-6A2D-4DF8-BD05-414392BE1FE4}
+		{8CD236F0-106A-4D91-B8F6-92B431987349} = {9F67A06C-6A2D-4DF8-BD05-414392BE1FE4}
+		{E824ACBB-90C8-4C60-9D52-9C8020E98E3E} = {505C8AB9-25C7-4D12-8BC4-225CB34A5A8A}
+		{2C3F1182-D243-448C-84B0-2F869A96A871} = {1B578BC0-6BB8-4EBB-BF3D-29974D94AE48}
+		{42A4400D-421F-41CF-86DC-14232D6EF4B3} = {1B578BC0-6BB8-4EBB-BF3D-29974D94AE48}
+		{46BAED51-3DFE-48B1-B832-2FB10F116E57} = {E1EAB237-5494-439A-B31A-FD3CAACE729E}
+		{55DC5579-AB9B-4465-950E-7DA145D01A52} = {E1EAB237-5494-439A-B31A-FD3CAACE729E}
+		{EADB5B75-FF34-4D71-8BD2-40AF2C9A2A65} = {E1EAB237-5494-439A-B31A-FD3CAACE729E}
+		{7C8F4442-CD63-4875-81AF-42FBF0E613C9} = {1B578BC0-6BB8-4EBB-BF3D-29974D94AE48}
+		{E805F02E-6702-42B9-91AA-A5A7CB39F7E6} = {8142272B-94C6-47EA-86EC-6CAACCD5BDB9}
+		{FA40F456-29B9-46BB-9C93-161167D4DD00} = {8142272B-94C6-47EA-86EC-6CAACCD5BDB9}
+		{6E0A1B63-560F-4DC4-9FCF-FAA715B03383} = {8142272B-94C6-47EA-86EC-6CAACCD5BDB9}
+		{B9B0729C-7C08-4769-8C86-B5E12BE24226} = {1B578BC0-6BB8-4EBB-BF3D-29974D94AE48}
+		{1A3B783F-1A5D-4A32-9E9D-85DAACE3F07F} = {505C8AB9-25C7-4D12-8BC4-225CB34A5A8A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.Database.6.0.1304.0\lib\NET45;terpriseLibrary.Common.6.0.1304.0\lib\NET45;terpriseLibrary.Data.6.0.1304.0\lib\NET45;terpriseLibrary.Logging.6.0.1304.0\lib\NET45;terpriseLibrary.Logging.Database.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal
