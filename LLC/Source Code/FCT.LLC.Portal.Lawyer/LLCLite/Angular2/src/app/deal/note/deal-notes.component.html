@@ -1,0 +1,93 @@
+<style>
+    a.disabled {
+        color: gray;
+        cursor: not-allowed;
+        background: gray;
+    }
+    a {background:#248}
+    ul {list-style-type: none;}
+    ul li:nth-child(even) {background: #FFF}
+    li:nth-child(odd) {background: #DEE}
+    li{ cursor: pointer; cursor: hand; }
+</style>
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        {{pageTitle}} [Deal FCT Ref Number: {{fCTRefNum}}]
+    </div>
+
+    <!-- Filter the Deals   -->
+    <div class='panel-body'>
+        <div class='has-error' *ngIf='errorMessage'>{{errorMessage}}</div>
+
+        <div class='table-responsive'>
+            <!--<table class='table'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button class='btn btn-primary'
+                                (click)='toggleImage()'>
+                                {{showImage ? 'Hide' : 'Show'}} Image
+                            </button>
+                        </th>
+                        <th>Notes</th>
+                        <th>Viewable To Lender</th>
+                        <th>Note Type</th>
+                    </tr>
+                </thead>
+             </table>-->
+               <ul *ngIf='notes && notes.length'>
+                    <li *ngFor='let note of notes'>
+                        <div *ngIf='note.Title != "- NO TITLE -"'><p><b>{{ note.Title }}</b></div>
+                        <h5>
+                        <table style="margin:0;padding:0;color:darkgray">
+                            <tr>
+                                <td style="width:200px">{{ note.NotesDate }}</td>
+                                <td *ngIf='note.ActionableNoteStatus'>
+                                    <input #{{note.NotesID}} type="checkbox" (click)='(note.isActivated = !note.isActivated) || true' /><span style='color:black'>By selecting this check box, you agree that the Lender can be notified that the task is complete.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><h5>{{ note.UserID ? 'System' : 'LLC_user' }} </h5></td>
+                                <td *ngIf='note.ActionableNoteStatus'>
+                                    <a [class.disabled]='!note.isActivated' class='btn' (click)='note.isActivated && onBack()' style='margin-top:1px;width:150px;height:30px;color:#FFF'>
+                                        <i class='glyphicon glyphicon-ok'></i> Complete Task
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan='2' style="color:black">{{ note.Notes}}</td>
+                            </tr>
+                        </table>
+                        </h5>
+                        <!--<p><a title='{{ note.Notes }}'>{{ note.Notes.substring(0,80) + (note.Notes.length > 80 ? '...' : '') }}
+                        </a>-->
+                         
+                        
+                        <!--<p><h2 style="text-align:center"></h2></p>-->
+                        <!--<td>   | noteFilter:listFilter
+                            <img *ngIf='showImage'
+                                 [src]='note.imageUrl'
+                                 [title]='note.noteName | uppercase'
+                                 [style.width.px]='imageWidth' 
+                                 [style.margin.px]='imageMargin'>
+                        </td>-->
+                        <!--<td>{{ note.Notes }}</td>
+                        <td>{{ note.ViewableToLender }}</td>
+                        <td>{{ note.NoteType }}</td>-->
+                        <!--<td>
+                            <ai-star [rating]='deal.starRating'
+                                    (ratingClicked)='onRatingClicked($event)'>
+                            </ai-star>
+                       </td>-->
+                    </li>
+                </ul>
+        </div>
+    </div>
+   
+    <div>
+        <a class='btn' (click)='onBack()' style='width:80px;color:#FFF'>
+            <i class='glyphicon glyphicon-chevron-left'></i> Back
+        </a>
+    </div>
+
+</div>

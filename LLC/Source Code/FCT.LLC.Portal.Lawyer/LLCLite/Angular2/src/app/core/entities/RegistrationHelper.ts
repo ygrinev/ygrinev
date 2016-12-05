@@ -1,0 +1,86 @@
+import { MetadataStore } from 'breeze-client';
+
+import { tblAnswer } from './tblAnswer';
+import { tblAnswerType } from './tblAnswerType';
+import { tblBranchContact } from './tblBranchContact';
+import { tblBuilderLegalDescription } from './tblBuilderLegalDescription';
+import { tblBuilderUnitLevel } from './tblBuilderUnitLevel';
+import { tblProperty } from './tblProperty';
+import { tblDeal } from './tblDeal';
+import { tblDealContact } from './tblDealContact';
+import { tblLawyer } from './tblLawyer';
+import { vw_Deal } from './vw_Deal';
+import { tblDealScope } from './tblDealScope';
+import { tblFundingDeal } from './tblFundingDeal';
+import { tblDealFundsAllocation } from './tblDealFundsAllocation';
+import { tblFee } from './tblFee';
+import { tblVendor } from './tblVendor';
+import { tblDealHistory } from './tblDealHistory';
+import { tblLender } from './tblLender';
+import { tblFinancialInstitutionNumber } from './tblFinancialInstitutionNumber';
+import { tblMilestoneLabel } from './tblMilestoneLabel';
+import { tblMilestoneCode } from './tblMilestoneCode';
+import { tblMilestone } from './tblMilestone';
+import { tblMortgage } from './tblMortgage';
+import { tblMortgagor } from './tblMortgagor';
+import { tblNote } from './tblNote';
+import { tblPIN } from './tblPIN';
+import { tblDealDocumentType } from './tblDealDocumentType';
+import { tblDocumentType } from './tblDocumentType';
+import { tblDisbursementDealDocumentType } from './tblDisbursementDealDocumentType';
+import { tblDisbursement } from './tblDisbursement';
+import { tblDisbursementSummary } from './tblDisbursementSummary';
+import { tblGlobalization } from './tblGlobalization';
+import { tblLawyerClerk } from './tblLawyerClerk';
+import { tblPaymentNotification } from './tblPaymentNotification';
+import { tblPaymentRequest } from './tblPaymentRequest';
+import { tblQuestion } from './tblQuestion';
+import { tblStatusReason } from './tblStatusReason';
+import { vw_EFDisbursementSummary } from './vw_EFDisbursementSummary';
+import { vw_PayoutLetterWorklist } from './vw_PayoutLetterWorklist';
+import { vw_ReconciliationItem } from './vw_ReconciliationItem';
+
+export class RegistrationHelper {
+
+    static register(metadataStore: MetadataStore) {
+        metadataStore.registerEntityTypeCtor('tblAnswer', tblAnswer);
+        metadataStore.registerEntityTypeCtor('tblAnswerType', tblAnswerType);
+        metadataStore.registerEntityTypeCtor('tblBranchContact', tblBranchContact);
+        metadataStore.registerEntityTypeCtor('tblBuilderLegalDescription', tblBuilderLegalDescription);
+        metadataStore.registerEntityTypeCtor('tblBuilderUnitLevel', tblBuilderUnitLevel);
+        metadataStore.registerEntityTypeCtor('tblProperty', tblProperty);
+        metadataStore.registerEntityTypeCtor('tblDeal', tblDeal);
+        metadataStore.registerEntityTypeCtor('tblDealContact', tblDealContact);
+        metadataStore.registerEntityTypeCtor('tblLawyer', tblLawyer);
+        metadataStore.registerEntityTypeCtor('vw_Deal', vw_Deal);
+        metadataStore.registerEntityTypeCtor('tblDealScope', tblDealScope);
+        metadataStore.registerEntityTypeCtor('tblFundingDeal', tblFundingDeal);
+        metadataStore.registerEntityTypeCtor('tblDealFundsAllocation', tblDealFundsAllocation);
+        metadataStore.registerEntityTypeCtor('tblFee', tblFee);
+        metadataStore.registerEntityTypeCtor('tblVendor', tblVendor);
+        metadataStore.registerEntityTypeCtor('tblDealHistory', tblDealHistory);
+        metadataStore.registerEntityTypeCtor('tblLender', tblLender);
+        metadataStore.registerEntityTypeCtor('tblFinancialInstitutionNumber', tblFinancialInstitutionNumber);
+        metadataStore.registerEntityTypeCtor('tblMilestoneLabel', tblMilestoneLabel);
+        metadataStore.registerEntityTypeCtor('tblMilestoneCode', tblMilestoneCode);
+        metadataStore.registerEntityTypeCtor('tblMilestone', tblMilestone);
+        metadataStore.registerEntityTypeCtor('tblMortgage', tblMortgage);
+        metadataStore.registerEntityTypeCtor('tblMortgagor', tblMortgagor);
+        metadataStore.registerEntityTypeCtor('tblNote', tblNote);
+        metadataStore.registerEntityTypeCtor('tblPIN', tblPIN);
+        metadataStore.registerEntityTypeCtor('tblDealDocumentType', tblDealDocumentType);
+        metadataStore.registerEntityTypeCtor('tblDocumentType', tblDocumentType);
+        metadataStore.registerEntityTypeCtor('tblDisbursementDealDocumentType', tblDisbursementDealDocumentType);
+        metadataStore.registerEntityTypeCtor('tblDisbursement', tblDisbursement);
+        metadataStore.registerEntityTypeCtor('tblDisbursementSummary', tblDisbursementSummary);
+        metadataStore.registerEntityTypeCtor('tblGlobalization', tblGlobalization);
+        metadataStore.registerEntityTypeCtor('tblLawyerClerk', tblLawyerClerk);
+        metadataStore.registerEntityTypeCtor('tblPaymentNotification', tblPaymentNotification);
+        metadataStore.registerEntityTypeCtor('tblPaymentRequest', tblPaymentRequest);
+        metadataStore.registerEntityTypeCtor('tblQuestion', tblQuestion);
+        metadataStore.registerEntityTypeCtor('tblStatusReason', tblStatusReason);
+        metadataStore.registerEntityTypeCtor('vw_EFDisbursementSummary', vw_EFDisbursementSummary);
+        metadataStore.registerEntityTypeCtor('vw_PayoutLetterWorklist', vw_PayoutLetterWorklist);
+        metadataStore.registerEntityTypeCtor('vw_ReconciliationItem', vw_ReconciliationItem);
+    }
+}

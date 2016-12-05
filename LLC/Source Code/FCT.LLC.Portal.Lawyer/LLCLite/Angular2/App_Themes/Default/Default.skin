@@ -1,0 +1,9 @@
+
+<%-- Named control skins --%>
+<asp:Button SkinID="ActionButton" runat="server" CssClass="ActionButton" />
+<asp:TextBox SkinID="FormInput" runat="server" Columns="60"></asp:TextBox>
+<asp:TextBox SkinID="FormInputShort" runat="server" Columns="60"></asp:TextBox>
+<asp:TextBox SkinID="FormInputLong" runat="server" Columns="60"></asp:TextBox>
+<asp:TextBox SkinID="FormInputDate" runat="server" Columns="15"></asp:TextBox>
+<asp:TextBox SkinID="FormInputPhone" runat="server" Columns="60"></asp:TextBox>
+<asp:DropDownList SkinID="FormInput" runat="server" Width="29em"></asp:DropDownList>

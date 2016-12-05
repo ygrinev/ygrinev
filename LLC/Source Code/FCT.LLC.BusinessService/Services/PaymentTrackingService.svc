@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="FCT.LLC.BusinessService.Contracts.IPaymentTrackingService, FCT.LLC.BusinessService.Contracts" CodeBehind="PaymentTrackingService.svc.cs" Factory="Autofac.Integration.Wcf.AutofacServiceHostFactory, Autofac.Integration.Wcf" %>

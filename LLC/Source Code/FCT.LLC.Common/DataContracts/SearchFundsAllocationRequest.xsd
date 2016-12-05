@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SearchFundsAllocationRequest"
+    targetNamespace="FCT.LLC.Common.DataContracts" elementFormDefault="qualified"
+    xmlns="FCT.LLC.Common.DataContracts"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+   <xs:include schemaLocation="DataContractTypes.xsd"/>
+
+   <xs:element name="SearchFundsAllocationRequest">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="LawyerID" type="xs:int" nillable="true" />
+            <xs:element name="AllocationStatus" type="xs:string" />
+            <xs:element name="PageIndex" type="xs:int" />
+            <xs:element name="PageSize" type="xs:int" />
+            <xs:element name="OrderBySpecifications" type="FundsAllocationOrderBySpecificationCollection" />
+            <xs:element name="UserContext" type="UserContext" />
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:simpleType name="FundsAllocationOrderByColumn">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Amount"/>
+         <xs:enumeration value="DepositDate"/>
+         <xs:enumeration value="LawyerName"/>
+         <xs:enumeration value="WireDepositDetails"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="FundsAllocationOrderBySpecificationCollection">
+      <xs:sequence>
+         <xs:element name="OrderBySpecification" type="FundsAllocationOrderBySpecification" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="FundsAllocationOrderBySpecification">
+      <xs:sequence>
+         <xs:element name="OrderByColumn" type="FundsAllocationOrderByColumn" />
+         <xs:element name="OrderByDirection" type="OrderByDirection" />
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

@@ -1,0 +1,22 @@
+﻿<h4>Notes</h4>
+<table class="table table-striped table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Notes ID</th>
+            <th>Notes</th>
+            <th>Deal ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="selectable" *ngFor="let note of deal.notes" [ngClass]="{ 'info': note.id == selectedNote}">
+            <td>{{ note.notesID }}</td>
+            <td>{{ note.notes }}</td>
+            <td>{{ note.dealID }}</td>
+        </tr>
+    </tbody>
+</table>
+<textarea class="form-control" rows="5" [(ngModel)]="newNoteText" style="margin-bottom:5px;"></textarea>
+<div class="btn-group">
+    <button class="btn btn-primary" (click)="addNote()"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;Add Note</button>
+    <button class="btn btn-primary" style="margin-left: 15px" [disabled]="!canSave" ><i class="fa fa-undo" aria-hidden="true"></i>&nbsp;Cancel</button>
+</div>

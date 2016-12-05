@@ -1,0 +1,55 @@
+﻿#page_wrapper {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    max-width: 100%;
+    min-width: 1000px;
+    text-align: left;
+}
+
+* html #page_wrapper {
+    overflow: visible;
+	font-size: 100%;
+}
+
+#page_header {
+	width: 100%;
+}
+
+#page_content {
+    float: right;
+    width: 84%;
+    margin-bottom:20px;
+}
+
+#page_leftColumn {
+    float: left;
+    width: 15%;
+}
+
+#page_mainContent_1col {
+    width: 100%;
+}
+
+#page_mainContent_2cols {
+    float: left;
+    width: 76%;
+}
+
+#page_secondaryContent_2cols {
+    float: right;
+    width: 22%;
+    margin-right: 3px;
+}
+
+#page_footer 
+{
+	padding-top: 20px;
+	clear: both;
+}
+
+/* IE min-max expression for 'conditional elastic' */
+
+* html body #page_wrapper {
+	width:expression((document.documentElement.offsetWidth) < 1020 ? "1000px" : "100%"); 
+}

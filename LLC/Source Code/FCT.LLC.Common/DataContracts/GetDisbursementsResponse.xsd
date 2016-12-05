@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GetDisbursementsResponse"
+    targetNamespace="FCT.LLC.Common.DataContracts" elementFormDefault="qualified"
+    xmlns="FCT.LLC.Common.DataContracts"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+   <xs:include schemaLocation="DataContractTypes.xsd"/>
+
+   <xs:element name="GetDisbursementsResponse">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="DealID" type="xs:int" />
+            <xs:element name="DisbursementSummary" type="DisbursementSummary" />
+            <xs:element name="Deposits" type="DealFundsAllocationCollection" />
+            <xs:element name="Disbursements" type="DisbursementCollection" />
+            <xs:element name="Signatures" type="SignatureCollection" />
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="SignatureCollection">
+      <xs:sequence>
+         <xs:element name="Signature" type="Signature" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Signature">
+      <xs:sequence>
+         <xs:element name="LawyerName" type="xs:string" />
+         <xs:element name="LawyerActingFor" type="xs:string" />
+         <xs:element name="Signed" type="xs:dateTime" nillable="true" />
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

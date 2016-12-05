@@ -1,0 +1,24 @@
+﻿<deal-header></deal-header>
+<deal-left-nav [deal]="model"></deal-left-nav>
+<!-- Content Wrapper. Contains page content -->
+<dashboard>
+    <div class="detail">
+        <collapsable-box [title]="'MMS Pre-Funding Information'">
+                <form (ngSubmit)="onSubmit()" [formGroup]="pifFormGroup">
+                    <!--<form (ngSubmit)="onSubmit()">-->
+                    <div *ngFor="let question of pifQuestions; let i = index" class="form-row">
+                        <br *ngIf="i > 0" />
+                        <pif-question [question]="question" [form]="pifFormGroup"></pif-question>
+                    </div>
+                    <div class="form-row">
+                        <!--<button type="submit" [disabled]="!form.valid">Save</button>-->
+                        <br/>
+                        <button type="submit">Save</button>
+                    </div>
+                </form>
+            <div *ngIf="payLoad" class="form-row">
+                <strong>Saved the following values</strong><br>{{payLoad}}
+            </div>
+        </collapsable-box>
+    </div>
+</dashboard>

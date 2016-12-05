@@ -1,0 +1,31 @@
+﻿<aside class="main-sidebar">
+    <section class="sidebar" *ngIf="deal!=null">
+        <ul class="sidebar-menu">
+            <li class="treeview" [routerLinkActive]="['active']">
+                <a [routerLink]="['/deal/', deal.FCTRefNum]">
+                    <i class="fa fa-dashboard"></i>
+                    <span>Deal</span>
+                </a>
+            </li>
+            <li class="treeview" [routerLinkActive]="['active']">
+                <a [routerLink]="['/deal-documents/', deal.FCTRefNum]">
+                    <i class="fa fa-files-o"></i>
+                    <span>Manage Documents</span>
+                </a>
+            </li>
+            <li class="treeview" [routerLinkActive]="['active']" *ngIf="renderPifMenuItem(deal.BusinessModel)">
+                <a [routerLink]="['/deal-prefunding/', deal.FCTRefNum]">
+                    <i class="fa fa-th"></i> 
+                    <span>Pre-Funding</span>
+                </a>
+            </li>
+            <li class="treeview" [routerLinkActive]="['active']">
+                <a [routerLink]="['/deal-history/', deal.DealID]">
+                    <i class="fa fa-table"></i> 
+                    <span>Deal History</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>

@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87472F5C-742F-486F-AAE5-999BC8FE7AF0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FCT.LLC.BusinessService.BusinessLogic</RootNamespace>
+    <AssemblyName>FCT.LLC.BusinessService.BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac.Integration.WebApi">
+      <HintPath>..\..\..\Binaries\Autofac\Autofac.Integration.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Common.AuditLog">
+      <HintPath>..\..\..\Binaries\FCT.Common\FCT.Common.AuditLog.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Common.Behaviors">
+      <HintPath>..\..\..\Binaries\FCT.Common\FCT.Common.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Common.Cryptography, Version=1.0.1.1, Culture=neutral, PublicKeyToken=98d0bc2b57f245d5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\FCT.Common\FCT.Common.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.EPS.PayeeService.Contracts">
+      <HintPath>..\..\..\Binaries\FCT.EPS.Common\FCT.EPS.PayeeService.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.EPS.PayeeService.DataContracts">
+      <HintPath>..\..\..\Binaries\FCT.EPS.Common\FCT.EPS.PayeeService.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.EPS.PaymentService.Contracts">
+      <HintPath>..\..\..\Binaries\FCT.EPS.Common\FCT.EPS.PaymentService.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.EPS.PaymentService.DataContracts">
+      <HintPath>..\..\..\Binaries\FCT.EPS.Common\FCT.EPS.PaymentService.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.EPS.PaymentTrackingService.DataContracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\FCT.EPS.Common\FCT.EPS.PaymentTrackingService.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Integration.Common.WCF">
+      <HintPath>..\..\..\Binaries\FCT.Common\FCT.Integration.Common.WCF.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.Common">
+      <HintPath>..\..\..\Binaries\FCT.LLC.Common\FCT.LLC.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.Common.DataContracts">
+      <HintPath>..\..\..\Binaries\FCT.LLC.Common\FCT.LLC.Common.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.Common.NotificationEmailDispatching.Client">
+      <HintPath>..\..\..\Binaries\FCT.LLC.NotificationEmail\FCT.LLC.Common.NotificationEmailDispatching.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.Common.NotificationEmailDispatching.Entities">
+      <HintPath>..\..\..\Binaries\FCT.LLC.NotificationEmail\FCT.LLC.Common.NotificationEmailDispatching.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.DealEventPublishing.Client">
+      <HintPath>..\..\..\Binaries\FCT.LLC.DealEventPublishing\FCT.LLC.DealEventPublishing.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.DocumentService.Client">
+      <HintPath>..\..\..\Binaries\FCT.LLC.Document\FCT.LLC.DocumentService.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.DocumentService.Common">
+      <HintPath>..\..\..\Binaries\FCT.LLC.Document\FCT.LLC.DocumentService.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.DocumentService.Data">
+      <HintPath>..\..\..\Binaries\FCT.LLC.Document\FCT.LLC.DocumentService.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.Entities">
+      <HintPath>..\..\..\Binaries\Nettiers\FCT.LLC.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.GenericRepository">
+      <HintPath>..\..\..\Binaries\FCT.LLC.Common\FCT.LLC.GenericRepository.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\FCT.LLC.Common\FCT.LLC.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.Portal.DTOs">
+      <HintPath>..\..\..\Binaries\FCT.LLC.Portal.DTOs\FCT.LLC.Portal.DTOs.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.Service">
+      <HintPath>..\..\..\Binaries\Nettiers\FCT.LLC.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Services.AuditLog.DataContracts.DataContracts">
+      <HintPath>..\..\..\Binaries\FCT.AuditLog\FCT.Services.AuditLog.DataContracts.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Services.AuditLog.MessageContracts.MessageContracts">
+      <HintPath>..\..\..\Binaries\FCT.AuditLog\FCT.Services.AuditLog.MessageContracts.MessageContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Services.AuditLog.ServiceContracts.ServiceContracts">
+      <HintPath>..\..\..\Binaries\FCT.AuditLog\FCT.Services.AuditLog.ServiceContracts.ServiceContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Services.LIM.DataContracts.DataContracts">
+      <HintPath>..\..\..\Binaries\FCT.LIM.Contracts\FCT.Services.LIM.DataContracts.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Services.LIM.MessageContracts.MessageContracts">
+      <HintPath>..\..\..\Binaries\FCT.LIM.Contracts\FCT.Services.LIM.MessageContracts.MessageContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Services.LIM.ServiceContracts.ServiceContracts">
+      <HintPath>..\..\..\Binaries\FCT.LIM.Contracts\FCT.Services.LIM.ServiceContracts.ServiceContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CancelDealHelper.cs" />
+    <Compile Include="DealAmendmentsChecker.cs" />
+    <Compile Include="DealEventsPublisher.cs" />
+    <Compile Include="DisbursementHelper.cs" />
+    <Compile Include="FeeCalculator.cs" />
+    <Compile Include="Helper Interfaces\ICancelDealHelper.cs" />
+    <Compile Include="Helper Interfaces\IDealAmendmentsChecker.cs" />
+    <Compile Include="Helper Interfaces\IEmailHelper.cs" />
+    <Compile Include="Helper Interfaces\IFeeCalculator.cs" />
+    <Compile Include="Helper Interfaces\IMilestoneUpdater.cs" />
+    <Compile Include="Helper Interfaces\IPaymentReportDetailsCollector.cs" />
+    <Compile Include="Helper Interfaces\IPaymentRequestConverter.cs" />
+    <Compile Include="Helper Interfaces\IPaymentRequestProcessor.cs" />
+    <Compile Include="Helper Interfaces\IReturnFundsHelper.cs" />
+    <Compile Include="Helper Interfaces\IValidationHelper.cs" />
+    <Compile Include="Helper Interfaces\IVendorLawyerHelper.cs" />
+    <Compile Include="Implementations\CancelDealBusinessLogic.cs" />
+    <Compile Include="Implementations\ConfirmationLetterBusinessLogic.cs" />
+    <Compile Include="Implementations\DeclineDealBusinessLogic.cs" />
+    <Compile Include="DealStateHelper.cs" />
+    <Compile Include="Implementations\DocumentBusinessLogic.cs" />
+    <Compile Include="Implementations\PifQuestionsBusinessLogic.cs" />
+    <Compile Include="Implementations\ReconciliationBusinessLogic.cs" />
+    <Compile Include="Implementations\ReturnFundsBusinessLogic.cs" />
+    <Compile Include="Interfaces\ICancelDealBusinessLogic.cs" />
+    <Compile Include="Interfaces\IConfirmationLetterBusinessLogic.cs" />
+    <Compile Include="Interfaces\IDealEventsPublisher.cs" />
+    <Compile Include="Interfaces\IDeclineDealBusinessLogic.cs" />
+    <Compile Include="Interfaces\IDocumentBusinessLogic.cs" />
+    <Compile Include="Interfaces\IPifQuestionsBusinessLogic.cs" />
+    <Compile Include="Interfaces\IReconciliationBusinessLogic.cs" />
+    <Compile Include="Interfaces\IReturnFundsBusinessLogic.cs" />
+    <Compile Include="PaymentReportDetailsCollector.cs" />
+    <Compile Include="PaymentServiceMapper.cs" />
+    <Compile Include="PaymentDescriptors.cs" />
+    <Compile Include="PaymentRequestProcessor.cs" />
+    <Compile Include="ReturnFundsHelper.cs" />
+    <Compile Include="Serializer.cs" />
+    <Compile Include="MilestoneUpdater.cs" />
+    <Compile Include="TransactionScopeBuilder.cs" />
+    <Compile Include="UserContextHelper.cs" />
+    <Compile Include="VarianceChecker.cs" />
+    <Compile Include="PaymentRequestConverter.cs" />
+    <Compile Include="HashProvider.cs" />
+    <Compile Include="Implementations\LLCFundingBusinessLogic.cs" />
+    <Compile Include="Implementations\PayoutLetterBusinessLogic.cs" />
+    <Compile Include="Interfaces\IPayoutLetterBusinessLogic.cs" />
+    <Compile Include="PropertyDescriptor.cs" />
+    <Compile Include="SignDealHelper.cs" />
+    <Compile Include="EmailHelper.cs" />
+    <Compile Include="FCTURNHelper.cs" />
+    <Compile Include="FundsAllocationHelper.cs" />
+    <Compile Include="Implementations\AcceptDealBusinessLogic.cs" />
+    <Compile Include="Implementations\DealBusinessLogic.cs" />
+    <Compile Include="Implementations\DealSearchBusinessLogic.cs" />
+    <Compile Include="FundingBusinessLogicHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FundingDealRequestValidator.cs" />
+    <Compile Include="Implementations\DisbursementBusinessLogic.cs" />
+    <Compile Include="Implementations\FundsAllocBusinessLogic.cs" />
+    <Compile Include="Implementations\PaymentBusinessLogic.cs" />
+    <Compile Include="Implementations\SignDealBusinessLogic.cs" />
+    <Compile Include="Interfaces\IAcceptDealBusinessLogic.cs" />
+    <Compile Include="Interfaces\IDealBusinessLogic.cs" />
+    <Compile Include="Interfaces\IDealSearchBusinessLogic.cs" />
+    <Compile Include="Interfaces\IDisbursementBusinessLogic.cs" />
+    <Compile Include="Interfaces\IFundsAllocBusinessLogic.cs" />
+    <Compile Include="Interfaces\IPaymentBusinessLogic.cs" />
+    <Compile Include="Interfaces\IDealManagementBusinessLogic.cs" />
+    <Compile Include="Implementations\EFFundingBusinessLogic.cs" />
+    <Compile Include="Interfaces\ISignDealBusinessLogic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\FCTURNReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UniqueDealDescriptor.cs" />
+    <Compile Include="ValidationHelper.cs" />
+    <Compile Include="VendorLawyerHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\FCT.LLC.BusinessService.Contracts.csproj">
+      <Project>{401B1620-75F5-4BE9-8D4B-F5488E1C4713}</Project>
+      <Name>FCT.LLC.BusinessService.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\FCT.LLC.BusinessService.DataAccess.csproj">
+      <Project>{a912f9c8-e071-4594-bd41-545d3bf9d9fb}</Project>
+      <Name>FCT.LLC.BusinessService.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\FCT.LLC.BusinessService.Entities.csproj">
+      <Project>{b132a7f1-d3a7-4b0a-adc5-74fc0755f0d0}</Project>
+      <Name>FCT.LLC.BusinessService.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\FCTURNReference\FCT.LLC.BusinessService.BusinessLogic.FCTURNReference.GetInvoiceNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FCTURNReference\FCT.LLC.BusinessService.BusinessLogic.FCTURNReference.GetPolicyNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FCTURNReference\FCT.LLC.BusinessService.BusinessLogic.FCTURNReference.GetUniqueReferenceNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FCTURNReference\fcturn.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\FCTURNReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FCTURNReference\fcturn.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FCTURNReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FCTURNReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FCTURNReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

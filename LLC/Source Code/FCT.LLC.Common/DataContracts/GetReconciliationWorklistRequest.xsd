@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GetReconciliationWorklistRequest"
+    targetNamespace="FCT.LLC.Common.DataContracts" elementFormDefault="qualified"
+    xmlns="FCT.LLC.Common.DataContracts"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+   <xs:include schemaLocation="DataContractTypes.xsd"/>
+
+   <xs:element name="GetReconciliationWorklistRequest">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="SearchCriteria" type="ReconciliationWorklistSearchCriteria" />
+            <xs:element name="PageIndex" type="xs:int" />
+            <xs:element name="PageSize" type="xs:int" />
+            <xs:element name="OrderBySpecifications" type="ReconciliationWorklistOrderBySpecificationCollection" />
+            <xs:element name="UserContext" type="UserContext" />
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:simpleType name="ReconciliationWorklistOrderByColumn">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="BatchNumber"/>
+         <xs:enumeration value="TransactionDate"/>
+         <xs:enumeration value="FCTURN"/>
+         <xs:enumeration value="TransactionType"/>
+         <xs:enumeration value="ReferenceNumber"/>
+         <xs:enumeration value="AmountOut"/>
+         <xs:enumeration value="AmountIn"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="ReconciliationWorklistOrderBySpecificationCollection">
+      <xs:sequence>
+         <xs:element name="OrderBySpecification" type="ReconciliationWorklistOrderBySpecification" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ReconciliationWorklistOrderBySpecification">
+      <xs:sequence>
+         <xs:element name="OrderByColumn" type="ReconciliationWorklistOrderByColumn" />
+         <xs:element name="OrderByDirection" type="OrderByDirection" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ReconciliationWorklistSearchCriteria">
+      <xs:sequence>
+         <xs:element name="BatchNumber" type="xs:string" />
+         <xs:element name="FCTURN" type="xs:string" />
+         <xs:element name="ReferenceNumber" type="xs:string" />
+         <xs:element name="TransactionType" type="xs:string" />
+        <xs:element name="AmountFrom" type="xs:decimal" nillable="true" />
+        <xs:element name="AmountTo" type="xs:decimal" nillable="true"  />
+        <xs:element name="DateFrom" type="xs:string" />
+         <xs:element name="DateTo" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

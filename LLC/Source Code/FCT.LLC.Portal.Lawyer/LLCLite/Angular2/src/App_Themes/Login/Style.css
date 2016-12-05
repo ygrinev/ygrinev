@@ -1,0 +1,385 @@
+﻿#login 
+{
+	margin-left: auto ;
+	margin-right: auto ;	
+}
+
+#login .border
+{
+	border: 1px solid #cccccc;
+	float:left;
+	position: relative;
+}
+
+#login .left_area
+{
+    position:absolute;
+	background-image: url('Images/FCT_BAR_PORTAL.png');
+	float: left;
+	width: 62px;
+	height: 656px;
+    z-index: 100;
+}
+#login .left_area_under
+{
+    position:absolute;
+	background-image: url('Images/FCT_BAR_PORTAL_SLICE.png' );
+	background-repeat: repeat-y;
+    float: left;
+	width: 62px;
+	height: 100%;
+    z-index: 4;
+}
+
+
+#login .right_area
+{
+	float: left;
+    margin-left: 62px;
+}
+
+#login img
+{
+	background-image: url('Images/FCT_LOGO.png');
+	float: left;
+	margin-top:35px;
+}
+
+#login .horizontal_divider
+{
+	float:right;
+	height: 1px;
+	width: 90%;
+	background-color: #55565A;
+	margin-right: 36px;
+}
+
+#login .content
+{
+	float:right;
+	/*width: 970px;*/
+	margin-right: 36px;
+    min-height: 520px;
+}
+#login .content2 {
+    position: relative;
+    top: 20px;
+	margin-right: 36px;
+    min-height: 520px;
+}
+
+#login .menu
+{
+	float:right;
+	text-align:right;
+	color:#333333;
+	margin-top:12px;
+	margin-bottom:12px;
+	font-size:11pt;
+	margin-left:100px;
+}
+
+#login .menu a
+{
+	color: #333333;
+	text-decoration: none;
+	
+}
+
+#login .menu ul
+{
+	list-style-type: none;
+	margin: auto;	
+}
+
+#login .menu li
+{
+	float:left;
+	padding-left:6px;
+	padding-right:6px;
+}
+
+#login .header2 #lblPleaseSignIn{
+    padding-right:50px;
+}
+#login .header2 #lblWelcome{
+    padding-right:50px;
+}
+#login .header2 #lblPleaseSignIn{
+    padding-right:50px;
+}
+#login .header2 .title {
+    margin-top:0px;
+}
+
+#login .header2 .logo {
+    margin-top:0px;
+    position: relative;
+    top: -15px;
+}
+#login .header2
+{
+	margin-right: 36px;
+}
+
+#login .header
+{
+	height:150px;
+	float:right;
+	margin-right: 36px;
+    width:90%;
+}
+
+#login .title
+{
+	float:right;
+	/*width:600px;*/
+	margin-top:40px;
+}
+
+#login .title .text
+{
+	color: #00A8E4;
+	font-size: 36pt;
+	text-align: right;
+}
+
+#login .title .subtext
+{
+	color: #005288;
+	font-size: 14pt;
+	font-weight:bold;
+	text-align: right;
+}
+	
+#login .block
+{
+	background-color: #015289;
+	width: 590px;
+	height: 256px;
+	float: right;
+	margin-top:50px;
+}
+
+#login .block .corner
+{
+	background-image: url('Images/FCT_BLOCK_CORNER.png');
+	width: 40px;
+	height: 40px;
+	float: right;
+}
+
+#login .block .control
+{
+	float:right;	
+	margin-right:74px;
+	margin-top:4px;
+}
+
+#login .block .row1
+{
+	float:right;	
+}
+
+#login .block .row2
+{
+	float:right;	
+	margin-top:36px;
+}
+
+#login .block .row3
+{
+	
+	float:left;	
+	margin-top:10px;
+	padding-left:208px;
+	font-weight:bold;
+	font-size:11pt;
+	width:100%;
+}
+
+#login .block .row3 a
+{
+	color:#B2D235;
+}
+
+#login .block .row4
+{
+	float:left;	
+	padding-left:208px;
+	margin-top:2px;
+	font-weight:bold;
+	font-size:11pt;
+	width:100%;
+}
+
+#login .block .row4 a
+{
+	color:#B2D235;
+}
+
+#login .block .row5
+{
+	float:right;
+}
+
+#login .block .control .value
+{
+	float:right;	
+	
+}
+
+#login .block .control .star
+{
+	float:right;	
+	width: 13px;
+	
+}
+
+#login .block .control .label
+{
+	color: #ffffff;
+	font-size:16pt;
+	font-weight:bold;
+	float:right;
+	margin-right:20px;
+}
+/* necessary for IE6 */
+#dataPassword
+{
+	font-family:Arial!important;
+}
+#login .block .control input[type=text]
+{
+	height: 34px;
+	width: 290px;	
+	float:left;
+	font-size:14pt;
+}
+
+#login .block .control input[type=password]
+{
+	height: 34px;
+	width:290px;	
+	float:left;
+	font-family: Arial;
+	font-size:14pt;
+}
+
+
+#login .block .control input[type=submit]
+{
+	height: 31px;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+	padding-left:10px;
+	padding-right:20px;
+	background-color: #73243D;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	font-size:11pt;
+	font-weight:bold;
+	background-image: url('Images/FCT_BUTTON_ARROW.png');
+	background-repeat:no-repeat;
+	background-position: right;
+}
+
+#login .newuser
+{
+	width: 590px;
+	float: right;
+	margin-top:10px;
+	font-size:11pt;
+	font-weight:bold;
+	color: #55565A;
+}
+
+#login .message
+{
+	width: 590px;
+	float: right;
+	margin-top:6px;
+	font-size:11pt;
+	font-weight:bold;
+	color: #55565A;
+	padding-left:0px;
+	margin-left:0px;
+}
+
+#login .message ul
+{
+	padding-left:0px;
+	margin-left:15px;
+}
+
+#login a
+{
+	color: #00A8E4;
+	text-decoration: none;
+	
+}
+
+#login .legal
+{
+	position: absolute; 
+	bottom: 10px;
+	right:36px;	
+	color:#bbbbbb;
+}
+/* Model Popup Begin */
+
+.modalPopup {
+	background-color:#ffffdd;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;	
+	width: 70% !important;	/* Major browsers other than IE 6 and below respect the importance immediately */
+	width: 900px;			/* IE 6 and below use this value instead, even though the above was marked as important */
+}
+
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+.HeaderFontBurgandyBold {
+	font-family: Arial, sans-serif;
+	font-size: 11pt;
+	color : #83203a;
+	font-weight : bold;	
+	margin-top:3px;				
+	}
+
+.actionbutton
+{
+	border-bottom: thin solid #000000;
+	border-right: thin solid #000000;
+	border-top: thin solid #999999;
+	border-left: thin solid #999999;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	background-color: #83203a;
+	color: #FFFFFF;
+	line-height: .85;
+	padding-top: 3px;
+	padding-bottom: 1px;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-bottom: 5px;
+	text-transform: capitalize;
+	cursor: hand; cursor: pointer;
+}
+
+/* Model Popup End */
+
+.page_stats
+{
+	float:left;
+	width:100%;
+	text-align:center;
+	padding:6px 6px 6px 6px;
+}

@@ -1,0 +1,48 @@
+﻿<h4>Deal Summary</h4>
+<div *ngIf="deal!=null">
+    <strong>FCT Reference Number: {{ deal.FCTRefNum}}</strong>
+    <p>Deal Number: {{deal.DealID}}</p>
+    <p>Closing Date:  {{ deal.RFFClosingDate }}</p>
+</div>
+<hr />
+<h4>Properties</h4>
+<table class="table table-condensed table-striped table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Property ID</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Deal ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="selectable"
+            *ngFor="let property of deal.tblProperties">
+            <td>{{ property.PropertyID }}</td>
+            <td>{{ property.Address}}</td>
+            <td>{{ property.City }}</td>
+            <td>{{ property.DealID }}</td>
+        </tr>
+    </tbody>
+</table>
+<hr />
+<h4>Mortgages</h4>
+<table class="table table-condensed table-striped table-hover table-bordered">
+    <thead>
+        <tr class="primary">
+            <th>Mortgage ID</th>
+            <th>Mortgage Number</th>
+            <th>Mortgage Type</th>
+            <th>Deal ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="selectable"
+            *ngFor="let mortgage of deal.mortgages">
+            <td>{{ mortgage.mortgageID }}</td>
+            <td>{{ mortgage.mortgageNumber }}</td>
+            <td>{{ mortgage.mortgageType}}</td>
+            <td>{{ mortgage.dealID }}</td>
+        </tr>
+    </tbody>
+</table>

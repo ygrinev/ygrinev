@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SearchDealResponse"
+    targetNamespace="FCT.LLC.Common.DataContracts" elementFormDefault="qualified"
+    xmlns="FCT.LLC.Common.DataContracts"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+   <xs:element name="SearchDealResponse">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="PageIndex" type="xs:int" />
+            <xs:element name="TotalRowsCount" type="xs:int" />
+            <xs:element name="SearchResults" type="DealInfoCollection" />
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="DealInfoCollection">
+      <xs:sequence>
+         <xs:element name="DealInfo" type="DealInfo" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="DealInfo">
+      <xs:sequence>
+         <xs:element name="DealID" type="xs:int" />
+         <xs:element name="FCTURN" type="xs:string" />
+         <xs:element name="LenderReferenceNumber" type="xs:string" />
+         <xs:element name="ClosingDate" type="xs:date" />
+         <xs:element name="LawyerName" type="xs:string" />
+         <xs:element name="ActingFor" type="xs:string" />
+         <xs:element name="ClientName" type="xs:string" />
+         <xs:element name="PropertyAddress" type="xs:string" />
+         <xs:element name="BusinessModel" type="xs:string" />
+         <xs:element name="DealStatus" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

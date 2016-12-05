@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GetDealHistoryResponse"
+    targetNamespace="FCT.LLC.Common.DataContracts" elementFormDefault="qualified"
+    xmlns="FCT.LLC.Common.DataContracts"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+   <xs:element name="GetDealHistoryResponse">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="Activities" type="ActivityCollection" />
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="ActivityCollection">
+      <xs:sequence>
+         <xs:element name="Activity" type="Activity" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Activity">
+      <xs:sequence>
+         <xs:element name="UserName" type="xs:string" />
+         <xs:element name="Activity" type="xs:string" />
+         <xs:element name="ActivityDate" type="xs:dateTime" />
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

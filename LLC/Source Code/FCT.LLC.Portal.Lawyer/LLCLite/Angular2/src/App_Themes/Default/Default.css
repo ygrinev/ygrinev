@@ -1,0 +1,427 @@
+﻿/* CSS RESET - start */
+/*html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: ''; content: none;}
+*/
+/* tables still need 'cellspacing="0"' in the markup */
+/*table {border-collapse: collapse;border-spacing: 0;}*/
+/* CSS RESET - end */
+
+/* Global start */
+/*
+body {font-family: Arial,sans-serif; margin:5px;}
+p, span, div, label {font-size:8.5pt;line-height: 1.2em;}
+p { margin: 0 0 1em 0;}
+input, textarea, select {font: normal 8.5pt "Arial","Tahoma","Sans-Serif"; margin:0; }
+a {text-decoration:none; font-size:8.5pt;}
+a:link, a:visited, a:hover, a:active {color:#00f; text-decoration:none;}
+a[disabled=disabled] {color:#999999;}
+h1 {margin: 10px 0 10px 0; font-size:11pt;font-weight:bold;}
+h2 {margin: 10px 0 6px 0; font-size:9.5pt;font-weight:bold;}
+h3 {margin: 2px 0 4px 0; font-size:8.5pt; font-weight:bold;}
+*/
+/* Global end */
+hr {
+    border: 1px solid #B2D235!important;
+}
+h4 {
+    color:#015289!important;
+}
+.chklist {border-collapse:inherit;border-spacing:3px;float:left;}
+.chklist label {padding-left:4px;}
+.ActionButton
+{
+    border-bottom: solid 1px #000000;
+    border-right: solid 1px #000000;
+    border-top: solid 1px #999999;
+    border-left: solid 1px #999999;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #660000;
+    color: #FFFFFF;
+    cursor: hand;
+}
+
+.field-row { margin-bottom:10px; clear:both;}
+.field-row * {vertical-align:middle;}
+.field-row .col-1 {width:50%; float:left;}
+.field-row .col-2 {width:45%; float:left}
+.field-row .lbl {width:25%; float:left; line-height:1.2; padding-top: 2px;}
+.field-row .ctrl {width:74%; float:left }
+.field-row .ctrl * {vertical-align:middle;}
+
+.alt-row { background-color: #efefef;}
+
+/* for RadioButtonList class="rb" */
+span.rb * { vertical-align:middle;}
+span.rb label {width:auto; margin:auto auto auto 7px; padding-right:10px;}
+span.rb input {margin: auto;}
+
+.input-hint {font-size:8pt; color:#666666; line-height:1.5; padding-left:10px;}
+ul.instructions li { list-style-image: url(Images/hollow-red-arrow.gif); padding-left: 5px; margin-left:12px;}
+p.instructions { margin: 15px 0;}
+h2.red { border-bottom:1px solid #000000; color:#660000; font-family:Arial,sans-serif; font-size:11pt; font-weight:bold; padding-bottom:4px;}
+h3.red { color:#660000; font-family:Arial,sans-serif; font-size:10pt; font-weight:bold; padding-bottom:4px;}
+.error {color: #f00; padding-left:5px;}
+.clr {clear:both;}
+.val { display:inline-block; width:13px; height:14px; line-height:1; color: #ff0000; font-size: 13pt; text-align:center; float:left}
+.val-msg { color:#990000;}
+
+#content {padding-left:1px; margin-bottom:20px;}
+#content h1 { color: #660000; border-bottom: solid 1px #666666; padding-bottom: 5px;}
+
+a.actionBtn, a.actionBtn:link, a.actionBtn:visited, a.actionBtn:hover, a.actionBtn:active
+{
+    background-color:#83203A; border: solid 1px; cursor:pointer; font-size:8.5pt; font-weight:bold;
+    color:#fff; border-color:#999999 #000 #000 #999999;
+    padding:2px 5px; overflow:visible;
+}
+
+/* User Login start */
+div.logo{float:left;}
+#login-main { width:672px; margin:40px auto 30px; text-align:left;}
+#login-main #top-links a { text-decoration:underline;}
+#login-main #footer-container {color:#b0b0b0;font-size:7pt;text-align:right;padding-top:2px;}
+#login-main .title {text-align:left; margin-top :10px;color:#6699bb; font-size: 20px; vertical-align:bottom; font-weight:normal}
+.login-message { height:20px; margin-bottom:10px; }
+div.loginmaintop{height:85px; border-bottom: 2px dotted #ddd;}
+.login-panel{ background-image: url('Images/login_bg.jpg'); background-repeat:no-repeat; height:227px; margin-top:12px; padding-bottom:100px;}
+.login-form {float:right; width:330px; margin-top:30px; height: 128px;}
+.login-form .row * {vertical-align:middle;}
+.login-form .row .alignment { padding-top:3px;}
+.login-form .row {margin-bottom:15px;}
+.login-form label {float:left;width:120px; text-align:right; color: #fff; font-size:9pt; font-weight:bold; padding-right:3px; }
+.login-form .row .ctrl { float:left;width:120px;}
+.login-form .row .ctrl * {vertical-align:middle;} 
+.login-form .row .ctrl .txt {font-size:9pt;}
+.login-form .btn-login-container { padding-left:120px;}
+.link-bottom {width:330px; float:right; text-align:left;}
+.link-bottom ul {list-style-type: disc; color:#fff; display:inline-block; padding-left: 20px; margin-left:110px;}
+.link-bottom a:link, .link-bottom a:visited, .link-bottom a:active{ color:#fff;}
+.link-bottom a:hover { text-decoration: underline; }
+.linktop ul{display:inline;}
+.linktop ul li{display:inline;}
+.linktop ul li  a{ color:#6699bb;}
+
+.linktop ul li a:visited {color:#6699bb; text-decoration:none;}
+.linktop ul li a:hover {color:#00f; text-decoration:none;}
+
+
+ul.login-form label { display:inline-block;line-height:1.8;vertical-align: top; margin-bottom:5px;}
+a.btn:link, a.btn:visited, a.btn:hover, a.btn:active{ color:#fff;}
+/* User Login end */
+
+/* Forgot User ID / Password start */
+#pre-login-form h1 { color:#336699; border:none; font: bold 12pt Arial,sans-serif; margin: 2px 0 4px 0;}
+.buttons { padding-top:5px; margin:20px 0; border-top:#bbb 1px solid; }
+.buttons .actionBtn { margin-right:10px;}
+.buttons .left {float:left;width:170px;line-height:1.8;}
+.buttons .right {float:left;width:500px;line-height:1.8;}
+
+#pre-login-form .row { margin-bottom:2px; clear:both;}
+#pre-login-form .row * {vertical-align:middle;}
+#pre-login-form .row label {float:left;width:160px;}
+#pre-login-form .row .ctrl { float:left;width:600px;}
+#pre-login-form .row .ctrl .txt {width:150px;}
+#pre-login-form .row .ctrl .txtAns {width:300px;}
+#pre-login-form ul.instructions li { list-style-image: url(Images/hollow-red-arrow.gif); padding-left: 0; margin-left:18px; line-height:1.8;}
+
+.bottombuttons {margin-top:10px; padding-bottom:10px; margin-bottom:10px; padding-top: 10px; border-top:#bbbbbb 1px solid;}
+.bottombuttons .left {float:left;width:170px;}
+.bottombuttons .right {float:left; text-align:left;}
+
+/* Forgot User ID / Password end */
+
+/* Contact Us start */
+div.contactleft{float:left;width:230px; line-height:1.3}
+div.contactright{float:left;width:300px; font-weight:bold;line-height:1.3}
+div.techSupport{font-weight:bold; line-height:5;}
+div.contactUsinfo{line-height:1.3}
+span.contactTele{font-weight:bold;}
+.contactCEmail{ font-weight:normal;}
+/* Contact Us end */
+
+/* BeforeLogin.Master start */
+#shell{width:980px;}
+.mastertop { border-bottom:2px dotted #bbb; padding-bottom:10px; background-color:#fff;}
+.mastertop .left {float:left; width:50%; text-align:left;}
+.mastertop .right {float:right; width:48%; text-align:right;}
+.welcome-message {float:left; width: 200px; font-size: 9pt; font-weight: bold; color: #660000; margin-top: 20px;} 
+.welcome-message * {vertical-align: middle;}
+.masterbottom { border-bottom:1px solid #BBBBBB; margin-bottom:10px;}
+.modalPopup { background-color:#FFFFFF;border-width:3px;border-style:solid;border-color:Gray;padding:3px;	
+	width: 70% !important;	/* Major browsers other than IE 6 and below respect the importance immediately */
+	width: 900px;			/* IE 6 and below use this value instead, even though the above was marked as important */
+}
+.HeaderFontBurgandyBold {width:100%; color : #83203a;font-weight : bold;margin-top:3px;}
+.pnlHeader {cursor:hand;cursor:pointer;background-color:White;border:solid 1px Gray;}
+.popupheader {font-size:12pt; text-align:center}
+.modalBackground {background-color:Gray; filter:alpha(opacity=70);opacity:0.7;}
+/* BeforeLogin.Master end */
+
+ul.left-nav-links li 
+{
+    line-height: 1.5;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000; 
+    border-top: solid 1px #000;
+    margin:0;
+    width:100%;
+    overflow:hidden;
+    padding:1px;
+    background-color: #e6e6e6;    
+}
+
+ul.left-nav-links li.last { border-bottom: solid 1px #000;}
+ul.left-nav-links li a, ul.left-nav-links li a:link, ul.left-nav-links li a:visited
+{
+    border-left: solid 5px #e6e6e6;
+    color: #660000;
+    font-weight:bold;
+    width:100%;
+    display:block;
+    padding: 0 3px;
+}
+
+ul#top-links {float:right; padding-bottom:8px;}
+ul#top-links li { display:inline; border-right: solid 1px black; padding: 0 5px; margin-top:5px;}
+ul#top-links li.last {border-right-width: 0; padding-right: 0;}
+
+#footer-container {border-top: 2px dotted #ddd;}
+#footer-container * {vertical-align:middle;}
+#footer-container .left {float:left; width:50%; text-align:left;}
+#footer-container .right {float:right; width:49%; text-align:right;}
+#footer-container .right p.legal {color:#b0b0b0; font-size:7pt; padding-top:2px; text-align:right; line-height:1.3;}
+
+ul#bottom-links li { display:inline; border-right: solid 1px black; padding: 0 5px; margin-top:5px; line-height:1.3}
+ul#bottom-links li.first {padding-left: 0;}
+ul#bottom-links li.last {border-right-width: 0;}
+
+#lnk-sol-sel { float:right; margin-left:5px;}
+#lnk-sol-sel .l {float:left; background: url(Images/solution-selector-l.gif) no-repeat; height:21px; width:8px;}
+#lnk-sol-sel .c {float:left; background: url(Images/solution-selector-c.gif) repeat-x; height:21px;}
+#lnk-sol-sel .c a {color: #fff; font-weight:bold; font-size:8pt; margin-top:5px; display:inline-block;}
+#lnk-sol-sel .r {float:left; background: url(Images/solution-selector-r.gif) no-repeat; height:21px;width:8px;}
+
+.header-logos { border-top: solid 2px #666666; border-bottom: solid 2px #666666; border-left: solid 1px #666666; border-right: solid 1px #666666;}
+.header-logos .logo {float:left; width:157px; height:70px; background-color:#fff; }
+.header-logos .blue-bar {float:right; width:595px; height:86px; background-color:#fff;background:url(Images/header-bar-blue.jpg) no-repeat;}
+.header-logos .handshake {float:right; width:181px; height:86px; background:url(Images/handshake.jpg) no-repeat;}
+
+.black-bar {background: url('Images/black-bar.jpg') repeat-x; height: 14px; clear:both;}
+
+#welcome { float: right; padding: 4px 0;}
+#welcome li { display:inline; border-right: solid 1px black; padding: 0 8px; margin-top:5px;}
+#welcome li.last {border-right-width: 0;}
+.welcome-msg { color: #660000; font-weight: bold;}
+.l {float:left;}
+.r {float:right;}
+.grey-bar { height:9px; background-color:#666666; margin-top:10px;}
+
+/*  Home.Master end */
+
+/* Home Product Selection start */
+#available-services a { float:left; width: 168px; height: 33px; text-align: center; background:url('Images/prod-service.gif'); margin-right:20px; padding: 76px 25px 20px 25px; font-weight: bold; color:#fff;}
+/* Home Product Selection end */
+
+.wmrk-input-hint { color:#b0b0b0;}
+
+/* Search results - Start */
+.grid {table-layout: fixed; width:100%; background-color: #fff; margin: 5px 0 0 0; border: solid 1px #ffffff; border-collapse: collapse;}
+.grid td { padding: 2px; border: solid 1px #ffffff; color: #000000; overflow: hidden;}
+.grid th { padding: 5px; color: #fff; background: #666; border-left: solid 1px #ffffff; font-size: 0.9em; vertical-align: middle; text-align:center}
+.grid th.gridSortAsc { background: #666 url('images/sort-arrowup.gif') no-repeat 95% 50%;}
+.grid th.gridSortDesc { background: #666 url('images/sort-arrowdown.gif') no-repeat 95% 60%;}
+.grid th a, .grid th a:visited {color: #fff; text-decoration: none;}
+.grid th a:hover { color: #fff; text-decoration: underline;}
+.grid tr.gridAlternateRow td { background-color: #efefef;}
+
+/* For IE */
+.gridPager td{ text-align: right;color: #000; margin-left: auto;margin-right: 2px;text-decoration: none;border: none;} 
+/* For FireFox */
+.gridPager td table{ text-align: right; margin-left: auto; margin-right: 2px;}
+#searchMessages {margin: 2px;}
+#searchValidationMessages{ margin: 5px 0 5px 0;}
+/* Search results - End */
+
+.topnavcontainer {margin:0; overflow:hidden;padding:0; width:100%; text-align:right;}
+
+.afi .instructions,
+    .afi .chk-select-all,
+    .list-afi {display:block; padding-bottom:5px;}
+.afi .list-afi {width:200px;}
+
+.button-row {margin-left:26%;margin-bottom:10px;}
+.grid-trust-info th {text-align:center; font-weight:bold;}
+.grid-trust-info {table-layout: fixed; width:100%; background-color: #fff; margin: 5px 0 0 0; border: solid 1px #ffffff; border-collapse: collapse;}
+.grid-trust-info td { padding: 4px; border: solid 1px #ffffff; color: #000000; overflow: hidden;}
+.grid-trust-info th { padding: 4px; color: #fff; background: #666; border-left: solid 1px #ffffff; vertical-align: middle;}
+.grid-trust-info th.gridSortAsc { background: #666 url('images/sort-arrowup.gif') no-repeat 95% 50%;}
+.grid-trust-info th.gridSortDesc { background: #666 url('images/sort-arrowdown.gif') no-repeat 95% 60%;}
+.grid-trust-info th a, .grid th a:visited {color: #fff; text-decoration: none;}
+
+.field-row input.ro { background-color:#e0e0e0; border:solid 1px #666666; padding: 2px;} /* read-only textboxes */
+input.phone { width:65px;}
+input.postal-code, input.street-no { width:50px;}
+input.phone { width:65px; }
+input.postal-code, input.street-no { width:50px; }
+
+.non-configurable-prefs { padding-bottom: 5px; margin-bottom: 5px; border-bottom: solid 1px #e0e0e0;}
+.configurable-prefs {}
+.prefs * { vertical-align:middle;}
+.prefs label {padding-left:5px;}
+.prefs span { display:block; padding-bottom:8px;}
+* html .prefs span { padding-bottom:3px;}  /* targets IE only */
+
+.notification-emails label {width: 120px; margin-left: 20px; display:inline-block;}
+.email-item { display:block; margin-bottom:8px;}
+.email-item input { width:175px; padding: 0 2px;}
+.email-item input.ro { background-color:#e0e0e0; border:solid 1px #666;} /* read-only textboxes */
+.email-itemVal { color: #ff0000; font-size: 13pt; text-align:center; }
+
+.button-row { padding-top:10px;}
+.sub-instructions {padding-top:4px; color: #666; display:block;}
+
+.reg-header {width:100%;}
+.reg-header .l { background:url(Images/blue-header-left.gif) no-repeat; width:11px; height:23px;}
+.reg-header .c { background:url(Images/blue-header-center.gif) repeat-x; width:100%; height:23px; color:#fff; font-size:10pt; font-weight:bold; vertical-align:middle;}
+.reg-header .r { background:url(Images/blue-header-right.gif) no-repeat; width:11px; height:23px;}
+
+.reg-footer {width:100%;}
+.reg-footer .l { background:url(Images/bottom-l-corner.gif) no-repeat; width:11px; height:11px;}
+.reg-footer .c { background:url(Images/bottom-center.gif) repeat-x; width:100%; height:11px;}
+.reg-footer .r { background:url(Images/bottom-r-corner.gif) no-repeat; width:11px; height:11px;}
+
+fieldset.register {padding: 10px 10px 0 10px; border-left:solid 1px #C0C0C0; border-right:solid 1px #C0C0C0;}
+fieldset.register fieldset legend { font: bold 9pt/1.4 "Arial", "Tahoma", "Sans-serif"; margin-left:-6px; padding: 6px 0; color:#660000}
+fieldset#result {padding: 10px; border-left:solid 1px #C0C0C0; border-right:solid 1px #C0C0C0;}
+fieldset#result fieldset legend { font: bold 9pt/1.4 "Arial", "Tahoma", "Sans-serif"; margin-left:-6px; padding: 6px 0;}
+
+ol.questions {list-style: decimal; margin-left: 15px; padding-left:15px;}
+ol.questions li {margin: 0 0 8px 0; line-height:1.4;}
+ol.questions .ctrl {display:block; padding-left:20px;}
+.short-answer { }
+.long-answer { width: 200px;}
+.register-buttons { margin:10px 0 5px 0;}
+.register-buttons .actionBtn { margin-right:10px;}
+a.agree, a.agree:visited, a.agree:hover {color:#fff;}
+a.disagree, a.disagree:visited, a.disagree:hover {color:#666;cursor:default;}
+
+div#sign-up-options { margin: 10px 0; line-height: 2;}
+div#sign-up-options p { color: #660000; font-weight: bold; font-size: 9pt;}
+div#sign-up-options label { padding-left: 10px; }
+div#sign-up-options * { vertical-align:middle;}
+.securityQuestion { width: 300px;}
+
+/* sign-up agreement - start */
+.agreement-box {border: 1px solid ; margin: 5px; padding: 10px; height: 300px; overflow: auto; }
+.agreement-box h2 {text-align:center;}
+
+#title {font-weight:bold;text-align:center;}
+ul.agreement{ list-style: disc outside none; }
+ul.agreement li {text-align:justify; margin:0 0 8px 20px; line-height:1.3; padding-left:5px;}
+p.agree { width:620px; padding: 5px 10px 5px 10px; text-align:justify }
+.agreement-msg {font-weight:bold;text-align:left;padding: 0 5px; line-height:1.3;}
+.agreement-ack {padding-top:3px;margin-bottom:20px; padding: 3px 5px 0 5px;}
+.agreement-ack * {vertical-align:middle;}
+.agreement-ack label {margin-left:5px;}
+.result-title {text-decoration:underline; font-weight:bold;text-align:left; line-height:1.3;}
+.result-msg {text-align:left; line-height:1.3;}
+.doc-frame {border:solid 1px grey}
+
+/* sign-up agreement - end */
+
+dl.contact-info {width:500px; margin-bottom: 4px;}
+dl.contact-info dt {width: 230px; float: left; font-weight: normal;margin-bottom:4px;}
+dl.contact-info dd {width: 270px; float: left; font-weight: bold;margin-bottom:4px;}
+.contact-us-or { line-height:2; color:#83203A; font-weight:bold;}
+dl.contact-info dd a {font-weight:normal;}
+h2.support {color:#83203A; padding-top:10px; padding-bottom:5px; margin-bottom:10px;border-bottom: solid 1px #c0c0c0;}
+
+.other-conv-app { padding: 7px 0 4px 11px;}
+
+.hideIt { width:0; border:none; padding:0px }
+
+@media print {
+.no-print {display:none;}
+fieldset.register {border:none;}
+}
+
+#legalverbiage {color:#b0b0b0;font-size:7pt;text-align:left;padding-top:10px;}
+.signupwelcome {text-align:right; padding:3px 5px 5px 0px;}
+
+.hintbox
+{
+    padding: 5px;
+    border: solid 1px #666;
+    background-color: #fff;
+    color: #666;
+}
+
+/* tabs style - used in TrustAccounts Page*/
+ul.tabs
+{
+    float:left; /* required! */ 
+    width: 100%;
+    border-bottom: solid 1px #000; 
+    margin: 0 0 10px 0;
+}
+
+ul.tabs *
+{
+    vertical-align: middle;
+}
+
+ul.tabs li
+{
+    /* do not change these! */ 
+    float:left; 
+    position: relative; 
+    top: 1px; 
+    list-style: none; 
+    /* these can be configured! */ 
+    margin: 0 2px 0 0; 
+    background-color: #c0c0c0; 
+    border: solid 1px #000; 
+    font-size: 8.5pt; 
+    font-weight: bold; 
+    padding: 7px 10px; 
+    text-align: center;
+}
+
+ul.tabs li.first
+{
+    margin-left:5px;
+}
+
+ul.tabs li.active
+{
+   border-bottom-color: #fff; 
+    background-color: #c0c0c0; 
+}
+/*, ul.tabs li.disabled a, li a:link, li a:visited*/
+ul.tabs li.disabled
+{
+    border-bottom-color: #fff;  
+    background-color: #fff;
+    
+}
+
+/*ul.tabs li.disabled a:hover
+{
+    text-decoration: none;
+    background-color: #c0c0c0; 
+}
+*/
+
+ul.tabs li a, ul.tabs li a:link, ul.left-nav-links li a:visited
+{
+    color: #660000;
+}

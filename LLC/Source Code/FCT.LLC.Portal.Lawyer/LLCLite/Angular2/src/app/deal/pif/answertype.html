@@ -1,0 +1,24 @@
+﻿<span *ngIf="answertype.AddControlOnNewLine">
+    <br/>
+</span>
+
+<span [formGroup]="form">
+    <label [attr.for]="answertype.id" [innerHTML]="answertype.label"></label>
+
+    <span [ngSwitch]="answertype.DisplayControlType">
+        <input *ngSwitchCase="'TextBox'" [formControlName]="answertype.id" [id]="answertype.id" [value]="answertype?.Answer?.AnswerData">
+        
+        <span *ngSwitchCase="'MoneyTextBox'">$<input [formControlName]="answertype.id" [id]="answertype.id" [value]="answertype?.Answer?.AnswerData | number:'.2-2'"></span>
+        
+        <textarea *ngSwitchCase="'MultiLineTextBox'" [formControlName]="answertype.id" [id]="answertype.id" rows="2" [value]="answertype?.Answer?.AnswerData"></textarea>
+        
+        <span *ngSwitchCase="'RadioButton'">
+            <input  [id]="answertype.id" [name]="answertype.QuestionID" [checked]="answertype?.Answer?.AnswerData == 'True'" type="radio">
+            &nbsp;
+        </span>
+        <span  *ngSwitchCase="'NotSet'">Type Not Set...booo!</span>
+        <small [hidden]="isControlValid(answertype.id)" class="text-danger">
+            {{getValidationMessage(answertype.id)}}
+        </small>
+    </span>   
+</span>

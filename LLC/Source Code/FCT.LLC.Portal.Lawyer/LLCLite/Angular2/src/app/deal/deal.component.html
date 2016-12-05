@@ -1,0 +1,16 @@
+﻿<deal-header></deal-header>
+<deal-left-nav [deal]="model"></deal-left-nav>
+<!-- Content Wrapper. Contains page content -->
+    <dashboard>
+        <div class="detail" *ngIf="model">
+            <llc-deal-summary [deal]="model"></llc-deal-summary>
+        </div>
+    </dashboard>
+    <!-- /.content -->
+<!-- /.content-wrapper -->
+<footer class="main-footer">
+    <div class="pull-right hidden-xs">
+        <b>Version</b> 0.0.1
+    </div>
+    <strong><a href="http://www.fct.ca">FCT</a>.</strong>
+</footer>

@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataContractTypes"
+    targetNamespace="FCT.LLC.Common.DataContracts" elementFormDefault="qualified"
+    xmlns="FCT.LLC.Common.DataContracts"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+   <xs:complexType name="BuilderLegalDescription">
+      <xs:sequence>
+         <xs:element name="BuilderLegalDescriptionID" type="xs:int" nillable="true" />
+         <xs:element name="BuilderProjectReference" type="xs:string" />
+         <xs:element name="BuilderLot" type="xs:string" />
+         <xs:element name="Lot" type="xs:string" />
+         <xs:element name="Plan" type="xs:string" />
+         <xs:element name="BuilderUnitsLevels" type="BuilderUnitLevelCollection" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="BuilderUnitLevelCollection">
+      <xs:sequence >
+         <xs:element name="BuilderUnitLevel" type="BuilderUnitLevel" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="BuilderUnitLevel">
+      <xs:sequence>
+         <xs:element name="BuilderUnitLevelID" type="xs:int" nillable="true" />
+         <xs:element name="Unit" type="xs:string" />
+         <xs:element name="Level" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ContactCollection">
+      <xs:sequence>
+         <xs:element name="Contact" type="Contact" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Contact">
+      <xs:sequence>
+         <xs:element name="ContactID" type="xs:int" />
+         <xs:element name="FirstName" type="xs:string" />
+         <xs:element name="LastName" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Deal">
+      <xs:sequence>
+         <xs:element name="DealID" type="xs:int" />
+         <xs:element name="DealFCTURN" type="xs:string" />
+         <xs:element name="DealScopeFCTURN" type="xs:string" />
+         <xs:element name="DealType" type="xs:string" />
+         <xs:element name="DealStatus" type="xs:string" />
+         <xs:element name="Lender" type="Lender" />
+         <xs:element name="LenderRefNumber" type="xs:string" />
+         <xs:element name="Lawyer" type="Lawyer" />
+         <xs:element name="LawyerApplication" type="xs:string" />
+         <xs:element name="LawyerFileNumber" type="xs:string" />
+         <xs:element name="ClosingDate" type="xs:dateTime" />
+         <xs:element name="BusinessModel" type="xs:string" />
+         <xs:element name="Property" type="Property" />
+         <xs:element name="Mortgagors" type="MortgagorCollection" />
+         <xs:element name="Mortgage" type="Mortgage" />
+         <xs:element name="LawyerActingFor" type="xs:string" />
+         <xs:element name="HasAmendments" type="xs:boolean" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="DealFundsAllocationCollection">
+      <xs:sequence>
+         <xs:element name="DealFundsAllocation" type="DealFundsAllocation" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="DealFundsAllocation">
+      <xs:sequence>
+         <!-- This type requires Version member -->
+         <xs:element name="DealFundsAllocationID" type="xs:int" nillable="true" />
+         <xs:element name="ReferenceNumber" type="xs:string" />
+         <xs:element name="Amount" type="xs:decimal" />
+         <xs:element name="DepositDate" type="xs:dateTime" nillable="true" />
+         <xs:element name="BankNumber" type="xs:string" />
+         <xs:element name="BranchNumber" type="xs:string" />
+         <xs:element name="AccountNumber" type="xs:string" />
+         <xs:element name="WireDepositDetails" type="xs:string" />
+         <xs:element name="FundingDealID" type="xs:int" nillable="true" />
+         <xs:element name="LawyerID" type="xs:int" nillable="true" />
+         <xs:element name="LawyerName" type="xs:string" />
+         <xs:element name="AllocationStatus" type="xs:string" />
+         <xs:element name="RecordType" type="xs:string" />
+         <xs:element name="TrustAccountID" type="xs:int" nillable="true"/>
+         <xs:element name="Fee" type="Fee"/>
+         <xs:element name="Reconciled" type="xs:dateTime" nillable="true" />
+         <xs:element name="ReconciledBy" type="xs:string" />
+         <xs:element name="PaymentOriginatorName" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="DisbursementCollection">
+      <xs:sequence>
+         <xs:element name="Disbursement" type="Disbursement" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Disbursement">
+      <xs:sequence>
+         <!-- This type requires Version member -->
+         <xs:element name="DisbursementID" type="xs:int" nillable="true"/>
+         <xs:element name="FundingDealID" type="xs:int" />
+         <xs:element name="PayeeID" type="xs:int" nillable="true" />
+         <xs:element name="PayeeType" type="xs:string" />
+         <xs:element name="PayeeName" type="xs:string" />
+         <xs:element name="PayeeComments" type="xs:string" />
+         <xs:element name="Amount" type="xs:decimal" />
+         <xs:element name="PaymentMethod" type="xs:string" />
+         <xs:element name="NameOnCheque" type="xs:string" />
+         <xs:element name="UnitNumber" type="xs:string" />
+         <xs:element name="StreetNumber" type="xs:string" />
+         <xs:element name="StreetAddress1" type="xs:string" />
+         <xs:element name="StreetAddress2" type="xs:string" />
+         <xs:element name="City" type="xs:string" />
+         <xs:element name="Province" type="xs:string" />
+         <xs:element name="PostalCode" type="xs:string" />
+         <xs:element name="Country" type="xs:string" />
+         <xs:element name="ReferenceNumber" type="xs:string" />
+         <xs:element name="AssessmentRollNumber" type="xs:string" />
+         <xs:element name="TrustAccountID" type="xs:int" nillable="true"/>
+         <xs:element name="BankNumber" type="xs:string" />
+         <xs:element name="BranchNumber" type="xs:string" />
+         <xs:element name="AccountNumber" type="xs:string" />
+         <xs:element name="Instructions" type="xs:string" />
+         <xs:element name="AgentFirstName" type="xs:string" />
+         <xs:element name="AgentLastName" type="xs:string" />
+         <xs:element name="AccountAction" type="xs:string" />
+         <xs:element name="DisbursementComment" type="xs:string" />
+         <xs:element name="DisbursementStatus" type="xs:string" />
+         <xs:element name="ChainDealID" type="xs:int" nillable="true" />
+         <xs:element name="Action" type="CRUDAction" />
+         <xs:element name="FCTFeeSplit" type="xs:string" />
+         <xs:element name="VendorFee" type="Fee" />
+         <xs:element name="PurchaserFee" type="Fee" />
+         <xs:element name="Reconciled" type="xs:dateTime" nillable="true" />
+         <xs:element name="PaymentReferenceNumber" type="xs:string" />
+         <xs:element name="AccountHolderName" type="xs:string" />
+         <xs:element name="Token" type="xs:string" />
+         <xs:element name="DisbursedAmount" type="xs:decimal" nillable="true" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="CRUDAction">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="None"/>
+         <xs:enumeration value="Create"/>
+         <xs:enumeration value="Read"/>
+         <xs:enumeration value="Update"/>
+         <xs:enumeration value="Delete"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="DisbursementSummary">
+      <xs:sequence>
+         <!-- This type requires Version member -->
+         <xs:element name="DisbursementSummaryID" type="xs:int" />
+         <xs:element name="FundingDealID" type="xs:int" />
+         <xs:element name="WireDepositDetails" type="xs:string" />
+         <xs:element name="RequiredDepositAmount" type="xs:decimal" />
+         <xs:element name="DepositAmountReceived" type="xs:decimal" />
+         <xs:element name="FundingMilestone" type="FundingMilestone" />
+         <xs:element name="Comments" type="xs:string" />
+         <xs:element name="FCTURN" type="xs:string" />
+         <xs:element name="DealFCTURN" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Fee">
+      <xs:sequence>
+         <xs:element name="FeeID" type="xs:int" nillable="true" />
+         <xs:element name="Amount" type="xs:decimal" />
+         <xs:element name="HST" type="xs:decimal" />
+         <xs:element name="GST" type="xs:decimal" />
+         <xs:element name="QST" type="xs:decimal" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="FundingDeal">
+      <xs:sequence>
+         <xs:element name="DealID" type="xs:int" nillable="true" />
+         <xs:element name="FCTURN" type="xs:string" />
+         <xs:element name="DealFCTURN" type="xs:string" />
+         <xs:element name="DealType" type="xs:string" />
+         <xs:element name="DealStatus" type="xs:string" />
+         <xs:element name="Lawyer" type="Lawyer" />
+         <xs:element name="LawyerFileNumber" type="xs:string" />
+         <xs:element name="ActingFor" type="xs:string" />
+         <xs:element name="OtherLawyer" type="Lawyer" />
+         <xs:element name="OtherLawyerFileNumber" type="xs:string" />
+         <xs:element name="OtherLawyerDealStatus" type="xs:string" />
+         <xs:element name="ClosingDate" type="xs:dateTime" nillable="true" />
+         <xs:element name="BusinessModel" type="xs:string" />
+         <xs:element name="Property" type="Property" />
+         <xs:element name="Mortgagors" type="MortgagorCollection" />
+         <xs:element name="Vendors" type="VendorCollection" />
+         <xs:element name="WireDepositDetails" type="xs:string" />
+         <xs:element name="HasAmendments" type="xs:boolean" />
+         <xs:element name="LawyerApplication" type="xs:string" />
+         <xs:element name="PrimaryDealContact" type="Contact" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="FundingMilestone">
+      <xs:sequence>
+         <xs:element name="PayoutSent" type="xs:dateTime" nillable="true" />
+         <xs:element name="Disbursed" type="xs:dateTime" nillable="true" />
+         <xs:element name="Funded" type="xs:dateTime" nillable="true"  />
+         <xs:element name="InvitationAccepted" type="xs:dateTime" nillable="true" />
+         <xs:element name="InvitationSent" type="xs:dateTime" nillable="true" />
+         <xs:element name="SignedByVendor" type="xs:dateTime" nillable="true" />
+         <xs:element name="SignedByPurchaser" type="xs:dateTime" nillable="true" />
+         <xs:element name="SignedByVendorName" type="xs:string" />
+         <xs:element name="SignedByPurchaserName" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Lawyer">
+      <xs:sequence>
+         <xs:element name="LawyerID" type="xs:int" />
+         <xs:element name="FirstName" type="xs:string" />
+         <xs:element name="LastName" type="xs:string" />
+         <xs:element name="LawFirm" type="xs:string" />
+         <xs:element name="Phone" type="xs:string" />
+         <xs:element name="DealContacts" type="ContactCollection" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Lender">
+      <xs:sequence>
+         <xs:element name="LenderID" type="xs:int" />
+         <xs:element name="LenderCode" type="xs:string" />
+         <xs:element name="LenderName" type="xs:string" />
+         <xs:element name="ContactName" type="xs:string" />
+         <xs:element name="Phone" type="xs:string" />
+         <xs:element name="Fax" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="MilestoneCollection">
+      <xs:sequence >
+         <xs:element name="Milestone" type="Milestone" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Milestone">
+      <xs:sequence>
+         <xs:element name="MilestoneName" type="xs:string" />
+         <xs:element name="CompletedDate" type="xs:dateTime" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Mortgage">
+      <xs:sequence>
+         <xs:element name="MortgageAmount" type="xs:decimal" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="MortgagorCollection">
+      <xs:sequence >
+         <xs:element name="Mortgagor" type="Mortgagor" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Mortgagor">
+      <xs:sequence>
+         <xs:element name="MortgagorID" type="xs:int" nillable="true" />
+         <xs:element name="MortgagorType" type="xs:string" />
+         <xs:element name="FirstName" type="xs:string" />
+         <xs:element name="MiddleName" type="xs:string" />
+         <xs:element name="LastName" type="xs:string" />
+         <xs:element name="CompanyName" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="OrderByDirection">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="ASC"/>
+         <xs:enumeration value="DESC"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="PinCollection">
+      <xs:sequence >
+         <xs:element name="Pin" type="Pin" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Pin">
+      <xs:sequence>
+         <xs:element name="PinID" type="xs:int" nillable="true" />
+         <xs:element name="PINNumber" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Property">
+      <xs:sequence>
+         <xs:element name="PropertyID" type="xs:int" nillable="true" />
+         <xs:element name="UnitNumber" type="xs:string" />
+         <xs:element name="StreetNumber" type="xs:string" />
+         <xs:element name="Address" type="xs:string" />
+         <xs:element name="Address2" type="xs:string" />
+         <xs:element name="City" type="xs:string" />
+         <xs:element name="Province" type="xs:string" />
+         <xs:element name="PostalCode" type="xs:string" />
+         <xs:element name="Country" type="xs:string" />
+         <xs:element name="Pins" type="PinCollection" />
+         <xs:element name="BuilderLegalDescription" type="BuilderLegalDescription" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ReconciliationCollection">
+      <xs:sequence>
+         <xs:element name="ReconciliationItem" type="ReconciliationItem" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ReconciliationItem">
+      <xs:sequence>
+         <xs:element name="ItemID" type="xs:int" />
+         <xs:element name="BatchNumber" type="xs:string" />
+         <xs:element name="TransactionDate" type="xs:string" />
+         <xs:element name="FCTURN" type="xs:string" />
+         <xs:element name="TransactionType" type="xs:string" />
+         <xs:element name="ReferenceNumber" type="xs:string" />
+         <xs:element name="AmountIn" type="xs:decimal" nillable="true" />
+         <xs:element name="AmountOut" type="xs:decimal" nillable="true" />
+         <xs:element name="Reconciled" type="xs:boolean" />
+         <xs:element name="ItemType" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="VendorCollection">
+      <xs:sequence >
+         <xs:element name="Vendor" type="Vendor" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Vendor">
+      <xs:sequence>
+         <xs:element name="VendorID" type="xs:int" nillable="true" />
+         <xs:element name="VendorType" type="xs:string" />
+         <xs:element name="FirstName" type="xs:string" />
+         <xs:element name="MiddleName" type="xs:string" />
+         <xs:element name="LastName" type="xs:string" />
+         <xs:element name="CompanyName" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="UserContext">
+      <xs:sequence>
+         <xs:element name="UserID" type="xs:string" />
+         <xs:element name="UserType" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

@@ -1,0 +1,10 @@
+﻿<!-- The question text -->
+<div *ngIf="question">
+    <span [innerHTML]="question.label"></span>
+
+    <!-- Each answertype will be reprensented by a FormGroup -->
+    <span *ngFor="let answertype of question.AnswerTypes; let i = index">
+        <br *ngIf="i == 0" />
+        <answertype [answertype]="answertype" [form]="form"></answertype>
+    </span>
+</div>

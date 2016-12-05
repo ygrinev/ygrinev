@@ -1,0 +1,40 @@
+﻿<div class="box2" [style.width.%]="getTotalColumnWidth()">
+    <strong style="color:#73243D">{{title}}</strong><br />
+    <span *ngIf="this.documents.length">
+        <b>&nbsp;&nbsp;&nbsp;Actions:</b>
+        <a href="javascript:void(0)" [class.disabled]="true" *ngIf="showRegenerate">Regenerate</a><span *ngIf="showRegenerate">|</span>
+        <a href="javascript:void(0)" [class.disabled]="!selectedDocument" *ngIf="showUpload">Upload</a><span *ngIf="showUpload">&nbsp;|</span>
+        <a href="javascript:void(0)" [class.disabled]="true" *ngIf="showSubmit">Submit</a><span *ngIf="showSubmit">&nbsp;|</span>
+        <a href="javascript:void(0)" [class.disabled]="!selectedDocument">View</a>
+        <span *ngIf="showDownload">|&nbsp;</span><a href="javascript:void(0)" [class.disabled]="!selectedDocument" *ngIf="showDownload">Download</a> 
+        <span *ngIf="showPublishToOther">|&nbsp;</span><a href="javascript:void(0)" [class.disabled]="true" *ngIf="showPublishToOther">Publish to Other Lawyer/Notary</a>
+    </span>
+    <span *ngIf="!this.documents.length">
+        &nbsp;&nbsp;&nbsp;No documents are available.
+        <br />
+    </span>    <!-- /.box-header -->
+    <div class="box-body" *ngIf="this.documents.length">
+        <table class="table table-bordered table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th [style.width.%]="DescriptionColumnWidth"><a href="javascript:void(0);">Description</a></th>
+                    <th [style.width.%]="TypeColumnWidth"><a href="javascript:void(0);">Type</a></th>
+                    <th *ngIf="showDateModified" [style.width.%]="DateModifiedColumnWidth"><a href="javascript:void(0);">Date Modified</a></th>
+                    <th *ngIf="showStatus" [style.width.%]="StatusColumnWidth"><a href="javascript:void(0);">Status</a></th>
+                    <th *ngIf="showDatePublished" [style.width.%]="DatePublishedColumnWidth"><a href="javascript:void(0);">Date Published</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr [class.selected]="document === selectedDocument" *ngFor="let document of this.documents" (click)="onClickDocument(document);">
+                    <td>{{document.Value}}</td>
+                    <td>{{document.BusinessModel}}</td>
+                    <td *ngIf="showDateModified">{{document.LastModifiedDate | date: 'mediumDate' }}{{document.LastModifiedDate | date: 'shortTime' }}</td>
+                    <td *ngIf="showStatus">Created</td>
+                    <td *ngIf="showDatePublished">{{document.PublishedDate | date: 'mediumDate' }}{{document.PublishedDate | date: 'shortTime' }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- /.box-body -->
+</div>
+

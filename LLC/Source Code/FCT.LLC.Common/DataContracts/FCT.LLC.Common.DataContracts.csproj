@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{388B5855-21E9-4EFA-BE79-6CCB9A55C5A4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FCT.LLC.Common.DataContracts</RootNamespace>
+    <AssemblyName>FCT.LLC.Common.DataContracts</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PifAnswer.cs" />
+    <Compile Include="PifAnswerType.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="DataAccessException.cs" />
+    <Compile Include="DataContracts.cs" />
+    <Compile Include="InValidDealException.cs" />
+    <Compile Include="Mortgagor.cs" />
+    <Compile Include="DisbursementSummary.cs" />
+    <Compile Include="ErrorConstants.cs" />
+    <Compile Include="Pin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Disbursement.cs" />
+    <Compile Include="PifQuestion.cs" />
+    <Compile Include="ValidationException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AcceptDealRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AssignFundingDealRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CalculateFCTFeeRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CalculateFCTFeeResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CancelDealRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CreateConfirmationLettersRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CreatePayoutLetterRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataContractTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DeclineDealRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DeleteDraftDealRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DisburseFundsRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DisburseFundsResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetDealHistoryRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetDealHistoryResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetDealRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetDealResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetDisbursementsRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetDisbursementsResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetFundingDealRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetFundingDealResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetMilestonesRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetMilestonesResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetNotesRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetNotesResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetPayoutLetterDateRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetPayoutLetterDateResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetPayoutLettersWorklistRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetPayoutLettersWorklistResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetPendingFundsReturnRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetPendingFundsReturnResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetReconciliationWorklistRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetReconciliationWorklistResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaveDisbursementsRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaveDisbursementsResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaveFundingDealRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaveFundingDealResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SavePayoutCommentsRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SavePayoutSentDateRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SavePendingFundsReturnRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaveReconciliationRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SearchDealRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SearchDealResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SearchFundsAllocationRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SearchFundsAllocationResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SignDealRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SyncFundingDealDataRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnsignDealRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateDealStatusRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateFundsAllocationRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /Y/R "$(TargetPath)" "$(TargetDir)..\..\..\..\..\Binaries\FCT.LLC.Common\*.*"
+xcopy /Y/R "$(TargetPath)" "$(TargetDir)..\..\..\..\..\..\EPS\Binaries\FCT.LLC.BusinessService\*.*"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<build>
+  <tools>
+    <tool name="tf.exe" varname="tf_path">C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\tf.exe</tool>
+    <tool name="msbuild.exe" varname="msbuild_path">C:\Program Files (x86)\MSBuild\12.0\Bin\msbuild.exe</tool>
+    <tool name="AsmInfoUpdater.exe" varname="asminfoupdater_path">D:\TFS\Tools\AsmInfoUpdater.exe</tool>
+    <tool name="ConsM.exe" varname="consm_path">D:\TFS\Tools\ConsM.exe</tool>
+    <tool name="CopyValidator.exe" varname="copyvalidator_path">D:\TFS\Tools\CopyValidator.exe</tool>
+    <tool name="IsCmdBld.exe" varname="iscmdbld_path">C:\Program Files (x86)\InstallShield\2014 SAB\System\IsCmdBld.exe</tool>
+    <tool name="ReportLogger.exe" varname="reportlogger_path">D:\TFS\Tools\ReportLogger.exe</tool>
+  </tools>
+  <roots>
+    <root name="local_path_solution">D:\TFS\LLC-EF Lite\LLC\Source Code\FCT.LLC.BusinessService</root>
+    <root name="local_path_binaries">D:\TFS\LLC-EF Lite\LLC\Binaries</root>
+    <root name="local_path_apd">D:\TFS\APD\Packaging\LLC\FCT.LLC.BusinessService\Version 2.0-LLCLite</root>
+  </roots>
+  <unitofbuild name="FCT.LLC.BusinessService">
+    <solution name="FCT.LLC.BusinessService.sln">
+      <location>%local_path_solution%\FCT.LLC.BusinessService.sln</location>
+
+    </solution>
+    <apd name="FCT.LLC.BusinessService.ism">
+      <ismproject>%local_path_apd%\IS Project\FCT.LLC.BusinessService</ismproject>
+      <xcopy>
+        <from>%local_path_apd%\IS Project\FCT.LLC.BusinessService\Product Configuration 1\Release 1\DiskImages\DISK1\FCT.LLC.BusinessService.msi</from>
+        <to>%local_path_apd%\Release\FCT.LLC.BusinessService.msi</to>
+      </xcopy>
+    </apd>
+  </unitofbuild>
+</build>

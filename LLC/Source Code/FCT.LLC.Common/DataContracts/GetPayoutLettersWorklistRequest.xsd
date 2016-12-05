@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GetPayoutLettersWorklistRequest"
+    targetNamespace="FCT.LLC.Common.DataContracts" elementFormDefault="qualified"
+    xmlns="FCT.LLC.Common.DataContracts"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+   <xs:include schemaLocation="DataContractTypes.xsd"/>
+
+   <xs:element name="GetPayoutLettersWorklistRequest">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="ChequeBatchNumber" type="xs:string" />
+            <xs:element name="PageIndex" type="xs:int" />
+            <xs:element name="PageSize" type="xs:int" />
+            <xs:element name="OrderBySpecifications" type="PayoutLetterWorklistOrderBySpecificationCollection" />
+            <xs:element name="UserContext" type="UserContext" />
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:simpleType name="PayoutLetterWorklistOrderByColumn">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="FCTURN"/>
+         <xs:enumeration value="DisbursementDate"/>
+         <xs:enumeration value="NumberOfCheques"/>
+         <xs:enumeration value="BatchNumber"/>
+         <xs:enumeration value="BatchDescription"/>
+         <xs:enumeration value="AssignedTo"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="PayoutLetterWorklistOrderBySpecificationCollection">
+      <xs:sequence>
+         <xs:element name="OrderBySpecification" type="PayoutLetterWorklistOrderBySpecification" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="PayoutLetterWorklistOrderBySpecification">
+      <xs:sequence>
+         <xs:element name="OrderByColumn" type="PayoutLetterWorklistOrderByColumn" />
+         <xs:element name="OrderByDirection" type="OrderByDirection" />
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

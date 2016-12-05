@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<License>
+  <Data>
+    <LicensedTo>First Canadian Title</LicensedTo>
+    <LicenseType>Developer OEM Subscription</LicenseType>
+    <LicenseNote>Limited to 1 developer.</LicenseNote>
+    <OrderID>091126095212</OrderID>
+    <OEM>This is a redistributable license</OEM>
+    <Products>
+      <Product>Aspose.Words</Product>
+    </Products>
+    <EditionType>Enterprise</EditionType>
+    <SerialNumber>552b1114-0d8f-4ee9-b5e0-4f83203542a7</SerialNumber>
+    <SubscriptionExpiry>20101126</SubscriptionExpiry>
+    <LicenseVersion>2.2</LicenseVersion>
+  </Data>
+  <Signature>ocgDNBxml0/lFzkWOSypq5u7+7u5Eoiw0vckpAwDXZdgxM7qHef2gjiZmMhiwekzOWJQp5NhST56KVfsvUD41ArI3Fo2DlgKyqpqfFYpiyzGkN3G5QZ8YR5/zAzKyX0Z8qq8C7Og6U4KXyoV1MoDOFagl5debDxTFGZdYbr3NyM=</Signature>
+</License>

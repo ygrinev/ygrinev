@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DEB240A-C32B-4E65-B651-84D4ECD0C763}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FCT.LLC.BusinessService.UnitTests</RootNamespace>
+    <AssemblyName>FCT.LLC.BusinessService.UnitTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\EntityFramework.6.1.3\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\EntityFramework.6.1.3\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.EPS.PayeeService.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\FCT.EPS.Common\FCT.EPS.PayeeService.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.EPS.PayeeService.DataContracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\FCT.EPS.Common\FCT.EPS.PayeeService.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.EPS.PaymentService.Contracts">
+      <HintPath>..\..\..\Binaries\FCT.EPS.Common\FCT.EPS.PaymentService.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.EPS.PaymentService.DataContracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\FCT.EPS.Common\FCT.EPS.PaymentService.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.EPS.PaymentTrackingService.DataContracts">
+      <HintPath>..\..\..\Binaries\FCT.EPS.Common\FCT.EPS.PaymentTrackingService.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.Common.DataContracts">
+      <HintPath>..\..\..\Binaries\FCT.LLC.Common\FCT.LLC.Common.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.GenericRepository, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\FCT.LLC.Common\FCT.LLC.GenericRepository.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\FCT.LLC.Common\FCT.LLC.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Services.AuditLog.DataContracts.DataContracts">
+      <HintPath>..\..\..\Binaries\FCT.AuditLog\FCT.Services.AuditLog.DataContracts.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Services.AuditLog.MessageContracts.MessageContracts">
+      <HintPath>..\..\..\Binaries\FCT.AuditLog\FCT.Services.AuditLog.MessageContracts.MessageContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Services.AuditLog.ServiceContracts.ServiceContracts">
+      <HintPath>..\..\..\Binaries\FCT.AuditLog\FCT.Services.AuditLog.ServiceContracts.ServiceContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Services.LIM.DataContracts.DataContracts, Version=4.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\FCT.LIM.Contracts\FCT.Services.LIM.DataContracts.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Services.LIM.FaultContracts.FaultContracts">
+      <HintPath>..\..\..\Binaries\FCT.LIM.Contracts\FCT.Services.LIM.FaultContracts.FaultContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Services.LIM.MessageContracts.MessageContracts, Version=4.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\FCT.LIM.Contracts\FCT.Services.LIM.MessageContracts.MessageContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Services.LIM.ServiceContracts.ServiceContracts, Version=4.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\FCT.LIM.Contracts\FCT.Services.LIM.ServiceContracts.ServiceContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Moq">
+      <HintPath>..\..\..\Binaries\Moq\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\Binaries\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise />
+  </Choose>
+  <ItemGroup>
+    <Compile Include="ArgumentsFactory.cs" />
+    <Compile Include="BusinessLogic Tests\DealAmendmentsCheckerTests.cs" />
+    <Compile Include="BusinessLogic Tests\PaymentReportDetailsCollectorTest.cs" />
+    <Compile Include="BusinessLogic Tests\PaymentRequestConverterTests.cs" />
+    <Compile Include="BusinessLogic Tests\PaymentServiceMapperTests.cs" />
+    <Compile Include="BusinessLogic Tests\SignDealHelperTests.cs" />
+    <Compile Include="BusinessLogic Tests\CreateConfirmationLettersTest.cs" />
+    <Compile Include="BusinessLogic Tests\UpdateDealStatusTest.cs" />
+    <Compile Include="BusinessLogic Tests\ValidationHelperTests.cs" />
+    <Compile Include="BusinessLogic Tests\VarianceCheckerTest.cs" />
+    <Compile Include="ByteConverter.cs" />
+    <Compile Include="BusinessLogic Tests\FeeCalculatorTests.cs" />
+    <Compile Include="Repository Tests\BuilderLegalDescriptionRepositoryTest.cs" />
+    <Compile Include="Repository Tests\BuilderUnitLevelRepositoryTest.cs" />
+    <Compile Include="Repository Tests\DealDocumentTypeRepositoryTests.cs" />
+    <Compile Include="Repository Tests\DealFundsAllocationRepositoryTests.cs" />
+    <Compile Include="BusinessLogic Tests\VendorLawyerHelperTests.cs" />
+    <Compile Include="BusinessLogic Tests\FundingBusinessLogicTests.cs" />
+    <Compile Include="BusinessLogic Tests\DealFundAllocationTest.cs" />
+    <Compile Include="Repository Tests\DealSearchRepositoryTests.cs" />
+    <Compile Include="Repository Tests\DisbursementDealDocumentTypeRepositoryTests.cs" />
+    <Compile Include="Repository Tests\DisbursementRepositoryTests.cs" />
+    <Compile Include="Repository Tests\DocumentTypeRepositoryTests.cs" />
+    <Compile Include="Repository Tests\FeeRepositoryTests.cs" />
+    <Compile Include="Repository Tests\FundingDealRepositoryTests.cs" />
+    <Compile Include="BusinessLogic Tests\FundsAllocBusinessLogicTests.cs" />
+    <Compile Include="Repository Tests\MortgagorRepositoryTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BusinessLogic Tests\DealSearchTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\FCT.LLC.BusinessService.BusinessLogic.csproj">
+      <Project>{87472f5c-742f-486f-aae5-999bc8fe7af0}</Project>
+      <Name>FCT.LLC.BusinessService.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contracts\FCT.LLC.BusinessService.Contracts.csproj">
+      <Project>{401b1620-75f5-4be9-8d4b-f5488e1c4713}</Project>
+      <Name>FCT.LLC.BusinessService.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\FCT.LLC.BusinessService.DataAccess.csproj">
+      <Project>{a912f9c8-e071-4594-bd41-545d3bf9d9fb}</Project>
+      <Name>FCT.LLC.BusinessService.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\FCT.LLC.BusinessService.Entities.csproj">
+      <Project>{b132a7f1-d3a7-4b0a-adc5-74fc0755f0d0}</Project>
+      <Name>FCT.LLC.BusinessService.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

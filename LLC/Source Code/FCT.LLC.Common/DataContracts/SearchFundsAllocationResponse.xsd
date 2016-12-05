@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SearchFundsAllocationResponse"
+    targetNamespace="FCT.LLC.Common.DataContracts" elementFormDefault="qualified"
+    xmlns="FCT.LLC.Common.DataContracts"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+   <xs:include schemaLocation="DataContractTypes.xsd"/>
+
+   <xs:element name="SearchFundsAllocationResponse">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="PageIndex" type="xs:int" />
+            <xs:element name="TotalRowsCount" type="xs:int" />
+            <xs:element name="SearchResults" type="DealFundsAllocationCollection" />
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>

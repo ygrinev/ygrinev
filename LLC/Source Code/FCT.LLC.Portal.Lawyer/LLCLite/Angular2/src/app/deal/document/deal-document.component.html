@@ -1,0 +1,37 @@
+﻿<deal-header></deal-header>
+<deal-left-nav [deal]="model"></deal-left-nav>
+<!-- Content Wrapper. Contains page content -->
+<dashboard>
+    <section class="content-header">
+        <h1>Manage Documents</h1>
+        <div>
+            <b><a href="javascript:void(0)">Create</a> | <a href="javascript:void(0)">Upload</a></b>
+        </div>
+        <div>
+            <br />
+        </div>
+        <div *ngIf="documents && docLists">
+            <div [class.selected]="document === selectedDocument" *ngFor="let docList of docLists">
+                <deal-doc-grid [title]="docList.title" 
+                               [documents]="docList.docs" 
+                               [showRegeneration]="docList.showRegenerate" 
+                               [showSubmit]="docList.showSubmit" 
+                               [showUpload]="docList.showUpload" 
+                               [showStatus]="docList.showStatus" 
+                               [showDateModified]="docList.showDateModified" 
+                               [showDatePublished]="docList.showDatePublished" 
+                               [showPublishToOther]="docList.showPublishToOther" 
+                               [showDownload]="docList.showDownload" >
+                </deal-doc-grid>
+            </div>
+        </div>
+    </section>
+</dashboard>
+<!--
+    @Input() showRegenerate: boolean = false;
+    @Input() showSubmit: boolean = false;
+    @Input() showUpload: boolean = false;
+    @Input() showDownload: boolean = false;
+    @Input() showDateModified: boolean = false;
+    @Input() showStatus: boolean = false;
+    -->

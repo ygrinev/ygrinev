@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A912F9C8-E071-4594-BD41-545D3BF9D9FB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FCT.LLC.BusinessService.DataAccess</RootNamespace>
+    <AssemblyName>FCT.LLC.BusinessService.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\Autofac\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\EntityFramework.6.1.3\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\EntityFramework.6.1.3\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.EPS.PaymentTrackingService.DataContracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\FCT.EPS.Common\FCT.EPS.PaymentTrackingService.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.Common.DataContracts">
+      <HintPath>..\..\..\Binaries\FCT.LLC.Common\FCT.LLC.Common.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.GenericRepository, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\FCT.LLC.Common\FCT.LLC.GenericRepository.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.LLC.Logging">
+      <HintPath>..\..\..\Binaries\FCT.LLC.Common\FCT.LLC.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="FCT.Services.LIM.DataContracts.DataContracts">
+      <HintPath>..\..\..\Binaries\FCT.LIM.Contracts\FCT.Services.LIM.DataContracts.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\EnterpriseLibrary.6\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Allocation.cs" />
+    <Compile Include="DealContactDetails.cs" />
+    <Compile Include="DataAccessResolverModule.cs" />
+    <Compile Include="DealDetails.cs" />
+    <Compile Include="DealDocumentType.cs" />
+    <Compile Include="DealHistoryDescriptors.cs" />
+    <Compile Include="DealHistoryHelper.cs" />
+    <Compile Include="DealScope.cs" />
+    <Compile Include="DisbursementDealDocumentType.cs" />
+    <Compile Include="DisbursementFee.cs" />
+    <Compile Include="DisbursementHistory.cs" />
+    <Compile Include="DocumentType.cs" />
+    <Compile Include="Implementations\ApplicationLocker.cs" />
+    <Compile Include="Implementations\CancelDealRepository.cs" />
+    <Compile Include="Implementations\DealDocumentTypeRepository.cs" />
+    <Compile Include="Implementations\DisbursementDealDocumentTypeRepository.cs" />
+    <Compile Include="Implementations\DocumentTypeRepository.cs" />
+    <Compile Include="Implementations\PaymentNotificationRepository.cs" />
+    <Compile Include="Implementations\PaymentRequestRepository.cs" />
+    <Compile Include="Implementations\PayoutLetterWorklistRepository.cs" />
+    <Compile Include="Implementations\PifAnswerRepository.cs" />
+    <Compile Include="Implementations\PifAnswerTypeRepository.cs" />
+    <Compile Include="Implementations\PifQuestionRepository.cs" />
+    <Compile Include="Implementations\ReconciliationItemsRepository.cs" />
+    <Compile Include="Implementations\BuilderUnitLevelRepository.cs" />
+    <Compile Include="Implementations\BuilderLegalDescriptionRepository.cs" />
+    <Compile Include="Interfaces\IBuilderLegalDescriptionRepository.cs" />
+    <Compile Include="Interfaces\IBuilderUnitLevelRepository.cs" />
+    <Compile Include="Interfaces\IDealDocumentTypeRepository.cs" />
+    <Compile Include="Interfaces\IDisbursementDealDocumentTypeRepository.cs" />
+    <Compile Include="Interfaces\IDocumentTypeRepository.cs" />
+    <Compile Include="Interfaces\IPaymentNotificationRepository.cs" />
+    <Compile Include="Interfaces\IPaymentRequestRepository.cs" />
+    <Compile Include="Interfaces\IPayoutLetterWorklistRepository.cs" />
+    <Compile Include="Interfaces\IApplicationLocker.cs" />
+    <Compile Include="Interfaces\IPifAnswerRepository.cs" />
+    <Compile Include="Interfaces\IPifQuestionRepository.cs" />
+    <Compile Include="Interfaces\IPifAnswerTypeRepository.cs" />
+    <Compile Include="Interfaces\IReconciliationItemsRepository.cs" />
+    <Compile Include="LLCDeal.cs" />
+    <Compile Include="Lookup.cs" />
+    <Compile Include="Implementations\DisbursementRepository.cs" />
+    <Compile Include="Implementations\DisbursementSummaryRepository.cs" />
+    <Compile Include="FundedDeal.cs" />
+    <Compile Include="Implementations\DealFundsAllocRepository.cs" />
+    <Compile Include="Implementations\FeeRepository.cs" />
+    <Compile Include="Implementations\FundedRepository.cs" />
+    <Compile Include="Implementations\GlobalizationRepository.cs" />
+    <Compile Include="Interfaces\IDealFundsAllocRepository.cs" />
+    <Compile Include="Implementations\DealHistoryRepository.cs" />
+    <Compile Include="Implementations\DealRepository.cs" />
+    <Compile Include="Implementations\DealSearchRepository.cs" />
+    <Compile Include="Interfaces\IDealHistoryRepository.cs" />
+    <Compile Include="Interfaces\IDealRepository.cs" />
+    <Compile Include="Interfaces\IDealSearchRepository.cs" />
+    <Compile Include="Interfaces\IDisbursementRepository.cs" />
+    <Compile Include="Interfaces\IDisbursementSummaryRepository.cs" />
+    <Compile Include="Interfaces\IFeeRepository.cs" />
+    <Compile Include="Interfaces\IFundedRepository.cs" />
+    <Compile Include="Interfaces\IGlobalizationRepository.cs" />
+    <Compile Include="Interfaces\ILawyerRepository.cs" />
+    <Compile Include="Implementations\DealContactRepository.cs" />
+    <Compile Include="Implementations\DealScopeRepository.cs" />
+    <Compile Include="Implementations\FundingDealRepository.cs" />
+    <Compile Include="Interfaces\IDealContactRepository.cs" />
+    <Compile Include="Interfaces\IDealScopeRepository.cs" />
+    <Compile Include="Interfaces\IFundingDealRepository.cs" />
+    <Compile Include="IEntityMapper.cs" />
+    <Compile Include="Interfaces\IMortgageRepository.cs" />
+    <Compile Include="Interfaces\IMortgagorRepository.cs" />
+    <Compile Include="Interfaces\IPINRepository.cs" />
+    <Compile Include="Interfaces\IPropertyRepository.cs" />
+    <Compile Include="Interfaces\IVendorRepository.cs" />
+    <Compile Include="Implementations\LawyerRepository.cs" />
+    <Compile Include="LawyerProfile.cs" />
+    <Compile Include="Mappers\AnswerMapper.cs" />
+    <Compile Include="Mappers\AnswerTypeMapper.cs" />
+    <Compile Include="Mappers\BuilderLegalDescriptionMapper.cs" />
+    <Compile Include="Mappers\BuilderUnitLevelMapper.cs" />
+    <Compile Include="Mappers\ContactMapper.cs" />
+    <Compile Include="Mappers\DealDocumentTypeMapper.cs" />
+    <Compile Include="Mappers\DealMapper.cs" />
+    <Compile Include="Mappers\DisbursementDealDocumentTypeMapper.cs" />
+    <Compile Include="Mappers\DisbursementMapper.cs" />
+    <Compile Include="Mappers\DisbursementSummaryMapper.cs" />
+    <Compile Include="Mappers\DocumentTypeMapper.cs" />
+    <Compile Include="Mappers\EPSToLLCPaymentMapper.cs" />
+    <Compile Include="Mappers\FeeMapper.cs" />
+    <Compile Include="Mappers\FundedDealMapper.cs" />
+    <Compile Include="Mappers\FundsAllocationMapper.cs" />
+    <Compile Include="Mappers\LawyerMapper.cs" />
+    <Compile Include="Mappers\FundingDealMapper.cs" />
+    <Compile Include="Mappers\LenderMapper.cs" />
+    <Compile Include="Mappers\MapDealRelatedEntities.cs" />
+    <Compile Include="Mappers\MortgageMapper.cs" />
+    <Compile Include="Mappers\MortgagorMapper.cs" />
+    <Compile Include="Mappers\PaymentNotificationMapper.cs" />
+    <Compile Include="Mappers\PaymentRequestMapper.cs" />
+    <Compile Include="Mappers\PINMapper.cs" />
+    <Compile Include="Mappers\PropertyMapper.cs" />
+    <Compile Include="Mappers\QuestionMapper.cs" />
+    <Compile Include="Mappers\VendorMapper.cs" />
+    <Compile Include="MappingResolverModule.cs" />
+    <Compile Include="Implementations\MortgageRepository.cs" />
+    <Compile Include="Implementations\MortgagorRepository.cs" />
+    <Compile Include="Implementations\PINRepository.cs" />
+    <Compile Include="LLCPaymentRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Implementations\PropertyRepository.cs" />
+    <Compile Include="Implementations\VendorRepository.cs" />
+    <Compile Include="ProvinceTax.cs" />
+    <Compile Include="ReadOnlyDataHelper.cs" />
+    <Compile Include="UserHistory.cs" />
+    <Compile Include="Variance.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\FCT.LLC.BusinessService.Entities.csproj">
+      <Project>{b132a7f1-d3a7-4b0a-adc5-74fc0755f0d0}</Project>
+      <Name>FCT.LLC.BusinessService.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

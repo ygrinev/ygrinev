@@ -1,0 +1,41 @@
+﻿<deal-header></deal-header>
+<deal-left-nav [deal]="model"></deal-left-nav>
+<dashboard>
+    <section class="content-header">
+        <h1>
+            Deal History
+        </h1>
+        <!--<ol class="breadcrumb">
+            <li><a href="#/deal"><i class="fa fa-dashboard"></i> Deal</a></li>
+            <li class="active">Deal History</li>
+        </ol>-->
+    </section>
+    <div class="box" *ngIf='dealHistories && dealHistories.length'>
+        <!--<div class="box-header">
+            <h3 class="box-title">Deal History</h3>
+        </div>-->
+        <!-- /.box-header -->
+        <div class="box-body">
+            <table id="table_history" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th style="width: 120px"><a href="javascript: void(0);" (click)="sortDealHistoryByUser();">User Name</a></th>
+                        <th><a href="javascript: void(0);" (click)="sortDealHistoryByActivity();">Activity</a></th>
+                        <th style="width: 170px"><a href="javascript: void(0);" (click)="sortDealHistoryByDate();">Date</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let dealHistory of dealHistories'>
+                        <td>{{ setUserName(dealHistory) }}</td>
+                        <td>
+                            {{ dealHistory.Activity }}
+                        </td>
+                        <td>{{ dealHistory.LogDate | date: 'mediumDate' }} {{ dealHistory.LogDate | date: 'shortTime' }} ET</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- /.box-body -->
+    </div>
+</dashboard>
+

@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.LLC.BusinessService.Entities", "Entities\FCT.LLC.BusinessService.Entities.csproj", "{B132A7F1-D3A7-4B0A-ADC5-74FC0755F0D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.LLC.BusinessService.DataAccess", "DataAccess\FCT.LLC.BusinessService.DataAccess.csproj", "{A912F9C8-E071-4594-BD41-545D3BF9D9FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.LLC.BusinessService.BusinessLogic", "BusinessLogic\FCT.LLC.BusinessService.BusinessLogic.csproj", "{87472F5C-742F-486F-AAE5-999BC8FE7AF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.LLC.BusinessService.UnitTests", "UnitTests\FCT.LLC.BusinessService.UnitTests.csproj", "{3DEB240A-C32B-4E65-B651-84D4ECD0C763}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.LLC.BusinessService.Contracts", "Contracts\FCT.LLC.BusinessService.Contracts.csproj", "{401B1620-75F5-4BE9-8D4B-F5488E1C4713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClient", "TestClient\TestClient.csproj", "{B39AD26B-078E-4E1B-956B-DC6EF1BCBDE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.LLC.BusinessService", "Services\FCT.LLC.BusinessService.csproj", "{EAEE6CD6-BFD9-4826-A692-E61A905D802F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B132A7F1-D3A7-4B0A-ADC5-74FC0755F0D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B132A7F1-D3A7-4B0A-ADC5-74FC0755F0D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B132A7F1-D3A7-4B0A-ADC5-74FC0755F0D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B132A7F1-D3A7-4B0A-ADC5-74FC0755F0D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A912F9C8-E071-4594-BD41-545D3BF9D9FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A912F9C8-E071-4594-BD41-545D3BF9D9FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A912F9C8-E071-4594-BD41-545D3BF9D9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A912F9C8-E071-4594-BD41-545D3BF9D9FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87472F5C-742F-486F-AAE5-999BC8FE7AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87472F5C-742F-486F-AAE5-999BC8FE7AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87472F5C-742F-486F-AAE5-999BC8FE7AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87472F5C-742F-486F-AAE5-999BC8FE7AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DEB240A-C32B-4E65-B651-84D4ECD0C763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DEB240A-C32B-4E65-B651-84D4ECD0C763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{401B1620-75F5-4BE9-8D4B-F5488E1C4713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{401B1620-75F5-4BE9-8D4B-F5488E1C4713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{401B1620-75F5-4BE9-8D4B-F5488E1C4713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{401B1620-75F5-4BE9-8D4B-F5488E1C4713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B39AD26B-078E-4E1B-956B-DC6EF1BCBDE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B39AD26B-078E-4E1B-956B-DC6EF1BCBDE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAEE6CD6-BFD9-4826-A692-E61A905D802F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAEE6CD6-BFD9-4826-A692-E61A905D802F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAEE6CD6-BFD9-4826-A692-E61A905D802F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAEE6CD6-BFD9-4826-A692-E61A905D802F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.firstcdn.com:8080/tfs/main
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Entities\\FCT.LLC.BusinessService.Entities.csproj
+		SccProjectName1 = Entities
+		SccLocalPath1 = Entities
+		SccProjectUniqueName2 = DataAccess\\FCT.LLC.BusinessService.DataAccess.csproj
+		SccProjectName2 = DataAccess
+		SccLocalPath2 = DataAccess
+		SccProjectUniqueName3 = BusinessLogic\\FCT.LLC.BusinessService.BusinessLogic.csproj
+		SccProjectName3 = BusinessLogic
+		SccLocalPath3 = BusinessLogic
+		SccProjectUniqueName4 = UnitTests\\FCT.LLC.BusinessService.UnitTests.csproj
+		SccProjectName4 = UnitTests
+		SccLocalPath4 = UnitTests
+		SccProjectUniqueName5 = Contracts\\FCT.LLC.BusinessService.Contracts.csproj
+		SccProjectName5 = Contracts
+		SccLocalPath5 = Contracts
+		SccProjectUniqueName6 = TestClient\\TestClient.csproj
+		SccProjectName6 = TestClient
+		SccLocalPath6 = TestClient
+		SccProjectUniqueName7 = Services\\FCT.LLC.BusinessService.csproj
+		SccProjectName7 = Services
+		SccLocalPath7 = Services
+	EndGlobalSection
+EndGlobal

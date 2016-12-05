@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--XSLT VERSION 2012-08-13 11:00-->
+<project>
+  <settings>
+    <roots>
+      <!--When this file is used in the LAUNCH.[solution name].BAT context, the paths are taken from the parameters defined in the LAUNCH.[solution name].BAT-->
+      <root id="$(local_path_solution)">D:\TFS\LLC-EF Lite\LLC\Source Code\FCT.LLC.BusinessService</root>
+      <root id="$(local_path_apd)">D:\TFS\APD\Packaging\LLC\FCT.LLC.BusinessService\Version 2.0-LLCLite</root>
+    </roots>
+    <target>
+      <ismproject id="&lt;ISProjectFolder&gt;">$(local_path_apd)\IS Project\FCT.LLC.BusinessService.ism</ismproject>
+      <pathvariables>
+        <!--Please check carefully paths defined in the Install Shield project!-->
+        <pathvariable id="&lt;PATH_TO_RESOURCE_FILES&gt;">&lt;ISProjectFolder&gt;\..\Resource</pathvariable>
+        <!--	<pathvariable id="&lt;PATH_TO_BIN_FILES&gt;">&lt;ISProjectFolder&gt;\..\Resource\bin</pathvariable>-->
+      </pathvariables>
+      <excludes>
+        <exclude>
+          <excluderoot>&lt;PATH_TO_RESOURCE_FILES&gt;</excluderoot>
+          <!--Edit Files to be excludet from the comparison-->
+          <excludemasks>web.config;global.asax;</excludemasks>
+        </exclude>
+      </excludes>
+    </target>
+    <sources>
+      <source id="$(sourceroot1)" targetid="$(target1)">
+        <!--EDIT SOLUTION OUTPUT PATH HERE-->
+        <includeroot>$(local_path_solution)\Services</includeroot>
+        <!--Add masks separated by ';' for files to be copied from the source-->
+        <!--*.htm;*.aspx;*.css;*.skin;*.gif;*.dfv;*.compiled;*.xml;*.ascx;*.master;*.dll;*.svc;*.config;*.asmx;*.jpg;*.resx;*.sitemap;*.asax-->
+        <includemasks>*.dll;*.svc</includemasks>
+        <!--Add paterns separated by ';' to be excluded from comparison [release\web.config;release\app.config]-->
+        <excludepatterns>obj\;web.config;*.cs;*.csproj;*.pdb;</excludepatterns>
+      </source>
+    </sources>
+  </settings>
+</project>

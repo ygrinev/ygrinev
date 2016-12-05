@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SearchDealRequest"
+    targetNamespace="FCT.LLC.Common.DataContracts" elementFormDefault="qualified"
+    xmlns="FCT.LLC.Common.DataContracts"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+   <xs:include schemaLocation="DataContractTypes.xsd"/>
+
+   <xs:element name="SearchDealRequest">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="SearchDealCriteria" type="SearchDealCriteria" />
+            <xs:element name="PageIndex" type="xs:int" />
+            <xs:element name="PageSize" type="xs:int" />
+            <xs:element name="OrderBySpecifications" type="OrderBySpecificationCollection" />
+            <xs:element name="UserContext" type="UserContext" />
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:simpleType name="OrderByColumn">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="FCTURN"/>
+         <xs:enumeration value="LenderReferenceNumber"/>
+         <xs:enumeration value="ClosingDate"/>
+         <xs:enumeration value="LawyerName"/>
+         <xs:enumeration value="ActingFor"/>
+         <xs:enumeration value="ClientName"/>
+         <xs:enumeration value="PropertyAddress"/>
+         <xs:enumeration value="BusinessModel"/>
+         <xs:enumeration value="DealStatus"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="OrderBySpecificationCollection">
+      <xs:sequence>
+         <xs:element name="OrderBySpecification" type="OrderBySpecification" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="OrderBySpecification">
+      <xs:sequence>
+         <xs:element name="OrderByColumn" type="OrderByColumn" />
+         <xs:element name="OrderByDirection" type="OrderByDirection" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="SearchDealCriteria">
+      <xs:sequence>
+         <xs:element name="LenderReferenceNumber" type="xs:string" />
+         <xs:element name="DealScopeFCTURN" type="xs:string" />
+         <xs:element name="LLCFCTURN" type="xs:string" />
+         <xs:element name="LawyerName" type="xs:string" />
+         <xs:element name="ClientName" type="xs:string" />
+         <xs:element name="VendorName" type="xs:string" />
+         <xs:element name="LawyerFileNumber" type="xs:string" />
+         <xs:element name="ClosingDateFrom" type="xs:string" />
+         <xs:element name="ClosingDateTo" type="xs:string" />
+         <xs:element name="MortgageNumber" type="xs:string" />
+         <xs:element name="PaymentReferenceNumber" type="xs:string" />
+         <xs:element name="BatchNumber" type="xs:string" />
+         <xs:element name="DisbursementAmount" type="xs:string" />
+         <xs:element name="DisbursementReferenceNumber" type="xs:string" />
+         <xs:element name="OutstandingDepositAmountFrom" type="xs:string" />
+         <xs:element name="OutstandingDepositAmountTo" type="xs:string" />
+         <xs:element name="ChequeNumber" type="xs:string" />
+         <xs:element name="WireDepositCode" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

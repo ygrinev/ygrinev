@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31010.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.LLC.Common.Utility", "FCT.LLC.Common.Utility\FCT.LLC.Common.Utility.csproj", "{9E7F26A2-F4BE-4615-95BF-6C8079CB258E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.LLC.Common.Constants", "FCT.LLC.Common.Constants\FCT.LLC.Common.Constants.csproj", "{CE1F80AC-41B2-41F0-9298-60D95B022F51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.LLC.Common.DataContracts", "DataContracts\FCT.LLC.Common.DataContracts.csproj", "{388B5855-21E9-4EFA-BE79-6CCB9A55C5A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.LLC.GenericRepository", "GenericRepository\FCT.LLC.GenericRepository.csproj", "{37E2437B-A856-4270-AA39-31EEEF80B4A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT.LLC.Logging", "Logging\FCT.LLC.Logging.csproj", "{DB0D7720-B3AE-42EA-B618-C003A0B48EF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingTestHarness", "LoggingTestHarness\LoggingTestHarness.csproj", "{368719F7-D155-4B3C-8933-D54BACEFC19B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.firstcdn.com:8080/tfs/main
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FCT.LLC.Common.Utility\\FCT.LLC.Common.Utility.csproj
+		SccProjectName1 = FCT.LLC.Common.Utility
+		SccLocalPath1 = FCT.LLC.Common.Utility
+		SccProjectUniqueName2 = FCT.LLC.Common.Constants\\FCT.LLC.Common.Constants.csproj
+		SccProjectName2 = FCT.LLC.Common.Constants
+		SccLocalPath2 = FCT.LLC.Common.Constants
+		SccProjectUniqueName3 = GenericRepository\\FCT.LLC.GenericRepository.csproj
+		SccProjectName3 = GenericRepository
+		SccLocalPath3 = GenericRepository
+		SccProjectUniqueName4 = DataContracts\\FCT.LLC.Common.DataContracts.csproj
+		SccProjectName4 = DataContracts
+		SccLocalPath4 = DataContracts
+		SccProjectUniqueName5 = Logging\\FCT.LLC.Logging.csproj
+		SccProjectName5 = Logging
+		SccLocalPath5 = Logging
+		SccProjectUniqueName6 = LoggingTestHarness\\LoggingTestHarness.csproj
+		SccProjectName6 = LoggingTestHarness
+		SccLocalPath6 = LoggingTestHarness
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E7F26A2-F4BE-4615-95BF-6C8079CB258E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E7F26A2-F4BE-4615-95BF-6C8079CB258E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E7F26A2-F4BE-4615-95BF-6C8079CB258E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E7F26A2-F4BE-4615-95BF-6C8079CB258E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE1F80AC-41B2-41F0-9298-60D95B022F51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE1F80AC-41B2-41F0-9298-60D95B022F51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE1F80AC-41B2-41F0-9298-60D95B022F51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE1F80AC-41B2-41F0-9298-60D95B022F51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388B5855-21E9-4EFA-BE79-6CCB9A55C5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388B5855-21E9-4EFA-BE79-6CCB9A55C5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388B5855-21E9-4EFA-BE79-6CCB9A55C5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388B5855-21E9-4EFA-BE79-6CCB9A55C5A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37E2437B-A856-4270-AA39-31EEEF80B4A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E2437B-A856-4270-AA39-31EEEF80B4A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E2437B-A856-4270-AA39-31EEEF80B4A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E2437B-A856-4270-AA39-31EEEF80B4A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB0D7720-B3AE-42EA-B618-C003A0B48EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB0D7720-B3AE-42EA-B618-C003A0B48EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB0D7720-B3AE-42EA-B618-C003A0B48EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB0D7720-B3AE-42EA-B618-C003A0B48EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{368719F7-D155-4B3C-8933-D54BACEFC19B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{368719F7-D155-4B3C-8933-D54BACEFC19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{368719F7-D155-4B3C-8933-D54BACEFC19B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{368719F7-D155-4B3C-8933-D54BACEFC19B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

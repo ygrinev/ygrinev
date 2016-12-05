@@ -1,0 +1,100 @@
+{
+  "project": {
+    "version": "1.0.0-beta.19-3",
+    "name": "llclite"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico",
+        "App_Themes"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.json",
+      "prefix": "app",
+      "mobile": false,
+      "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../Content/font-awesome-4.6.3/css/font-awesome.min.css",
+        "../Content/app.css",
+        "../App_Themes/Default/Default.css",
+        "../App_Themes/Login/Style.css",
+        "../App_Themes/Default/jquery.tooltip.css",
+        "../App_Themes/Default/LiquidLayout.css",
+        "../App_Themes/dist/css/AdminLTE.css",
+        "../App_Themes/dist/css/skins/_all-skins.css",
+        "../App_Themes/plugins/iCheck/flat/blue.css",
+        "../App_Themes/plugins/morris/morris.css",
+        "../App_Themes/plugins/jvectormap/jquery-jvectormap-1.2.2.css",
+        "../App_Themes/plugins/datepicker/datepicker3.css",
+        "../App_Themes/plugins/daterangepicker/daterangepicker.css",
+        "../App_Themes/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css",
+        "../App_Themes/plugins/ionicons/ionicons.min.css",
+        "../App_Themes/plugins/datatables/dataTables.bootstrap.css",
+        "../App_Themes/plugins/datatables/jquery.dataTables_themeroller.css",
+        "../App_Themes/dist/css/animate.css",
+        "styles.css"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../App_Themes/plugins/jquery-ui-1.11.4/jquery-ui.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "../node_modules/lodash/lodash.js",
+        "../App_Themes/plugins/sparkline/jquery.sparkline.min.js",
+        "../App_Themes/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js",
+        "../App_Themes/plugins/jvectormap/jquery-jvectormap-world-mill-en.js",
+        "../App_Themes/plugins/knob/jquery.knob.js",
+        "../App_Themes/plugins/daterangepicker/daterangepicker.js",
+        "../App_Themes/plugins/datepicker/bootstrap-datepicker.js",
+        "../App_Themes/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js",
+        "../App_Themes/plugins/slimScroll/jquery.slimscroll.min.js",
+        "../App_Themes/plugins/fastclick/fastclick.js",
+        "../App_Themes/dist/js/app.js",
+        "../App_Themes/dist/js/pages/dashboard.js",
+        "../App_Themes/dist/js/demo.js",
+        "../App_Themes/plugins/raphael/raphael-min.js",
+        "../App_Themes/plugins/moment/moment.min.js",
+        "../App_Themes/plugins/datatables/jquery.dataTables.js",
+        "../App_Themes/plugins/datatables/dataTables.bootstrap.js"
+      ],
+      "environments": {
+        "source": "environments/environment.ts",
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "addons": [],
+  "packages": [],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "prefixInterfaces": false,
+    "inline": {
+      "style": false,
+      "template": false
+    },
+    "spec": {
+      "class": false,
+      "component": true,
+      "directive": true,
+      "module": false,
+      "pipe": true,
+      "service": true
+    }
+  }
+}
