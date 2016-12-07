@@ -1,0 +1,27 @@
+@import "../../theme/sass/conf/conf";
+
+.ng2-smart-table-container table.ng2-smart-table {
+  th, td {
+    border: 1px solid #8295a3 !important;
+    line-height: 35px !important;
+    vertical-align: middle !important;
+    text-align: left !important;
+  }
+
+  color: #383333;
+
+  input {
+    line-height: 1.5 !important;
+  }
+
+  tbody {
+    tr:hover {
+      background: #c6d9e6 !important;
+    }
+  }
+}
+
+nav.ng2-smart-pagination-nav {
+  display: flex !important;
+  justify-content: center !important;
+}
